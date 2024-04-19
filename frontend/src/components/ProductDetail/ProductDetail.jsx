@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import star from "../../assets/star.svg";
 import QuestionsAnswersHome from "../QuestionsAnswersHome/QuestionsAnswersHome";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
 import {
   calendar,
   shipping,
@@ -10,6 +13,7 @@ import {
   product2,
   product3,
 } from "../../assets/index";
+
 const ProductDetail = () => {
   const [images, setImages] = useState({
     img1: product,
@@ -41,13 +45,39 @@ const ProductDetail = () => {
       free_shipping: true,
     },
   ];
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  };
   const handleSelectedVariant = (variant) => {
     setSelectedVariant(variant);
   };
   return (
     <div className="bg-white flex flex-wrap lg:flex-nowrap py-4 lg:py-10">
-      <div className="flex flex-col gap-6 lg:w-2/4">
-        <div className="sticky top-0">
+      <div className="block lg:hidden py-8 w-[100%]">
+        <Slider {...settings} className="">
+          <div className="px-2">
+            <div className="w-auto flex flex-wrap justify-center items-start gap-4 rounded-xl overflow-hidden">
+              <img src={product} alt="img_before" />
+            </div>
+          </div>
+          <div className="px-2">
+            <div className="w-auto flex flex-wrap justify-center items-start gap-4 rounded-xl overflow-hidden">
+              <img src={product2} alt="img_before" />
+            </div>
+          </div>
+          <div className="px-2">
+            <div className="w-auto flex flex-wrap justify-center items-start gap-4 rounded-xl overflow-hidden">
+              <img src={product3} alt="img_before" />
+            </div>
+          </div>
+        </Slider>
+      </div>
+      <div className="hidden lg:flex flex-col gap-6 lg:w-2/4">
+        <div className="hidden lg:block sticky top-0">
           <img
             src={activeImg}
             alt=""
