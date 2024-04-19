@@ -10,7 +10,7 @@ import ImageDescription from "../../components/ImageDescription/ImageDescription
 import Reviews from "../../components/Reviews/Reviews";
 const LandingPage = () => {
   const [homeVariant, setHomeVariant] = useState(2);
-const [variantPrice, setVariantPrice] = useState("$35")
+const [variantPrice, setVariantPrice] = useState(35)
   const handleHomeVariant = (variant, price) => {
     setHomeVariant(variant);
     setVariantPrice(price)

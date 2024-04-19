@@ -22,6 +22,7 @@ const ProductDetail = ({ homeVariant, handleVariantDetail }) => {
   });
   const [activeImg, setActiveImage] = useState(images.img1);
   const [selectedVariant, setSelectedVariant] = useState(homeVariant);
+  const [objectVariant, setObjectVariant] = useState()
   const variants = [
     {
       id: 1,
@@ -49,6 +50,12 @@ const ProductDetail = ({ homeVariant, handleVariantDetail }) => {
   useEffect(() => {
     setSelectedVariant(homeVariant);
   }, [homeVariant]);
+
+
+  useEffect(() => {
+    const foundVariant = variants.find(variant => variant.id === selectedVariant);
+    setObjectVariant(foundVariant);
+  }, [selectedVariant, variants]);
 
   const settings = {
     dots: true,
@@ -209,8 +216,9 @@ const ProductDetail = ({ homeVariant, handleVariantDetail }) => {
           Shipping 2 to 5 days from Sydney, AU 🇦🇺
           </p>
           <a href="https://ifbeauty.com.au/cart/41854498111663:1">
-            <button className="w-full rounded-md bg-slate-600 text-2xl font-sans-500 text-gray-200 px-2 py-4">
-              👉🏻 Add To Bag
+            <button id="add-to-bag-button" className="w-full rounded-md bg-slate-600 text-2xl font-sans-500 text-gray-200 px-2 py-4">
+          { objectVariant ? ` 👉🏻 ADD TO BAG $${objectVariant.price}` : ""}
+              
             </button>
           </a>
         </div>

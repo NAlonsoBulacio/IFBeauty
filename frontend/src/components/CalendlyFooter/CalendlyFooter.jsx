@@ -5,26 +5,7 @@ const CalendlyFooter = ({ handleVariantFooter, homeVariant, variantPrice }) => {
   const [isVisible, setIsVisible] = useState(false);
   const [showOptions, setShowOptions] = useState(false);
   const [selectedVariant, setSelectedVariant] = useState(homeVariant);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.pageYOffset > window.innerHeight * 1) {
-        setIsVisible(true);
-      } else {
-        setIsVisible(false);
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
-  useEffect(() => {
-    setSelectedVariant(homeVariant);
-  }, [homeVariant]);
+  const [objectVariant, setObjectVariant] = useState()
 
   const variants = [
     {
@@ -53,6 +34,31 @@ const CalendlyFooter = ({ handleVariantFooter, homeVariant, variantPrice }) => {
     },
   ];
 
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.pageYOffset > window.innerHeight * 1) {
+        setIsVisible(true);
+      } else {
+        setIsVisible(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  useEffect(() => {
+    setSelectedVariant(homeVariant);
+  }, [homeVariant]);
+  useEffect(() => {
+    const foundVariant = variants.find(variant => variant.id === selectedVariant);
+    setObjectVariant(foundVariant);
+  }, [selectedVariant, variants]);
+  
   const handleSelectedVariant = (variant) => {
     handleVariantFooter(variant);
   };
@@ -107,7 +113,7 @@ const CalendlyFooter = ({ handleVariantFooter, homeVariant, variantPrice }) => {
         <div>
           <a href="https://ifbeauty.com.au/cart/41854498111663:1">
             <button className="w-full rounded-md bg-slate-600 text-2xl font-sans-500 text-gray-200 px-2 py-4">
-              ADD TO BAG - {variantPrice}
+            { objectVariant ? ` 👉🏻 ADD TO BAG $${objectVariant.price}` : ""}
             </button>
           </a>
         </div>
