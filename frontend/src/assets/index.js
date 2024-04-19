@@ -10,6 +10,7 @@ import product3 from "./images/product3.png";
 import logo from "./images/logo.png";
 import life from "./images/life.png";
 import logo_blanco from "./images/logo-blanco.png";
+import paymeth from "./images/paymethods.png";
 export {
     calendar,
     shipping,
@@ -19,6 +20,7 @@ export {
     product2,
     product3,
     logo,
+    paymeth,
     life,
     logo_blanco,
 }
