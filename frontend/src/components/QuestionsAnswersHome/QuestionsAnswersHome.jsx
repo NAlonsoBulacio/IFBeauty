@@ -10,27 +10,27 @@ const QuestionsAnswersHome = ({ landing }) => {
 
   const QAs = [
     {
-      question: "How it works",
+      question: "How does it work?",
       answer:
-        "Using Nano-Crystalline technology, Bleame™ Crystal Hair Eraser allows the hair to clump and break from the surface when rubbed gently on the skin. This process also helps exfoliate, revealing baby smooth skin after use 💜",
+        "This light-as-a-feather formula contains Vitamin C, peptides and plant stem cells to stimulate collagen production and repair.Why boost collagen? Collagen is the most common and abundant protein in the body. In our skin, it is responsible for helping skin cells renew and repair themselves and keeps our skin smooth and healthy. As we mature, collagen is naturally depleted. Vitamin C and specific peptides help stimulate collagen production. Sodium PCA, amino acids and plant-derived hyaluronic acid promote skin hydration. A botanical repair serum for every day. A good starting point if you want to begin using specific serums.",
       answer_id: "1",
     },
     {
-      question: "Instructions",
+      question: "How to use?",
       answer:
-        "Prep Your Skin Exfoliate your skin no less than 24 hours before use. If you have sensitive skin, exfoliate no less than 48 hours before use.",
+        "Apply 2-3 pumps to face and neck after cleansing and before your chosen moisturiser. May be used am or pm in conjunction with other serums if required.",
       answer_id: "2",
     },
     {
-      question: "Shipping",
+      question: "How do I ship?",
       answer:
-        "Order processing takes 1-3 business days before shipment. Once your item/s is dispatched, the estimated delivery time is",
+        "Order processing takes 1-3 business days before shipping. Once your items are shipped, estimated delivery time is 2-5 days.",
       answer_id: "3",
     },
     {
-      question: "Return & Refund Policy",
+      question: "Refund Policy",
       answer:
-        "We love our Bleame™ Crystal Hair Eraser and we're confident you will too! In case things don't go as planned, our return and refund policy is designed to make things as easy as possible for you. Click here to learn more about how we can help.",
+        "We love our If - Boost skin health and repair and we're sure you will too! In case things don't go as planned, our return and refund policy is designed to make it as easy as possible for you. <a href='/refund-policy' style='text-decoration: underline;' >Click here</a> for more information on how we can help.",
       answer_id: "4",
     },
   ];
@@ -85,9 +85,10 @@ const QuestionsAnswersHome = ({ landing }) => {
                 answer === qa.answer_id ? "show" : ""
               }`}
             >
-              <span className="flex-grow text-left font-sans-300 text-gray-500 text-md lg:text-lg">
-                {qa.answer}
-              </span>
+              <span className="flex-grow text-left font-sans-300 text-gray-500 text-md lg:text-lg"
+               dangerouslySetInnerHTML={{ __html: qa.answer }}
+              >
+             </span>
             </div>
             <div className="w-full flex justify-center ">
               <div className="w-full">

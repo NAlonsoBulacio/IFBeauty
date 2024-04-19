@@ -4,13 +4,13 @@ const BenefitsandVideo = () => {
   return (
     <div className="flex flex-wrap justify-center gap-4">
       <div className="w-full">
-        <h1 className="text-senter font-sans-600 text-3xl text-gray-700">
-          Hair removal just got waaaaay easier
+        <h1 className="text-senter font-sans-700 text-3xl text-gray-700">
+        Making your skin look younger and healthier is now much easier!
         </h1>
       </div>
       <div className="w-full ">
         <p className="text-center font-sans-400 text-md text-gray-600 px-3">
-        Not all trips to the wax salon ends with a pleasant experience because things can get pretty hairy (get it?) during the whole process. Meet Bleame Crystal Hair Eraser - the easiest, painless hair removal for a smooth skin instantly!
+        Not all creams provide effective results, as some brands may offer products with ingredients or formulas that have been proven not to work, simply because they are cheaper. At If Beauty, our mission is to provide the best cream possible, with ingredients that have been proven to work over our 30 years of working with our patients.
         </p>
       </div>
       <div className="w-full flex justify-center py-4">
@@ -24,7 +24,7 @@ const BenefitsandVideo = () => {
         />
       </div>
       <div className="w-full flex flex-wrap justify-center">
-        <div className="w-1/2 flex flex-wrap justify-center px-8">
+        <div className="w-1/2 flex flex-wrap justify-center px-2 lg:px-8">
           <div className="w-auto flex justify-center">
             <img
               src="https://cdn.accentuate.io/7105770193071/21150527029423/Easy-to-use-(7069bc)-v1644651560187.png?200x200"
@@ -40,11 +40,11 @@ const BenefitsandVideo = () => {
           <div>
             <h1>
               Simply rub it to your skin in circular motion for a hair-free
-              body!{" "}
+              body!
             </h1>
           </div>
         </div>
-        <div className="w-1/2 flex flex-wrap justify-center px-8">
+        <div className="w-1/2 flex flex-wrap justify-center px-2 lg:px-8">
           <div className="w-auto flex justify-center">
             <img
               src="https://cdn.accentuate.io/7105770193071/21150527815855/Non-Violent-(7069bc)-v1644651652333.png?200x200"
@@ -64,7 +64,7 @@ const BenefitsandVideo = () => {
             </h1>
           </div>
         </div>
-        <div className="w-1/2 flex flex-wrap justify-center px-8">
+        <div className="w-1/2 flex flex-wrap justify-center px-2 lg:px-8">
           <div className="w-auto flex justify-center">
             <img
               src="https://cdn.accentuate.io/7105770193071/21150527291567/Peace-of-Mind-(7069bc)-v1644651643275.png?200x200"
@@ -84,7 +84,7 @@ const BenefitsandVideo = () => {
             </h1>
           </div>
         </div>
-        <div className="w-1/2 flex flex-wrap justify-center px-8">
+        <div className="w-1/2 flex flex-wrap justify-center px-2 lg:px-8">
           <div className="w-auto flex justify-center">
             <img
               src="https://cdn.accentuate.io/7105770193071/21150527586479/Travel-Safe-(7069bc)-v1644651647656.png?200x200"

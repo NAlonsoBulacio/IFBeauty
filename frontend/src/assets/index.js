@@ -22,3 +22,5 @@ export {
     life,
     logo_blanco,
 }
+
+

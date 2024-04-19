@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import star from "../../assets/star.svg";
 import QuestionsAnswersHome from "../QuestionsAnswersHome/QuestionsAnswersHome";
 import "slick-carousel/slick/slick.css";
@@ -14,14 +14,14 @@ import {
   product3,
 } from "../../assets/index";
 
-const ProductDetail = () => {
+const ProductDetail = ({ homeVariant, handleVariantDetail }) => {
   const [images, setImages] = useState({
     img1: product,
     img2: product2,
     img3: product3,
   });
   const [activeImg, setActiveImage] = useState(images.img1);
-  const [selectedVariant, setSelectedVariant] = useState(2);
+  const [selectedVariant, setSelectedVariant] = useState(homeVariant);
   const variants = [
     {
       id: 1,
@@ -45,6 +45,11 @@ const ProductDetail = () => {
       free_shipping: true,
     },
   ];
+
+  useEffect(() => {
+    setSelectedVariant(homeVariant);
+  }, [homeVariant]);
+
   const settings = {
     dots: true,
     infinite: true,
@@ -53,7 +58,7 @@ const ProductDetail = () => {
     slidesToScroll: 1,
   };
   const handleSelectedVariant = (variant) => {
-    setSelectedVariant(variant);
+    handleVariantDetail(variant);
   };
   return (
     <div className="bg-white flex flex-wrap lg:flex-nowrap py-4 lg:py-10">
@@ -117,46 +122,47 @@ const ProductDetail = () => {
           <h1 className="text-gray-500 text-xl mx-2">(1319 Reviews)</h1>
         </div>
         <div className="w-full flex justify-start items-start">
-          <h1 className="text-5xl text-left text-gray-800 font-sans-600">
-            Collagen Boost and Repair Vit C + Peptides + Stem Cells
+          <h1 className="text-4xl lg:text-5xl text-left text-gray-800 font-sans-700">
+            Collagen Boost and Repair
           </h1>
         </div>
         <div className="w-full flex justify-start items-start text-[12px]">
-          NEW: 🏆 2024 RATED HAIR REMOVAL INNOVATION
+          New 🏆 Innovation in skin health 2024
         </div>
         <div className="w-full flex justify-start items-start py-4">
           <h1 className="text-gray-700 font-sans-500 text-left">
-            If you’re tired of razor cuts, painful waxing or expensive lasers —
-            our hair eraser is for you!
+            If you are tired of creams that you don't know what ingredients are
+            in them and that don't give you the results you expect, our skin
+            repair is for you!
           </h1>
         </div>
         <div className="w-full flex justify-start items-start">
           <ul className="text-left text-md lg:text-xl">
-            <li>💜 Guarantees to remove unwanted hair</li>
-            <li>🍑 Gently exfoliates dead skin cell</li>
-            <li>✨ Painless and Non-toxic</li>
-            <li>🌱 Eco-Friendly and Reusable (~1 year)</li>
+            <li>💜 Guarantees healthy and youthful skin.</li>
+            <li>🍑 Collagen repair Vit C, Peptides, Stem cells.</li>
+            <li>✨ Refreshing citrus scent of pink grapefruit.</li>
+            <li>🌱Not tested on animals and organic.</li>
           </ul>
         </div>
         <div className="w-full flex flex-wrap gap-3 py-4">
           <div className="flex items-center w-full">
-            <div className="flex-grow rounded-md h-[2px] bg-amber-600"></div>
+            <div className="flex-grow rounded-md h-[2px] bg-slate-600"></div>
             <div className="px-4 font-sans-400">Bundle and Save</div>
-            <div className="flex-grow h-[2px] bg-amber-600"></div>
+            <div className="flex-grow h-[2px] bg-slate-600"></div>
           </div>
           {variants?.map((variant) => {
             const savings = variant.compare_price - variant.price;
             return (
               <div
                 className={`${
-                  variant.id === selectedVariant ? "bg-yellow-100" : ""
-                } relative h-24 w-full border-yellow-500 border-2 rounded-md flex gap-4 py-4 px-4 lg:px-8 cursor-pointer  hover:bg-yellow-400`}
+                  variant.id === selectedVariant ? "bg-slate-100" : ""
+                } relative h-24 w-full border-slate-500 border-2 rounded-md flex gap-4 py-4 px-4 lg:px-8 cursor-pointer  hover:bg-slate-400`}
                 onClick={() => handleSelectedVariant(variant.id)}
               >
                 <div
                   className={`${
-                    variant.id === selectedVariant ? "bg-yellow-600" : ""
-                  } w-6 h-6  rounded-full border-yellow-600 border-2 mt-[6px]`}
+                    variant.id === selectedVariant ? "bg-slate-600" : ""
+                  } w-6 h-6  rounded-full border-slate-600 border-2 mt-[6px]`}
                 ></div>
                 <div className="w-full flex justify-between">
                   <div className="flex flex-col justify-start">
@@ -165,7 +171,7 @@ const ProductDetail = () => {
                         {variant.variant}
                       </p>
                       {variant.free_shipping ? (
-                        <div className="p-2 py-1 border-amber-600 text-amber-600 text-sm font-sans-400 border-2 rounded-md">
+                        <div className="p-2 py-1 border-amber-500 text-amber-500 text-sm font-sans-400 border-2 rounded-md">
                           Free Shipping
                         </div>
                       ) : (
@@ -175,7 +181,7 @@ const ProductDetail = () => {
                     <p className="text-left">You Save ${savings}</p>
                   </div>
                   <div>
-                    <p className="text-xl font-sans-500 text-amber-600">
+                    <p className="text-2xl font-sans-500 text-amber-500">
                       ${variant.price}
                     </p>
                     <p className="font-sans-400 text-gray-600 line-through">
@@ -200,17 +206,17 @@ const ProductDetail = () => {
         </div>
         <div className="w-full">
           <p className="font-sans-400">
-            Free 2~5 Day Shipping from Nevada, USA 🇺🇸
+          Shipping 2 to 5 days from Sydney, AU 🇦🇺
           </p>
           <a href="https://ifbeauty.com.au/cart/41854498111663:1">
-            <button className="w-full rounded-md bg-amber-600 text-2xl font-sans-500 text-gray-200 px-2 py-4">
+            <button className="w-full rounded-md bg-slate-600 text-2xl font-sans-500 text-gray-200 px-2 py-4">
               👉🏻 Add To Bag
             </button>
           </a>
         </div>
-        <div className="w-full flex justify-center items-center py-6  gap-6">
-          <div className="flex justify-center flex-wrap w-[138px] gap-2">
-            <div className="w-20">
+        <div className="w-full flex justify-center items-center py-6  gap-2">
+          <div className="flex justify-center flex-wrap w-[138px] gap-2 lg:gap-6">
+            <div className="w-14 lg:w-20">
               <img src={shipping} alt="" className="w-full" />
             </div>
             <h1 className="text-center text-sm" s>
@@ -218,13 +224,13 @@ const ProductDetail = () => {
             </h1>
           </div>
           <div className="flex justify-center flex-wrap w-32 gap-2">
-            <div className="w-20">
+            <div className="w-14 lg:w-20">
               <img src={calendar} alt="" className="w-full" />
             </div>
             <h1 className="text-center text-sm">30-Day Returns</h1>
           </div>
           <div className="flex justify-center flex-wrap w-32 gap-2">
-            <div className="w-20">
+            <div className="w-14 lg:w-20">
               <img src={returning} alt="" className="w-full" />
             </div>
             <h1 className="text-center text-sm">Easy Exchanges</h1>
@@ -233,7 +239,9 @@ const ProductDetail = () => {
         <div className="w-full">
           <QuestionsAnswersHome />
         </div>
-        <div className="w-full">phrase</div>
+        <div className="w-full text-center text-lg font-sans-500 text-gray-600">
+          + 100.000 happy clients
+        </div>
       </div>
     </div>
   );
