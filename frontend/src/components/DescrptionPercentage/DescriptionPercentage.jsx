@@ -8,7 +8,6 @@ import "slick-carousel/slick/slick-theme.css";
 import VideoWithPreview from "./VideoPreview";
 
 const DescriptionPercentage = () => {
-
   const settings = {
     infinite: true,
     speed: 500,
@@ -63,17 +62,7 @@ const DescriptionPercentage = () => {
         </p>
         <StatementList />
       </div>
-      {/* <Slider {...settings} > */}
-          <VideoWithPreview
-            videoSrc="https://cdn.shopify.com/videos/c/o/v/1f4eab19489349e48af156e40bcf7ad5.mp4"
-            posterSrc="https://cdn.accentuate.io/7105770193071/-1675836209392/poster-image-v1675924900212.png?446x766"
-          />
-          <VideoWithPreview
-            videoSrc="https://cdn.shopify.com/videos/c/o/v/9807f673cea143efa2369e992d8d5a96.mp4"
-            posterSrc="https://cdn.accentuate.io/7105770193071/-1675836209392/video-capture-1024-v1675928914418.png?360x640"
-          />
-        
-      {/* </Slider> */}
+      <VideoWithPreview />
     </div>
   );
 };
