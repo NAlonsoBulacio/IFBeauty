@@ -14,6 +14,7 @@ const DescriptionPercentage = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     adaptiveHeight: true,
+
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
     responsive: [

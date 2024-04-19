@@ -9,6 +9,7 @@ import product3 from "./images/product3.png";
 
 import logo from "./images/logo.png";
 import life from "./images/life.png";
+import logo_blanco from "./images/logo-blanco.png";
 export {
     calendar,
     shipping,
@@ -19,4 +20,5 @@ export {
     product3,
     logo,
     life,
+    logo_blanco,
 }
