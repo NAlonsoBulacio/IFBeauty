@@ -2,7 +2,7 @@ import calendar from "./images/calendar.png";
 import shipping from "./images/shipping.png";
 import returning from "./images/return.png";
 import best_seller from "./images/best_seller.png";
-
+import au from "./images/australia.png";
 import product from "./images/product.png";
 import product2 from "./images/product2.png";
 import product3 from "./images/product3.png";
@@ -23,6 +23,7 @@ export {
     paymeth,
     life,
     logo_blanco,
+    au,
 }
 
 

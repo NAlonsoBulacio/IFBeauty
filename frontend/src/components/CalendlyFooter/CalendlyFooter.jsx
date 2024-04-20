@@ -82,7 +82,7 @@ const CalendlyFooter = ({ handleVariantFooter, homeVariant, variantPrice }) => {
       <div
         className={` ${
           showOptions ? "h-[120px]" : "h-[1px]"
-        }   flex space-x-2 transition-height duration-300`}
+        }  w-full flex justify-center space-x-2 transition-height duration-300`}
       >
         {variants?.map((variant) => (
           <div
@@ -107,9 +107,9 @@ const CalendlyFooter = ({ handleVariantFooter, homeVariant, variantPrice }) => {
         ))}
       </div>
       <div className="flex justify-center items-center py-2 gap-x-6">
-        <h1 className="hidden lg:block text-3xl font-plus-400 text-gray-800">
+        {/* <h1 className="hidden lg:block text-3xl font-plus-400 text-gray-800">
           Tratamiento Anti-Aging Infalible
-        </h1>
+        </h1> */}
         <div>
           <a href="https://ifbeauty.com.au/cart/41854498111663:1">
             <button className="w-full rounded-md bg-slate-600 text-2xl font-sans-500 text-gray-200 px-2 py-4">

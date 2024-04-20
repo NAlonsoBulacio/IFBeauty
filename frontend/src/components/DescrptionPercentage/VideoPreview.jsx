@@ -8,8 +8,9 @@ const VideoWithPreview = () => {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 3,
-    slidesToScroll: 1,
+    slidesPerRow: 1,
+          slidesToShow: 1.2,
+          slidesToScroll: 1,
     centerMode: true,
     autoplay: true,
     autoplaySpeed: 6000,
@@ -35,9 +36,9 @@ const VideoWithPreview = () => {
     ],
   };
   return (
-    <div className="py-12 w-[100%]">
+    <div className="py-12 w-[30%]">
       <Slider {...settings} className="">
-        <div className="w-[100%] px-2 ">
+        <div className="w-[100%] lg:w-[30%] px-2 ">
           <div className="w-auto flex flex-wrap justify-center items-start gap-4 rounded-xl overflow-hidden relative">
             <video
               autoPlay={true}
@@ -53,7 +54,7 @@ const VideoWithPreview = () => {
             </div>
           </div>
         </div>
-        <div className="w-[100%] px-2">
+        <div className="w-[100%] lg:w-[30%] px-2">
           <div className="w-auto flex flex-wrap justify-center items-start gap-4 rounded-xl overflow-hidden relative">
             <video
               autoPlay={true}
@@ -69,7 +70,7 @@ const VideoWithPreview = () => {
             </div>
           </div>
         </div>
-        <div className="w-[100%] px-2">
+        <div className="w-[100%] lg:w-[30%] px-2">
           <div className="w-auto flex flex-wrap justify-center items-start gap-4 rounded-xl overflow-hidden relative">
             <video
               autoPlay={true}

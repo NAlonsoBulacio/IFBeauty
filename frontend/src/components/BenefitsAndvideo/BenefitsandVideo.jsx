@@ -20,7 +20,7 @@ const BenefitsandVideo = () => {
           muted
           playsInline
           src="https://cdn.shopify.com/videos/c/o/v/7e8ec8551dd14572bc6f291c3a33378e.mp4"
-          className="w-[80%] rounded-full"
+          className="w-[80%] lg:w-[30%] rounded-full"
         />
       </div>
       <div className="w-full flex flex-wrap justify-center">

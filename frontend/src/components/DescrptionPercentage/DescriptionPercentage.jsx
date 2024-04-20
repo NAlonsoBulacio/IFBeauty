@@ -47,22 +47,18 @@ const DescriptionPercentage = () => {
 
   return (
     <div className="flex flex-wrap justify-between items-start h-auto lg:h-[550px] xl:space-x-0">
-      <div className="w-full lg:w-[50%] flex flex-wrap justify-start items-start space-y-4">
-        <h2 className="w-full font-roboto-400 text-xl text-center lg:text-left text-yellow-700">
-          Estudio Clinico
+      <div className="w-full lg:w-[50%] flex flex-wrap justify-start items-start space-y-4 ">
+        <h2 className="w-full font-sans-400 text-xl text-left text-teal-700">
+          IF Beauty
         </h2>
-        <h1 className="font-roboto-400 text-3xl lg:text-5xl text-center lg:text-left">
-          Resultados demostrados al cabo de 90 días
+        <h1 className="font-sans-400 text-3xl lg:text-5xl text-left">
+          90 days results
         </h1>
-        <p>
-          Hemos desarrollado y registrado la fórmula Anti-aging Infalible con la
-          Caléndula Marigold® que ha sido científicamente comprobada con
-          estudios clínicos realizados por dermatólogos del Hospital
-          Universitario Sagrado Corazón (Barcelona, España). Estos fueron los
-          resultados:
+        <p className="text-left">
+        We have developed and patented the Unfailing Anti-aging Formula which has been scientifically proven with clinical studies conducted by dermatologists from Australia. These were the results:
         </p>
         <StatementList />
-      </div>
+      </div> 
       <VideoWithPreview />
     </div>
   );

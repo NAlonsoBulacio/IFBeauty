@@ -12,6 +12,7 @@ import {
   product,
   product2,
   product3,
+  au,
 } from "../../assets/index";
 
 const ProductDetail = ({ homeVariant, handleVariantDetail }) => {
@@ -69,7 +70,7 @@ const ProductDetail = ({ homeVariant, handleVariantDetail }) => {
   };
   return (
     <div className="bg-white flex flex-wrap lg:flex-nowrap py-4 lg:py-10">
-      <div className="block lg:hidden py-8 w-[100%]">
+      <div className="block lg:hidden pt-0 pb-8 lg:py-8 w-[100%]">
         <Slider {...settings} className="">
           <div className="px-2">
             <div className="w-auto flex flex-wrap justify-center items-start gap-4 rounded-xl overflow-hidden">
@@ -153,23 +154,23 @@ const ProductDetail = ({ homeVariant, handleVariantDetail }) => {
         </div>
         <div className="w-full flex flex-wrap gap-3 py-4">
           <div className="flex items-center w-full">
-            <div className="flex-grow rounded-md h-[2px] bg-slate-600"></div>
+            <div className="flex-grow rounded-md h-[2px] bg-cyan-600"></div>
             <div className="px-4 font-sans-400">Bundle and Save</div>
-            <div className="flex-grow h-[2px] bg-slate-600"></div>
+            <div className="flex-grow h-[2px] bg-cyan-600"></div>
           </div>
           {variants?.map((variant) => {
             const savings = variant.compare_price - variant.price;
             return (
               <div
                 className={`${
-                  variant.id === selectedVariant ? "bg-slate-100" : ""
-                } relative h-24 w-full border-slate-500 border-2 rounded-md flex gap-4 py-4 px-4 lg:px-8 cursor-pointer  hover:bg-slate-400`}
+                  variant.id === selectedVariant ? "bg-cyan-100" : ""
+                } relative h-24 w-full border-cyan-500 border-2 rounded-md flex gap-4 py-4 px-4 lg:px-8 cursor-pointer  hover:bg-cyan-400`}
                 onClick={() => handleSelectedVariant(variant.id)}
               >
                 <div
                   className={`${
-                    variant.id === selectedVariant ? "bg-slate-600" : ""
-                  } w-6 h-6  rounded-full border-slate-600 border-2 mt-[6px]`}
+                    variant.id === selectedVariant ? "bg-cyan-600" : ""
+                  } w-6 h-6  rounded-full border-cyan-600 border-2 mt-[6px]`}
                 ></div>
                 <div className="w-full flex justify-between">
                   <div className="flex flex-col justify-start">
@@ -178,7 +179,7 @@ const ProductDetail = ({ homeVariant, handleVariantDetail }) => {
                         {variant.variant}
                       </p>
                       {variant.free_shipping ? (
-                        <div className="p-2 py-1 border-amber-500 text-amber-500 text-sm font-sans-400 border-2 rounded-md">
+                        <div className="p-2 py-1 border-gray-700 text-gray-700 text-sm font-sans-400 border-2 rounded-md">
                           Free Shipping
                         </div>
                       ) : (
@@ -188,7 +189,7 @@ const ProductDetail = ({ homeVariant, handleVariantDetail }) => {
                     <p className="text-left">You Save ${savings}</p>
                   </div>
                   <div>
-                    <p className="text-2xl font-sans-500 text-amber-500">
+                    <p className="text-2xl font-sans-500 text-gray-700">
                       ${variant.price}
                     </p>
                     <p className="font-sans-400 text-gray-600 line-through">
@@ -210,13 +211,17 @@ const ProductDetail = ({ homeVariant, handleVariantDetail }) => {
               </div>
             );
           })}
-        </div>
-        <div className="w-full">
+        </div> 
+        <div className="w-full ">
+          <div className="flex space-x-2 justify-center items-center">
           <p className="font-sans-400">
-          Shipping 2 to 5 days from Sydney, AU 🇦🇺
+          Shipping 2 to 5 days from Sydney, AU  
           </p>
+          <img src={au} alt="au" className="w-4 h-4" />
+          </div>
+          
           <a href="https://ifbeauty.com.au/cart/41854498111663:1">
-            <button id="add-to-bag-button" className="w-full rounded-md bg-slate-600 text-2xl font-sans-500 text-gray-200 px-2 py-4">
+            <button id="add-to-bag-button" className="w-full rounded-md bg-cyan-600 text-2xl font-sans-500 text-gray-200 px-2 py-4">
           { objectVariant ? ` 👉🏻 ADD TO BAG $${objectVariant.price}` : ""}
               
             </button>
