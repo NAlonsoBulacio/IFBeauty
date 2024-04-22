@@ -18,7 +18,7 @@ function VideoPlayer({ url }) {
   return (
     <div className="w-[100%] pr-4">
       <div className=" rounded-xl relative">
-      <video ref={videoRef} autoplay="autoplay" loop muted playsInline>
+      <video ref={videoRef} preload="auto" autoPlay="autoplay" loop muted playsInline>
           <source src={url} type="video/mp4" />
           Tu navegador no soporta el elemento de video.
         </video>
