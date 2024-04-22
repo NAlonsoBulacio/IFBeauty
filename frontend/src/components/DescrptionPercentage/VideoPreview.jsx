@@ -9,15 +9,15 @@ const VideoWithPreview = () => {
     "https://cdn.shopify.com/videos/c/o/v/1f4eab19489349e48af156e40bcf7ad5.mp4",
     "https://cdn.shopify.com/videos/c/o/v/9807f673cea143efa2369e992d8d5a96.mp4",
     // "https://cdn.shopify.com/videos/c/o/v/1f4eab19489349e48af156e40bcf7ad5.mp4",
-  ]
+  ];
   const settings = {
     dots: true,
     infinite: true,
     speed: 500,
     slidesPerRow: 1,
-          slidesToShow: 1.2,
-          slidesToScroll: 1,
-    centerMode: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    // centerMode: true,
     autoplay: true,
     autoplaySpeed: 6000,
     focusOnSelect: true,
@@ -45,7 +45,7 @@ const VideoWithPreview = () => {
     <div className="py-12 w-full lg:w-[30%] h-auto lg:h-[550px]">
       <Slider {...settings} className="">
         {VideosUrl?.map((video) => (
-          <VideoPlayer url={video}/>
+          <VideoPlayer url={video} />
         ))}
         {/* { VideosUrl?.map((video) => (
           <VideoPlayer url={video} />
