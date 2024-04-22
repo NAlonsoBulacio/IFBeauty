@@ -8,7 +8,7 @@ const VideoWithPreview = () => {
   const VideosUrl = [
     "https://cdn.shopify.com/videos/c/o/v/1f4eab19489349e48af156e40bcf7ad5.mp4",
     "https://cdn.shopify.com/videos/c/o/v/9807f673cea143efa2369e992d8d5a96.mp4",
-    "https://cdn.shopify.com/videos/c/o/v/1f4eab19489349e48af156e40bcf7ad5.mp4",
+    // "https://cdn.shopify.com/videos/c/o/v/1f4eab19489349e48af156e40bcf7ad5.mp4",
   ];
   const settings = {
     dots: true,
@@ -17,7 +17,7 @@ const VideoWithPreview = () => {
     slidesPerRow: 1,
     slidesToShow: 1,
     slidesToScroll: 1,
-
+    centerMode: true,
     // autoplay: true,
     // autoplaySpeed: 6000,
     focusOnSelect: true,
@@ -25,6 +25,7 @@ const VideoWithPreview = () => {
       {
         breakpoint: 1025,
         settings: {
+          centerMode: true,
           slidesToShow: 1,
           slidesToScroll: 1,
           infinite: true,
@@ -43,7 +44,7 @@ const VideoWithPreview = () => {
     ],
   };
   return (
-    <div className="py-12 w-full lg:w-[30%] h-auto lg:h-[550px]">
+    <div className=" py-12 w-full lg:w-[40%] h-auto lg:h-[550px]">
       <Slider {...settings} className="">
         {VideosUrl?.map((video, index) => (
           <VideoPlayer url={video} key={index}/>

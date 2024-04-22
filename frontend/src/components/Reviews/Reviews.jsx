@@ -4,20 +4,20 @@ import star from "../../assets/star.svg";
 import { reviews } from "./AllReviews";
 
 const Reviews = () => {
-    const [visibleReviews, setVisibleReviews] = useState(3);
-    const maxVisibleReviews = 3; // Máximo número de reviews visibles
-  
-    const handleShowMore = () => {
-      if (visibleReviews + 3 <= reviews.length) {
-        setVisibleReviews(visibleReviews + 3);
-      }
-    };
-  
-    const handleShowLess = () => {
-      if (visibleReviews > maxVisibleReviews) {
-        setVisibleReviews(visibleReviews - 3);
-      }
-    };
+  const [visibleReviews, setVisibleReviews] = useState(3);
+  const maxVisibleReviews = 3; // Máximo número de reviews visibles
+
+  const handleShowMore = () => {
+    if (visibleReviews + 3 <= reviews.length) {
+      setVisibleReviews(visibleReviews + 3);
+    }
+  };
+
+  const handleShowLess = () => {
+    if (visibleReviews > maxVisibleReviews) {
+      setVisibleReviews(visibleReviews - 3);
+    }
+  };
 
   return (
     <div>
@@ -42,7 +42,9 @@ const Reviews = () => {
                 <h1 className="font-sans-600">{review.name}</h1>
                 <h1 className="text-green-600 font-sans-500">Verified Buyer</h1>
               </div>
-              <div><Stars /></div>
+              <div>
+                <Stars starsRate={review.starRate === "4" ? true : false}/>
+              </div>
               <div>
                 <h1 className="text-left text-lg font-sans-600">
                   {review.title}
@@ -55,13 +57,19 @@ const Reviews = () => {
               </div>
             </div>
           ))}
-           {reviews.length > maxVisibleReviews && (
+          {reviews.length > maxVisibleReviews && (
             <div className="text-center">
-              <button onClick={handleShowLess} className="text-blue-600 font-sans-600 underline">
+              <button
+                onClick={handleShowLess}
+                className="text-blue-600 font-sans-600 underline"
+              >
                 Show Less
               </button>
               {" | "}
-              <button onClick={handleShowMore} className="text-blue-600 font-sans-600 underline">
+              <button
+                onClick={handleShowMore}
+                className="text-blue-600 font-sans-600 underline"
+              >
                 Show More
               </button>
             </div>

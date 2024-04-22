@@ -1,15 +1,29 @@
-import React from 'react'
-import star from "../../assets/star.svg";
-const Stars = (height) => {
-  return (
-    <div className={`flex ${height === "layout" ? "h-8" : "h-4"}`}>
-    <img src={star} alt="star" />
-    <img src={star} alt="star" />
-    <img src={star} alt="star" />
-    <img src={star} alt="star" />
-    <img src={star} alt="star" />
-  </div>
-  )
-}
+import React from "react";
+import { GoStar, GoStarFill } from "react-icons/go";
 
-export default Stars
+const Stars = ({height, starsRate}) => {
+  console.log(starsRate);
+  return (
+    <>
+      {starsRate === true ? (
+        <div className={`flex ${height === "layout" ? "h-8" : "h-4"}`}>
+          <GoStarFill className="text-yellow-400 " />
+          <GoStarFill className="text-yellow-400 " />
+          <GoStarFill className="text-yellow-400 " />
+          <GoStarFill className="text-yellow-400 " />
+          <GoStar className="text-yellow-400 " />
+        </div>
+      ) : (
+        <div className={`flex ${height === "layout" ? "h-8" : "h-4"}`}>
+          <GoStarFill className="text-yellow-400 " />
+          <GoStarFill className="text-yellow-400 " />
+          <GoStarFill className="text-yellow-400 " />
+          <GoStarFill className="text-yellow-400 " />
+          <GoStarFill className="text-yellow-400 " />
+        </div>
+      )}
+    </>
+  );
+};
+
+export default Stars;

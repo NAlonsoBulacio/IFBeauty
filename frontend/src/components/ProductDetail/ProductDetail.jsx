@@ -237,7 +237,7 @@ const ProductDetail = ({ homeVariant, handleVariantDetail }) => {
         </div>
         <div className="w-full ">
           <div className="flex space-x-2 justify-center items-center">
-            <p className="font-sans-400">
+            <p className="font-sans-400 pb-2">
               Shipping 2 to 5 days from Sydney, AU
             </p>
             <img src={au} alt="au" className="w-4 h-4" />

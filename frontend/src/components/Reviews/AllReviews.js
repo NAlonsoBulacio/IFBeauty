@@ -16,6 +16,7 @@ const reviews = [
     title: "Great for Mature Skin",
     review:
       "As someone in their 50s, I've tried numerous skincare products, but this serum stands out. It has visibly reduced the appearance of fine lines and wrinkles, leaving my skin looking plump and youthful.",
+    starRate: "4",
   },
   {
     name: "Noah Wilson",
@@ -40,6 +41,7 @@ const reviews = [
     title: "Youthful Glow",
     review:
       "This serum gives me a youthful glow that I haven't been able to achieve with other products. My skin feels hydrated and looks radiant. I'm thrilled with the results!",
+    starRate: "4",
   },
   {
     name: "James Miller",
@@ -76,6 +78,7 @@ const reviews = [
     title: "Fantastic Results",
     review:
       "I've been using this serum for a while now and I'm amazed at the results. My skin looks smoother, firmer, and more radiant. I feel confident going makeup-free thanks to this serum!",
+    starRate: "4",
   },
   {
     name: "Henry Robinson",
@@ -118,6 +121,7 @@ const reviews = [
     title: "Visible Firming Effect",
     review:
       "I've been using this serum for a few weeks now and I've already noticed a visible firming effect. My skin feels tighter and more lifted, and fine lines appear diminished. Love it!",
+    starRate: "4",
   },
 ];
 export { reviews };

@@ -46,15 +46,15 @@ const DescriptionPercentage = () => {
   };
 
   return (
-    <div className="flex flex-wrap justify-between items-start h-auto lg:h-[550px] xl:space-x-0">
-      <div className="w-full lg:w-[50%] flex flex-wrap justify-start items-start space-y-4 ">
+    <div className="flex flex-wrap justify-center items-start h-auto lg:h-[550px] xl:space-x-0">
+      <div className="w-full lg:w-[60%] flex flex-wrap justify-start items-start space-y-4 ">
         <h2 className="w-full font-sans-400 text-xl text-left text-teal-700">
           IF Beauty
         </h2>
         <h1 className="font-sans-400 text-3xl lg:text-5xl text-left">
           90 days results
         </h1>
-        <p className="text-left">
+        <p className="text-left w-auto lg:w-[90%]">
         We have developed and patented the Unfailing Anti-aging Formula which has been scientifically proven with clinical studies conducted by dermatologists from Australia. These were the results:
         </p>
         <StatementList />
