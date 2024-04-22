@@ -3,7 +3,13 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { logo_blanco } from "../../assets";
+import VideoPlayer from "./VideoPlayer";
 const VideoWithPreview = () => {
+  const VideosUrl = [
+    "https://cdn.shopify.com/videos/c/o/v/1f4eab19489349e48af156e40bcf7ad5.mp4",
+    "https://cdn.shopify.com/videos/c/o/v/9807f673cea143efa2369e992d8d5a96.mp4",
+    // "https://cdn.shopify.com/videos/c/o/v/1f4eab19489349e48af156e40bcf7ad5.mp4",
+  ]
   const settings = {
     dots: true,
     infinite: true,
@@ -36,9 +42,16 @@ const VideoWithPreview = () => {
     ],
   };
   return (
-    <div className="py-12 w-[30%]">
+    <div className="py-12 w-full lg:w-[30%] h-auto lg:h-[550px]">
       <Slider {...settings} className="">
-        <div className="w-[100%] lg:w-[30%] px-2 ">
+        {VideosUrl?.map((video) => (
+          <VideoPlayer url={video}/>
+        ))}
+        {/* { VideosUrl?.map((video) => (
+          <VideoPlayer url={video} />
+        ))
+        } */}
+        {/* <div className="w-[100%] lg:w-[30%] px-2 ">
           <div className="w-auto flex flex-wrap justify-center items-start gap-4 rounded-xl overflow-hidden relative">
             <video
               autoPlay={true}
@@ -53,8 +66,8 @@ const VideoWithPreview = () => {
               <h1 className="font-sans-600 text-white">IF Beauty</h1>
             </div>
           </div>
-        </div>
-        <div className="w-[100%] lg:w-[30%] px-2">
+        </div> */}
+        {/* <div className="w-[100%] lg:w-[30%] px-2">
           <div className="w-auto flex flex-wrap justify-center items-start gap-4 rounded-xl overflow-hidden relative">
             <video
               autoPlay={true}
@@ -69,8 +82,8 @@ const VideoWithPreview = () => {
               <h1 className="font-sans-600 text-white">IF Beauty</h1>
             </div>
           </div>
-        </div>
-        <div className="w-[100%] lg:w-[30%] px-2">
+        </div> */}
+        {/* <div className="w-[100%] lg:w-[30%] px-2">
           <div className="w-auto flex flex-wrap justify-center items-start gap-4 rounded-xl overflow-hidden relative">
             <video
               autoPlay={true}
@@ -85,8 +98,8 @@ const VideoWithPreview = () => {
               <h1 className="font-sans-600 text-white">IF Beauty</h1>
             </div>
           </div>
-        </div>
-        <div className="px-2">
+        </div> */}
+        {/* <div className="px-2">
           <div className="w-auto flex flex-wrap justify-center items-start gap-4 rounded-xl overflow-hidden relative">
             <video
               autoPlay={true}
@@ -101,7 +114,7 @@ const VideoWithPreview = () => {
               <h1 className="font-sans-600 text-white">IF Beauty</h1>
             </div>
           </div>
-        </div>
+        </div> */}
       </Slider>
     </div>
   );

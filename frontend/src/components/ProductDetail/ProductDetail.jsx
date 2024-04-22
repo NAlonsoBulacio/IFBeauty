@@ -23,7 +23,13 @@ const ProductDetail = ({ homeVariant, handleVariantDetail }) => {
   });
   const [activeImg, setActiveImage] = useState(images.img1);
   const [selectedVariant, setSelectedVariant] = useState(homeVariant);
-  const [objectVariant, setObjectVariant] = useState()
+  const [objectVariant, setObjectVariant] = useState({
+    id: 2,
+    variant: "Double Pack",
+    price: 35,
+    compare_price: 60,
+    free_shipping: true,
+  });
   const variants = [
     {
       id: 1,
@@ -49,14 +55,25 @@ const ProductDetail = ({ homeVariant, handleVariantDetail }) => {
   ];
 
   useEffect(() => {
-    setSelectedVariant(homeVariant);
+    if (homeVariant !== null) {
+      handleSelectVariant(homeVariant);
+    }
   }, [homeVariant]);
 
+  // useEffect(() => {
+  //   handleSetObjectVariant(selectedVariant, variants);
+  // }, [selectedVariant, variants]);
 
-  useEffect(() => {
-    const foundVariant = variants.find(variant => variant.id === selectedVariant);
-    setObjectVariant(foundVariant);
-  }, [selectedVariant, variants]);
+  const handleSelectVariant = (variant) => {
+    setSelectedVariant(variant);
+  };
+
+  // const handleSetObjectVariant = (selectedVariant, allVariants) => {
+  //   const foundVariant = allVariants.find(
+  //     (variant) => variant.id === selectedVariant
+  //   );
+  //   setObjectVariant(foundVariant);
+  // };
 
   const settings = {
     dots: true,
@@ -65,8 +82,12 @@ const ProductDetail = ({ homeVariant, handleVariantDetail }) => {
     slidesToShow: 1,
     slidesToScroll: 1,
   };
-  const handleSelectedVariant = (variant) => {
-    handleVariantDetail(variant);
+  const handleSelectedVariant = (variantId) => {
+    handleVariantDetail(variantId);
+    const selectedVariant = variants.find(
+      (variant) => variant.id === variantId
+    );
+    setObjectVariant(selectedVariant);
   };
   return (
     <div className="bg-white flex flex-wrap lg:flex-nowrap py-4 lg:py-10">
@@ -211,19 +232,21 @@ const ProductDetail = ({ homeVariant, handleVariantDetail }) => {
               </div>
             );
           })}
-        </div> 
+        </div>
         <div className="w-full ">
           <div className="flex space-x-2 justify-center items-center">
-          <p className="font-sans-400">
-          Shipping 2 to 5 days from Sydney, AU  
-          </p>
-          <img src={au} alt="au" className="w-4 h-4" />
+            <p className="font-sans-400">
+              Shipping 2 to 5 days from Sydney, AU
+            </p>
+            <img src={au} alt="au" className="w-4 h-4" />
           </div>
-          
+
           <a href="https://ifbeauty.com.au/cart/41854498111663:1">
-            <button id="add-to-bag-button" className="w-full rounded-md bg-cyan-600 text-2xl font-sans-500 text-gray-200 px-2 py-4">
-          { objectVariant ? ` 👉🏻 ADD TO BAG $${objectVariant.price}` : ""}
-              
+            <button
+              id="add-to-bag-button"
+              className="w-full rounded-md bg-cyan-600 text-2xl font-sans-500 text-gray-200 px-2 py-4"
+            >
+              {objectVariant ? ` 👉🏻 ADD TO BAG $${objectVariant.price}` : ""}
             </button>
           </a>
         </div>

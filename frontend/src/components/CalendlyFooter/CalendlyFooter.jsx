@@ -1,11 +1,18 @@
 import React, { useState, useEffect } from "react";
 import { IoIosArrowDown } from "react-icons/io";
 
-const CalendlyFooter = ({ handleVariantFooter, homeVariant, variantPrice }) => {
+const CalendlyFooter = ({ handleVariantFooter, homeVariant }) => {
   const [isVisible, setIsVisible] = useState(false);
   const [showOptions, setShowOptions] = useState(false);
   const [selectedVariant, setSelectedVariant] = useState(homeVariant);
-  const [objectVariant, setObjectVariant] = useState()
+  const [objectVariant, setObjectVariant] = useState({
+    id: 2,
+    variant: "2-Pack",
+    price: 35,
+    compare_price: 60,
+    free_shipping: true,
+    save: "Save $12",
+  });
 
   const variants = [
     {
@@ -34,7 +41,6 @@ const CalendlyFooter = ({ handleVariantFooter, homeVariant, variantPrice }) => {
     },
   ];
 
-
   useEffect(() => {
     const handleScroll = () => {
       if (window.pageYOffset > window.innerHeight * 1) {
@@ -54,13 +60,13 @@ const CalendlyFooter = ({ handleVariantFooter, homeVariant, variantPrice }) => {
   useEffect(() => {
     setSelectedVariant(homeVariant);
   }, [homeVariant]);
-  useEffect(() => {
-    const foundVariant = variants.find(variant => variant.id === selectedVariant);
-    setObjectVariant(foundVariant);
-  }, [selectedVariant, variants]);
-  
-  const handleSelectedVariant = (variant) => {
-    handleVariantFooter(variant);
+
+  const handleSelectedVariant = (variantId) => {
+    handleVariantFooter(variantId);
+    const selectedVariant = variants.find(
+      (variant) => variant.id === variantId
+    );
+    setObjectVariant(selectedVariant);
   };
   return (
     <footer
@@ -72,7 +78,7 @@ const CalendlyFooter = ({ handleVariantFooter, homeVariant, variantPrice }) => {
         className="flex  justify-center items-center space-x-3 cursor-pointer h-10 rounded-t-2xl w-full px-8 bg-slate-300"
         onClick={() => setShowOptions(!showOptions)}
       >
-       <p>Ver opciones de compra</p> 
+        <p>Ver opciones de compra</p>
         <IoIosArrowDown
           className={` ${
             showOptions ? "rotate-180" : ""
@@ -93,17 +99,17 @@ const CalendlyFooter = ({ handleVariantFooter, homeVariant, variantPrice }) => {
             } relative w-24 h-20 border-slate-500 border-2 rounded-xl my-4 overflow-hidden flex  cursor-pointer transition-opacity duration-400`}
             onClick={() => handleSelectedVariant(variant.id, variant.price)}
           >
-              <div className="w-full flex flex-col justify-start items-center">
-                <div className="bg-slate-500 w-full h-8 text-gray-200 flex justify-center items-center">
-                  {variant.save}
-                </div>
-                <div className="flex gap-2">
-                  <p className="font-sans-600 text-gray-600 text-lg">
-                    {variant.variant}
-                  </p>
-                </div>
+            <div className="w-full flex flex-col justify-start items-center">
+              <div className="bg-slate-500 w-full h-8 text-gray-200 flex justify-center items-center">
+                {variant.save}
+              </div>
+              <div className="flex gap-2">
+                <p className="font-sans-600 text-gray-600 text-lg">
+                  {variant.variant}
+                </p>
               </div>
             </div>
+          </div>
         ))}
       </div>
       <div className="flex justify-center items-center py-2 gap-x-6">
@@ -113,7 +119,7 @@ const CalendlyFooter = ({ handleVariantFooter, homeVariant, variantPrice }) => {
         <div>
           <a href="https://ifbeauty.com.au/cart/41854498111663:1">
             <button className="w-full rounded-md bg-slate-600 text-2xl font-sans-500 text-gray-200 px-2 py-4">
-            { objectVariant ? ` 👉🏻 ADD TO BAG $${objectVariant.price}` : ""}
+              {objectVariant ? ` 👉🏻 ADD TO BAG $${objectVariant.price}` : ""}
             </button>
           </a>
         </div>
