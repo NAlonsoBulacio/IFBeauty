@@ -120,7 +120,7 @@ const CalendlyFooter = ({ handleVariantFooter, homeVariant }) => {
         </h1> */}
         <div>
           <a href="https://ifbeauty.com.au/cart/41854498111663:1">
-            <button className="w-full rounded-md bg-slate-600 text-2xl font-sans-500 text-gray-200 px-2 py-4">
+            <button className="w-full rounded-md bg-slate-600 text-xl lg:text-2xl font-sans-500 text-gray-200 px-2 py-4">
               {objectVariant ? ` 👉🏻 ADD TO BAG $${objectVariant.price}` : ""}
             </button>
           </a>
