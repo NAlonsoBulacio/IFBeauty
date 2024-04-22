@@ -17,7 +17,7 @@ const VideoWithPreview = () => {
     slidesPerRow: 1,
     slidesToShow: 1,
     slidesToScroll: 1,
-    // centerMode: true,
+
     // autoplay: true,
     // autoplaySpeed: 6000,
     focusOnSelect: true,
@@ -33,8 +33,9 @@ const VideoWithPreview = () => {
       {
         breakpoint: 769,
         settings: {
+          centerMode: true,
           slidesPerRow: 1,
-          slidesToShow: 1,
+          slidesToShow: 1.1,
           slidesToScroll: 1,
           infinite: true,
         },

@@ -16,7 +16,7 @@ function VideoPlayer({ url }) {
     setIsPlaying(!isPlaying); 
   };
   return (
-    <div className="w-[60%] ">
+    <div className="w-[86%] lg:[60%] ">
       <div className=" rounded-xl relative">
       <video ref={videoRef} preload="auto" autoPlay="autoplay" loop muted playsInline>
           <source src={url} type="video/mp4" />
@@ -25,11 +25,11 @@ function VideoPlayer({ url }) {
         {/* <div className="absolute top-[50%] left-[50%]">
           <FaRegCirclePlay className="text-5xl" />
         </div> */}
-        <div className="absolute bottom-2 left-4 flex items-center space-x-2">
-          <div className="rounded-full bg-white w-[30px] h-[30px] flex justify-center items-center overflow-hidden">
-            <img src={logo_blanco} alt="" className="w-6" />
+        <div className="absolute bottom-4 left-2 lg:left-4 flex items-center space-x-2">
+          <div className="rounded-full bg-white w-[20px] lg:w-[28px] h-[20px] lg:h-[28px] flex justify-center items-center overflow-hidden">
+            <img src={logo_blanco} alt="" className="w-[14px] lg:w-[20px]" />
           </div>
-          <h1 className="font-sans-600 text-white">IF Beauty</h1>
+          <h1 className="font-sans-600 text-sm lg:text-lg text-white">IF Beauty</h1>
         </div>
       </div>
     </div>
