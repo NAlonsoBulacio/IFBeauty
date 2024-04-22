@@ -25,7 +25,7 @@ const VideoWithPreview = () => {
       {
         breakpoint: 1025,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 1,
           slidesToScroll: 1,
           infinite: true,
         },
@@ -35,7 +35,7 @@ const VideoWithPreview = () => {
         settings: {
           centerMode: true,
           slidesPerRow: 1,
-          slidesToShow: 1.1,
+          slidesToShow: 1,
           slidesToScroll: 1,
           infinite: true,
         },
