@@ -26,8 +26,8 @@ function VideoPlayer({ url }) {
           <FaRegCirclePlay className="text-5xl" />
         </div> */}
         <div className="absolute bottom-4 left-2 lg:left-4 flex items-center space-x-2">
-          <div className="rounded-full bg-white w-[20px] lg:w-[28px] h-[20px] lg:h-[28px] flex justify-center items-center overflow-hidden">
-            <img src={logo_blanco} alt="" className="w-[14px] lg:w-[20px]" />
+          <div className="rounded-full bg-white w-[16px] lg:w-[28px] h-[16px] lg:h-[28px] flex justify-center items-center overflow-hidden">
+            <img src={logo_blanco} alt="" className="w-[10px] lg:w-[20px]" />
           </div>
           <h1 className="font-sans-600 text-sm lg:text-lg text-white">IF Beauty</h1>
         </div>
