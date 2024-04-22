@@ -57,6 +57,7 @@ const ProductDetail = ({ homeVariant, handleVariantDetail }) => {
   useEffect(() => {
     if (homeVariant !== null) {
       handleSelectVariant(homeVariant);
+      handleSelectedVariant(homeVariant);
     }
   }, [homeVariant]);
 
@@ -179,10 +180,11 @@ const ProductDetail = ({ homeVariant, handleVariantDetail }) => {
             <div className="px-4 font-sans-400">Bundle and Save</div>
             <div className="flex-grow h-[2px] bg-cyan-600"></div>
           </div>
-          {variants?.map((variant) => {
+          {variants?.map((variant, index) => {
             const savings = variant.compare_price - variant.price;
             return (
               <div
+              key={index}
                 className={`${
                   variant.id === selectedVariant ? "bg-cyan-100" : ""
                 } relative h-24 w-full border-cyan-500 border-2 rounded-md flex gap-4 py-4 px-4 lg:px-8 cursor-pointer  hover:bg-cyan-400`}

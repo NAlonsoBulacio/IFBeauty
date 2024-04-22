@@ -67,8 +67,10 @@ const BeforeAfterReviews = () => {
       </div>
       <div className="py-12">
         <Slider {...settings} className="">
-          { before_after?.map((rev) => (<div className="px-2">
-            <div className="w-auto flex flex-wrap justify-center items-start gap-4 rounded-3xl overflow-hidden">
+          { before_after?.map((rev, index) => (<div key={index} className="px-2">
+            <div
+            
+            className="w-auto flex flex-wrap justify-center items-start gap-4 rounded-3xl overflow-hidden">
               <img
                 src={rev.img}
                 alt="img_before"

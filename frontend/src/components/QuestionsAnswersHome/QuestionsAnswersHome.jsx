@@ -55,8 +55,8 @@ const QuestionsAnswersHome = ({ landing }) => {
         ""
       )}
       <div className="w-full flex flex-wrap justify-start items-center space-y-2 max-w-[800px]">
-        {QAs?.map((qa) => (
-          <>
+        {QAs?.map((qa, index) => (
+          <div key={index}>
             <div className="w-full">
               <button
                 className="w-full flex justify-between items-center space-x-2 text-gray-200"
@@ -95,7 +95,7 @@ const QuestionsAnswersHome = ({ landing }) => {
                 <hr className=" border-[0.5pxrem] border-gray-400" />
               </div>
             </div>
-          </>
+          </div>
         ))}
       </div>
     </div>

@@ -59,6 +59,7 @@ const CalendlyFooter = ({ handleVariantFooter, homeVariant }) => {
 
   useEffect(() => {
     setSelectedVariant(homeVariant);
+    handleSelectedVariant(homeVariant);
   }, [homeVariant]);
 
   const handleSelectedVariant = (variantId) => {
@@ -90,8 +91,9 @@ const CalendlyFooter = ({ handleVariantFooter, homeVariant }) => {
           showOptions ? "h-[120px]" : "h-[1px]"
         }  w-full flex justify-center space-x-2 transition-height duration-300`}
       >
-        {variants?.map((variant) => (
+        {variants?.map((variant, index) => (
           <div
+          key={index}
             className={`${
               variant.id === selectedVariant ? "bg-slate-400" : ""
             } ${

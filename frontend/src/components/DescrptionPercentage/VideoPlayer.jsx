@@ -16,7 +16,7 @@ function VideoPlayer({ url }) {
     setIsPlaying(!isPlaying); 
   };
   return (
-    <div className="w-[100%] ">
+    <div className="w-[60%] ">
       <div className=" rounded-xl relative">
       <video ref={videoRef} preload="auto" autoPlay="autoplay" loop muted playsInline>
           <source src={url} type="video/mp4" />
