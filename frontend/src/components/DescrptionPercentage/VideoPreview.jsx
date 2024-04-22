@@ -18,8 +18,8 @@ const VideoWithPreview = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     // centerMode: true,
-    autoplay: true,
-    autoplaySpeed: 6000,
+    // autoplay: true,
+    // autoplaySpeed: 6000,
     focusOnSelect: true,
     responsive: [
       {
