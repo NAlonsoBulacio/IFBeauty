@@ -18,7 +18,7 @@ function VideoPlayer({ url }) {
   return (
     <div className="w-[100%]">
       <div className=" rounded-xl relative">
-      <video ref={videoRef} muted onClick={handleClick}>
+      <video ref={videoRef} muted autoPlay >
           <source src={url} type="video/mp4" />
           Tu navegador no soporta el elemento de video.
         </video>
