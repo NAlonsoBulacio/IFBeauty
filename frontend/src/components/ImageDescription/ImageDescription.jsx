@@ -10,15 +10,12 @@ const ImageDescription = () => {
         <div className="h-1/2 bg-slate-800 p-8 text-left space-y-3">
           <div>
             <h1 className="text-3xl font-sans-600 text-gray-300">
-              Hair-Free Guarantee
+              IF Beauty Guarantee
             </h1>
           </div>
           <div>
             <h1 className="text-md font-sans-600 text-gray-500">
-              We love our Bleame™ Crystal Hair Eraser and are confident you will
-              too! That’s why we’re offering a 30-Day, Risk-Free Guarantee. If
-              you’re not satisfied, we’ll gladly issue a full refund in
-              accordance with our Return & Refund Policy
+            At If Beauty, our mission is to provide the best cream possible, with ingredients that have been proven to work over our 30 years of working with our patients. We have a 30-day return policy, which means you have 30 days after receiving your item to request a return.
             </h1>
           </div>
         </div>

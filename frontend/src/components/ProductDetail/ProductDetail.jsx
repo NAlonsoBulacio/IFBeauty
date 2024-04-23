@@ -4,6 +4,7 @@ import QuestionsAnswersHome from "../QuestionsAnswersHome/QuestionsAnswersHome";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
+import Registro2 from "../Registro/Registro2";
 import {
   calendar,
   shipping,
@@ -21,6 +22,7 @@ const ProductDetail = ({ homeVariant, handleVariantDetail }) => {
     img2: product2,
     img3: product3,
   });
+  const [showRegistro, setShowRegistro] = useState(false);
   const [activeImg, setActiveImage] = useState(images.img1);
   const [selectedVariant, setSelectedVariant] = useState(homeVariant);
   const [objectVariant, setObjectVariant] = useState({
@@ -176,24 +178,26 @@ const ProductDetail = ({ homeVariant, handleVariantDetail }) => {
         </div>
         <div className="w-full flex flex-wrap gap-3 py-4">
           <div className="flex items-center w-full">
-            <div className="flex-grow rounded-md h-[2px] bg-cyan-600"></div>
+            <div className="flex-grow rounded-md h-[2px] bg-[#1c4cfc]"></div>
             <div className="px-4 font-sans-400">Bundle and Save</div>
-            <div className="flex-grow h-[2px] bg-cyan-600"></div>
+            <div className="flex-grow h-[2px] bg-[#1c4cfc]"></div>
           </div>
           {variants?.map((variant, index) => {
             const savings = variant.compare_price - variant.price;
             return (
               <div
-              key={index}
+                key={index}
                 className={`${
-                  variant.id === selectedVariant ? "bg-cyan-100" : ""
-                } relative h-24 w-full border-cyan-500 border-2 rounded-md flex gap-4 py-4 px-4 lg:px-8 cursor-pointer  hover:bg-cyan-400`}
+                  variant.id === selectedVariant
+                    ? "bg-gray-200  border-[#1c4cfc]"
+                    : "bg-gray-100 border-gray-400 "
+                } relative h-24 w-full  border-2 rounded-md flex gap-4 py-4 px-4 lg:px-8 cursor-pointer  hover:bg-gray-200`}
                 onClick={() => handleSelectedVariant(variant.id)}
               >
                 <div
                   className={`${
-                    variant.id === selectedVariant ? "bg-cyan-600" : ""
-                  } w-6 h-6  rounded-full border-cyan-600 border-2 mt-[6px]`}
+                    variant.id === selectedVariant ? "bg-[#1c4cfc]" : ""
+                  } w-6 h-6  rounded-full border-gray-600 border-2 mt-[6px]`}
                 ></div>
                 <div className="w-full flex justify-between">
                   <div className="flex flex-col justify-start">
@@ -202,7 +206,7 @@ const ProductDetail = ({ homeVariant, handleVariantDetail }) => {
                         {variant.variant}
                       </p>
                       {variant.free_shipping ? (
-                        <div className="p-2 py-1 border-gray-700 text-gray-700 text-sm font-sans-400 border-2 rounded-md">
+                        <div className="p-2 py-1 border-[#1c4cfc] text-[#1c4cfc] text-sm font-sans-400 border-2 rounded-md">
                           Free Shipping
                         </div>
                       ) : (
@@ -243,14 +247,15 @@ const ProductDetail = ({ homeVariant, handleVariantDetail }) => {
             <img src={au} alt="au" className="w-4 h-4" />
           </div>
 
-          <a href="https://ifbeauty.com.au/cart/41854498111663:1">
-            <button
-              id="add-to-bag-button"
-              className="w-full rounded-md bg-cyan-600 text-2xl font-sans-500 text-gray-200 px-2 py-4"
-            >
-              {objectVariant ? ` 👉🏻 ADD TO BAG $${objectVariant.price}` : ""}
-            </button>
-          </a>
+          {/* <a href="https://ifbeauty.com.au/cart/41854498111663:1"> */}
+          <button
+            id="add-to-bag-button"
+            className="w-full rounded-md bg-[#1c4cfc] text-2xl font-sans-500 text-gray-200 px-2 py-4"
+            onClick={() => setShowRegistro(!showRegistro)}
+          >
+            {objectVariant ? ` 👉🏻 ADD TO BAG $${objectVariant.price}` : ""}
+          </button>
+          {/* </a> */}
         </div>
         <div className="w-full flex justify-center items-center py-6  gap-2">
           <div className="flex justify-center flex-wrap w-[138px] gap-2 lg:gap-6">
@@ -277,10 +282,22 @@ const ProductDetail = ({ homeVariant, handleVariantDetail }) => {
         <div className="w-full">
           <QuestionsAnswersHome />
         </div>
-        <div className="w-full text-center text-lg font-sans-500 text-gray-600">
+        <div className="w-full text-center text-lg font-sans-500 text-[#1c4cfc]">
           + 100.000 happy clients
         </div>
       </div>
+      {showRegistro ? (
+        <div className="fixed inset-0 flex items-center justify-center z-50">
+          <div className="bg-white p-4 rounded-lg shadow-lg">
+            <Registro2
+              // actualizarEstado={actualizarEstadoPadre}
+              // handleShowForm={handleShowForm}
+            />
+          </div>
+        </div>
+      ) : (
+        ""
+      )}
     </div>
   );
 };

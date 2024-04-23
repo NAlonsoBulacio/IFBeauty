@@ -27,80 +27,77 @@ const BenefitsandVideo = () => {
         <div className="w-1/2 flex flex-wrap justify-center px-2 lg:px-8">
           <div className="w-auto flex justify-center">
             <img
-              src="https://cdn.accentuate.io/7105770193071/21150527029423/Easy-to-use-(7069bc)-v1644651560187.png?200x200"
+              src="https://res.cloudinary.com/doczyujqf/image/upload/v1713798991/Doctor%20Sales/IF/notesting_ssbvod.png"
               alt=""
-              className="w-[70%]"
+              className="w-[50%]"
             />
           </div>
           <div className="w-[100%]">
             <h1 className="text-center text-lg font-sans-700 text-gray-700">
-              Easy to Use
+              No Animal Testing 
             </h1>
           </div>
           <div>
             <h1>
-              Simply rub it to your skin in circular motion for a hair-free
-              body!
+            Rest assured, our products are cruelty-free, ensuring no harm to animals.
             </h1>
           </div>
         </div>
         <div className="w-1/2 flex flex-wrap justify-center px-2 lg:px-8">
           <div className="w-auto flex justify-center">
             <img
-              src="https://cdn.accentuate.io/7105770193071/21150527815855/Non-Violent-(7069bc)-v1644651652333.png?200x200"
+              src="https://res.cloudinary.com/doczyujqf/image/upload/v1713799015/Doctor%20Sales/IF/skincare-svgrepo-com_vptcqd.svg"
               alt=""
-              className="w-[70%]"
+              className="w-[50%]"
             />
           </div>
           <div className="w-[100%]">
             <h1 className="text-center text-lg font-sans-700 text-gray-700">
-              Easy to Use
+              Anti Aging
             </h1>
           </div>
           <div>
             <h1>
-              Simply rub it to your skin in circular motion for a hair-free
-              body!{" "}
+            Turn back the clock with our powerful anti-aging formula, restoring youthful radiance.
             </h1>
           </div>
         </div>
         <div className="w-1/2 flex flex-wrap justify-center px-2 lg:px-8">
           <div className="w-auto flex justify-center">
             <img
-              src="https://cdn.accentuate.io/7105770193071/21150527291567/Peace-of-Mind-(7069bc)-v1644651643275.png?200x200"
+              src="https://res.cloudinary.com/doczyujqf/image/upload/v1713798990/Doctor%20Sales/IF/smells_sjdhca.png"
               alt=""
-              className="w-[70%]"
+              className="w-[50%]"
             />
           </div>
           <div className="w-[100%]">
             <h1 className="text-center text-lg font-sans-700 text-gray-700">
-              Easy to Use
+              Fresh Smell
             </h1>
           </div>
           <div>
             <h1>
-              Simply rub it to your skin in circular motion for a hair-free
-              body!{" "}
+              
+Revitalize your skin with the invigorating pink grapefruit aroma, leaving you refreshed!
             </h1>
           </div>
         </div>
         <div className="w-1/2 flex flex-wrap justify-center px-2 lg:px-8">
           <div className="w-auto flex justify-center">
             <img
-              src="https://cdn.accentuate.io/7105770193071/21150527586479/Travel-Safe-(7069bc)-v1644651647656.png?200x200"
+              src="https://res.cloudinary.com/doczyujqf/image/upload/v1713799139/Doctor%20Sales/IF/sun_i0zfqp.png"
               alt=""
-              className="w-[70%]"
+              className="w-[50%]"
             />
           </div>
           <div className="w-[100%]">
             <h1 className="text-center text-lg font-sans-700 text-gray-700">
-              Easy to Use
+            Sun Damage Repair
             </h1>
           </div>
           <div>
             <h1>
-              Simply rub it to your skin in circular motion for a hair-free
-              body!{" "}
+            Restore your skin's natural radiance with our sun damage repair solution.
             </h1>
           </div>
         </div>

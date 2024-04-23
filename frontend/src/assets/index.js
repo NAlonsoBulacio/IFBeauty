@@ -11,6 +11,9 @@ import logo from "./images/logo.png";
 import life from "./images/life.png";
 import logo_blanco from "./images/logo-blanco.png";
 import paymeth from "./images/paymethods.png";
+import person from "./images/person.svg";
+import email from "./images/email.svg";
+import phone from "./images/phone.svg";
 export {
     calendar,
     shipping,
@@ -24,6 +27,9 @@ export {
     life,
     logo_blanco,
     au,
+    person, 
+    phone, 
+    email,
 }
 
 
