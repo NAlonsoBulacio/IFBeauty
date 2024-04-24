@@ -2,12 +2,16 @@
     opacity: 0;
     max-height: 0;
     overflow: hidden;
-    transition: opacity 0.5s ease, max-height 0.5s ease;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    transition: all 0.5s ease;
   }
   
   .answer.show {
     opacity: 1;
     max-height: 200px; 
+    padding-top: 4px;
+    padding-bottom: 10px;
   }
 
   @media screen and (max-width: 600px) {

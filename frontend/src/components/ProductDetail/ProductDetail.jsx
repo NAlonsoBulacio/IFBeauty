@@ -5,6 +5,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import Registro2 from "../Registro/Registro2";
+
 import {
   calendar,
   shipping,
@@ -92,8 +93,12 @@ const ProductDetail = ({ homeVariant, handleVariantDetail }) => {
     );
     setObjectVariant(selectedVariant);
   };
+
+  const handleShowRegistro = () => {
+    setShowRegistro(!showRegistro);
+  };
   return (
-    <div className="bg-white flex flex-wrap lg:flex-nowrap py-4 lg:py-10">
+    <div className="bg-white flex flex-wrap lg:flex-nowrap">
       <div className="block lg:hidden pt-0 pb-8 lg:py-8 w-[100%]">
         <Slider {...settings} className="">
           <div className="px-2">
@@ -280,6 +285,7 @@ const ProductDetail = ({ homeVariant, handleVariantDetail }) => {
           </div>
         </div>
         <div className="w-full">
+         
           <QuestionsAnswersHome />
         </div>
         <div className="w-full text-center text-lg font-sans-500 text-[#1c4cfc]">
@@ -290,8 +296,7 @@ const ProductDetail = ({ homeVariant, handleVariantDetail }) => {
         <div className="fixed inset-0 flex items-center justify-center z-50">
           <div className="bg-white p-4 rounded-lg shadow-lg">
             <Registro2
-              // actualizarEstado={actualizarEstadoPadre}
-              // handleShowForm={handleShowForm}
+              handleShowRegistro={handleShowRegistro}
             />
           </div>
         </div>

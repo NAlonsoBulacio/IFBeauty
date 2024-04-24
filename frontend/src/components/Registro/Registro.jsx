@@ -215,3 +215,4 @@ const Registro = ({ actualizarEstado, handleShowForm }) => {
 };
 
 export default Registro;
+// https://script.google.com/macros/s/AKfycbwVvIFlBkWy5lq9jfAyzzLfBbPVnyebOFGQ-e31nGecLQG3ywWur8zl5d_ksp3PJ16S/exec

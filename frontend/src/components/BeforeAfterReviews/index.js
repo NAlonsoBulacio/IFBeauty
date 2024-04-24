@@ -65,12 +65,12 @@ const before_after = [
           "I've been using this serum for a few months now, and I'm blown away by the results. My skin feels firmer and more hydrated, and my fine lines have noticeably diminished. I can't recommend it enough!",
         img: b9,
       },
-      {
-        name: "Ava W.",
-        description:
-          "As a skincare enthusiast, I'm always on the lookout for products that deliver results. This serum has quickly become one of my favorites. It's lightweight, absorbs quickly, and leaves my skin feeling smooth and refreshed. 10/10 would recommend!",
-        img: b10,
-      },
+      // {
+      //   name: "Ava W.",
+      //   description:
+      //     "As a skincare enthusiast, I'm always on the lookout for products that deliver results. This serum has quickly become one of my favorites. It's lightweight, absorbs quickly, and leaves my skin feeling smooth and refreshed. 10/10 would recommend!",
+      //   img: b10,
+      // },
 ];
 
 export { before_after };

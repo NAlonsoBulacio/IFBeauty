@@ -1,6 +1,10 @@
 import React, { useState } from "react";
 import { IoIosArrowDown } from "react-icons/io";
 import "./QuestionsAnswersHome.css";
+import QuestionSvg from "../../utils/QuestionSvg";
+import StarSvg from "../../utils/StarSvg";
+import ShippingSvg from "../../utils/ShippingSvg";
+import ReturnSvg from "../../utils/ReturnSvg";
 const QuestionsAnswersHome = ({ landing }) => {
   const [answer, setAnswer] = useState("");
 
@@ -59,14 +63,19 @@ const QuestionsAnswersHome = ({ landing }) => {
           <div key={index}>
             <div className="w-full">
               <button
-                className="w-full flex justify-between items-center space-x-2 text-gray-200"
+                className="w-full flex justify-between items-center space-x-2 text-gray-200 py-2"
                 onClick={() => {
                   answer !== qa.answer_id
                     ? handleAnswer(qa.answer_id)
                     : handleAnswer("");
                 }}
               >
-                <span className="w-3/4 flex-grow text-left font-sans-400 text-gray-700 text-md lg:text-lg">
+                {index === 0 && <QuestionSvg />}
+                {index === 1 && <StarSvg />}
+                {index === 2 && <ShippingSvg />}
+                {index === 3 && <ReturnSvg />}
+
+                <span className="w-3/4 flex-grow text-left font-sans-600 text-gray-800 text-md lg:text-lg">
                   {qa.question}
                 </span>
                 <IoIosArrowDown
@@ -81,14 +90,14 @@ const QuestionsAnswersHome = ({ landing }) => {
               </button>
             </div>
             <div
-              className={`w-full answer text-left ${
+              className={`w-full  answer text-left ${
                 answer === qa.answer_id ? "show" : ""
               }`}
             >
-              <span className="flex-grow text-left font-sans-300 text-gray-500 text-md lg:text-lg"
-               dangerouslySetInnerHTML={{ __html: qa.answer }}
-              >
-             </span>
+              <span
+                className="flex-grow text-left font-sans-300 text-gray-500 text-md lg:text-lg"
+                dangerouslySetInnerHTML={{ __html: qa.answer }}
+              ></span>
             </div>
             <div className="w-full flex justify-center ">
               <div className="w-full">

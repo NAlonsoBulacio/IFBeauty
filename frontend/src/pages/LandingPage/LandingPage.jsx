@@ -8,6 +8,7 @@ import BenefitsandVideo from "../../components/BenefitsAndvideo/BenefitsandVideo
 import CalendlyFooter from "../../components/CalendlyFooter/CalendlyFooter";
 import ImageDescription from "../../components/ImageDescription/ImageDescription";
 import Reviews from "../../components/Reviews/Reviews";
+import YoutubePlayer from "../../components/YoutubePlayer/YoutubePlayer";
 const LandingPage = () => {
   const [homeVariant, setHomeVariant] = useState(2);
   const handleHomeVariant = (variant) => {
@@ -16,7 +17,8 @@ const LandingPage = () => {
   return (
     <div>
       <Header />
-      <div className="px-4 lg:px-10 xl:px-20 bg-white space-y-20">
+      <div className="px-4 lg:px-10 xl:px-20 bg-white space-y-6 lg:space-y-20 py-4">
+      <YoutubePlayer youtube_url="txvYcUGUzaQ" />
         <ProductDetail
           homeVariant={homeVariant}
           handleVariantDetail={handleHomeVariant}
