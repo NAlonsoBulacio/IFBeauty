@@ -36,7 +36,7 @@ const YoutubePlayer = ({ youtube_url }) => {
   return (
     <div className="w-full flex flex-wrap justify-center px-0 lg:px-4 space-y-3">
       <div className="w-full">
-        <h1 className="text-3xl font-robotoCon-500 text-gray-300">See how more than 10,000 clients rejuvenated their skin by 10 to 15 years with our frmula and repairing sun damage.</h1>
+        <h1 className="text-3xl lg:text-5xl px-0 lg:mx-20 font-robotoCon-500 text-gray-300">See how more than 10,000 clients rejuvenated their skin by 10 to 15 years with our frmula and repairing sun damage.</h1>
       </div>
       <div className="youtube-div relative">
         <YouTube
