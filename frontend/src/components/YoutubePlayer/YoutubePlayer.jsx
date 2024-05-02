@@ -16,7 +16,7 @@ const YoutubePlayer = ({ youtube_url }) => {
     if (estado === true) {
       setShowform(!showForm);
       setShowVideo(true);
-      toast.success("¡Mensaje enviado exitosamente!");
+      toast.success("Subscription submitted!");
     }
   };
   const handleClick = (click) => {
