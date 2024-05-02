@@ -7,7 +7,7 @@ function App() {
 
   return (
     <div className="App font-sans-200">
-      <Route exact path="/testeando-subdominios" component={LandingPage} />
+      <Route exact path="/" component={LandingPage} />
       <Route exact path="/test" component={Test} />
     </div>
   );
