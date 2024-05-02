@@ -34,19 +34,15 @@ const YoutubePlayer = ({ youtube_url }) => {
   };
   const videoId = youtube_url;
   return (
-    <div className="w-full flex flex-wrap justify-center px-4 space-y-3">
+    <div className="w-full flex flex-wrap justify-center px-0 lg:px-4 space-y-3">
       <div className="w-full">
-        <h1 className="text-2xl font-montserrat-500 ">Titulo de la pagina: Recupera tu piel en 45 Days</h1>
+        <h1 className="text-3xl font-robotoCon-500 text-gray-300">See how more than 10,000 clients rejuvenated their skin by 10 to 15 years with our frmula and repairing sun damage.</h1>
       </div>
       <div className="youtube-div relative">
         <YouTube
           videoId={videoId}
           opts={opts}
-          // onStateChange={(event) => {
-          //   if (event.data === window.YT.PlayerState.PLAYING) {
-          //     handleVideoStart();
-          //   }
-          // }}
+         
         />
       </div>
       {showForm && (

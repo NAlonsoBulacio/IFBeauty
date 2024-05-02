@@ -97,7 +97,7 @@ const CalendlyFooter = ({ handleVariantFooter, homeVariant }) => {
             className={`${
               variant.id === selectedVariant ? "bg-slate-400" : ""
             } ${
-              showOptions ? "block opacity-100" : " opacity-0"
+              showOptions ? "block opacity-100 transition-opacity duration-400" : "hidden opacity-0"
             } relative w-24 h-20 border-slate-500 border-2 rounded-xl my-4 overflow-hidden flex  cursor-pointer transition-opacity duration-400`}
             onClick={() => handleSelectedVariant(variant.id, variant.price)}
           >
