@@ -9,6 +9,7 @@ import CalendlyFooter from "../../components/CalendlyFooter/CalendlyFooter";
 import ImageDescription from "../../components/ImageDescription/ImageDescription";
 import Reviews from "../../components/Reviews/Reviews";
 import YoutubePlayer from "../../components/YoutubePlayer/YoutubePlayer";
+import QuestionsAnswersEnd from "../../components/QuestionsAnswersHome/QuestionsAnswersEnd";
 const LandingPage = () => {
   const [homeVariant, setHomeVariant] = useState(2);
   const handleHomeVariant = (variant) => {
@@ -30,6 +31,7 @@ const LandingPage = () => {
         <BeforeAfterReviews />
         <ImageDescription />
         <Reviews />
+        <QuestionsAnswersEnd />
       </div>
       <CalendlyFooter
         handleVariantFooter={handleHomeVariant}

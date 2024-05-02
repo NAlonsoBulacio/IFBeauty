@@ -12,6 +12,7 @@ const CalendlyFooter = ({ handleVariantFooter, homeVariant }) => {
     compare_price: 60,
     free_shipping: true,
     save: "Save $12",
+    link: "https://ifbeauty.com.au/cart/43602984206511:1",
   });
 
   const variants = [
@@ -22,6 +23,7 @@ const CalendlyFooter = ({ handleVariantFooter, homeVariant }) => {
       compare_price: 40,
       free_shipping: false,
       save: "Full Price",
+      link: "https://ifbeauty.com.au/cart/43602984173743:1",
     },
     {
       id: 2,
@@ -30,6 +32,7 @@ const CalendlyFooter = ({ handleVariantFooter, homeVariant }) => {
       compare_price: 60,
       free_shipping: true,
       save: "Save $12",
+      link: "https://ifbeauty.com.au/cart/43602984206511:1",
     },
     {
       id: 3,
@@ -38,6 +41,7 @@ const CalendlyFooter = ({ handleVariantFooter, homeVariant }) => {
       compare_price: 70,
       free_shipping: true,
       save: "Save $12",
+      link: "https://ifbeauty.com.au/cart/43602984239279:1",
     },
   ];
 
@@ -119,7 +123,7 @@ const CalendlyFooter = ({ handleVariantFooter, homeVariant }) => {
           Tratamiento Anti-Aging Infalible
         </h1> */}
         <div>
-          <a href="https://ifbeauty.com.au/cart/41854498111663:1">
+          <a href={objectVariant.link}>
             <button className="w-full rounded-md bg-[#1c4cfc] text-xl lg:text-2xl font-sans-500 text-gray-200 px-2 py-4">
               {objectVariant ? ` 👉🏻 ADD TO BAG $${objectVariant.price}` : ""}
             </button>

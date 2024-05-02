@@ -32,6 +32,7 @@ const ProductDetail = ({ homeVariant, handleVariantDetail }) => {
     price: 35,
     compare_price: 60,
     free_shipping: true,
+    link: "https://ifbeauty.com.au/cart/43602984206511:1",
   });
   const variants = [
     {
@@ -40,6 +41,7 @@ const ProductDetail = ({ homeVariant, handleVariantDetail }) => {
       price: 23,
       compare_price: 40,
       free_shipping: false,
+      link: "https://ifbeauty.com.au/cart/43602984173743:1",
     },
     {
       id: 2,
@@ -47,6 +49,7 @@ const ProductDetail = ({ homeVariant, handleVariantDetail }) => {
       price: 35,
       compare_price: 60,
       free_shipping: true,
+      link: "https://ifbeauty.com.au/cart/43602984206511:1",
     },
     {
       id: 3,
@@ -54,6 +57,7 @@ const ProductDetail = ({ homeVariant, handleVariantDetail }) => {
       price: 43,
       compare_price: 70,
       free_shipping: true,
+      link: "https://ifbeauty.com.au/cart/43602984239279:1",
     },
   ];
 
@@ -252,7 +256,7 @@ const ProductDetail = ({ homeVariant, handleVariantDetail }) => {
             <img src={au} alt="au" className="w-4 h-4" />
           </div>
 
-          {/* <a href="https://ifbeauty.com.au/cart/41854498111663:1"> */}
+          <a href={objectVariant.link}>
           <button
             id="add-to-bag-button"
             className="w-full rounded-md bg-[#1c4cfc] text-2xl font-sans-500 text-gray-200 px-2 py-4"
@@ -260,7 +264,7 @@ const ProductDetail = ({ homeVariant, handleVariantDetail }) => {
           >
             {objectVariant ? ` 👉🏻 ADD TO BAG $${objectVariant.price}` : ""}
           </button>
-          {/* </a> */}
+          </a>
         </div>
         <div className="w-full flex justify-center items-center py-6  gap-2">
           <div className="flex justify-center flex-wrap w-[138px] gap-2 lg:gap-6">
