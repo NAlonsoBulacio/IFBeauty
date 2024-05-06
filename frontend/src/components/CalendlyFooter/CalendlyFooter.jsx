@@ -8,10 +8,10 @@ const CalendlyFooter = ({ handleVariantFooter, homeVariant }) => {
   const [objectVariant, setObjectVariant] = useState({
     id: 2,
     variant: "2-Pack",
-    price: 35,
-    compare_price: 60,
+    price: 60,
+    compare_price: 83,
     free_shipping: true,
-    save: "Save $12",
+    save: "Save $13",
     link: "https://ifbeauty.com.au/cart/43602984206511:1",
   });
 
@@ -19,8 +19,8 @@ const CalendlyFooter = ({ handleVariantFooter, homeVariant }) => {
     {
       id: 1,
       variant: "Single",
-      price: 23,
-      compare_price: 40,
+      price: 35,
+      compare_price: 41.5,
       free_shipping: false,
       save: "Full Price",
       link: "https://ifbeauty.com.au/cart/43602984173743:1",
@@ -28,21 +28,21 @@ const CalendlyFooter = ({ handleVariantFooter, homeVariant }) => {
     {
       id: 2,
       variant: "2-Pack",
-      price: 35,
-      compare_price: 60,
-      free_shipping: true,
-      save: "Save $12",
+      price: 60,
+      compare_price: 83,
+      free_shipping: false,
+      save: "Save $13",
       link: "https://ifbeauty.com.au/cart/43602984206511:1",
     },
-    {
-      id: 3,
-      variant: "3-Pack",
-      price: 43,
-      compare_price: 70,
-      free_shipping: true,
-      save: "Save $12",
-      link: "https://ifbeauty.com.au/cart/43602984239279:1",
-    },
+    // {
+    //   id: 3,
+    //   variant: "3-Pack",
+    //   price: 43,
+    //   compare_price: 70,
+    //   free_shipping: true,
+    //   save: "Save $12",
+    //   link: "https://ifbeauty.com.au/cart/43602984239279:1",
+    // },
   ];
 
   useEffect(() => {
