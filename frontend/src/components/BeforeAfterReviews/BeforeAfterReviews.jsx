@@ -82,117 +82,12 @@ const BeforeAfterReviews = () => {
                 </p>
               </div>
               <div className="w-full flex justify-center items-center gap-2">
-                {/* <div className="w-10 h-10 rounded-full overflow-hidden">
-                  <img
-                    className=""
-                    src="https://cdn.accentuate.io/7105770193071/21123782770863/IMG_3987-v1646792369376.jpeg?40x40"
-                    alt=""
-                  />
-                </div> */}
+              
                 <p className="font-sans-600 text-lg">{rev.name}</p>
               </div>
             </div>
           </div>))}
-          {/* <div className="px-2">
-            <div className="w-auto flex flex-wrap justify-center items-start gap-4 rounded-xl overflow-hidden">
-              <img
-                src="https://cdn.accentuate.io/7105770193071/21121808072879/Bleame-Graphic-Design-5-v1646802395134.jpeg?1440x1440"
-                alt="img_before"
-              />
-              <div className="w-full">
-                <p>
-                  Find out why you should choose Bleame instead of other hair
-                  removal tools. Find out why you should choose Bleame instead
-                  of other hair removal tools.
-                </p>
-              </div>
-              <div className="w-full flex justify-center items-center gap-2">
-                <div className="w-10 h-10 rounded-full overflow-hidden">
-                  <img
-                    className=""
-                    src="https://cdn.accentuate.io/7105770193071/21123782770863/IMG_3987-v1646792369376.jpeg?40x40"
-                    alt=""
-                  />
-                </div>
-                <p className="font-sans-600 text-lg">Sara F.</p>
-              </div>
-            </div>
-          </div>
-          <div className="px-2">
-            <div className="w-auto flex flex-wrap justify-center items-start gap-4 rounded-xl overflow-hidden">
-              <img
-                src="https://cdn.accentuate.io/7105770193071/21121808072879/Bleame-Graphic-Design-5-v1646802395134.jpeg?1440x1440"
-                alt="img_before"
-              />
-              <div className="w-full">
-                <p>
-                  Find out why you should choose Bleame instead of other hair
-                  removal tools. Find out why you should choose Bleame instead
-                  of other hair removal tools.
-                </p>
-              </div>
-              <div className="w-full flex justify-center items-center gap-2">
-                <div className="w-10 h-10 rounded-full overflow-hidden">
-                  <img
-                    className=""
-                    src="https://cdn.accentuate.io/7105770193071/21123782770863/IMG_3987-v1646792369376.jpeg?40x40"
-                    alt=""
-                  />
-                </div>
-                <p className="font-sans-600 text-lg">Sara F.</p>
-              </div>
-            </div>
-          </div>
-          <div className="px-2">
-            <div className="w-auto flex flex-wrap justify-center items-start gap-4 rounded-xl overflow-hidden">
-              <img
-                src="https://cdn.accentuate.io/7105770193071/21121808072879/Bleame-Graphic-Design-5-v1646802395134.jpeg?1440x1440"
-                alt="img_before"
-              />
-              <div className="w-full">
-                <p>
-                  Find out why you should choose Bleame instead of other hair
-                  removal tools. Find out why you should choose Bleame instead
-                  of other hair removal tools.
-                </p>
-              </div>
-              <div className="w-full flex justify-center items-center gap-2">
-                <div className="w-10 h-10 rounded-full overflow-hidden">
-                  <img
-                    className=""
-                    src="https://cdn.accentuate.io/7105770193071/21123782770863/IMG_3987-v1646792369376.jpeg?40x40"
-                    alt=""
-                  />
-                </div>
-                <p className="font-sans-600 text-lg">Sara F.</p>
-              </div>
-            </div>
-          </div>
-          <div className="px-2">
-            <div className="w-auto flex flex-wrap justify-center items-start gap-4 rounded-xl overflow-hidden">
-              <img
-                src="https://cdn.accentuate.io/7105770193071/21121808072879/Bleame-Graphic-Design-5-v1646802395134.jpeg?1440x1440"
-                alt="img_before"
-              />
-              <div className="w-full">
-                <p>
-                  Find out why you should choose Bleame instead of other hair
-                  removal tools. Find out why you should choose Bleame instead
-                  of other hair removal tools.
-                </p>
-              </div>
-              <div className="w-full flex justify-center items-center gap-2">
-                <div className="w-10 h-10 rounded-full overflow-hidden">
-                  <img
-                    className=""
-                    src="https://cdn.accentuate.io/7105770193071/21123782770863/IMG_3987-v1646792369376.jpeg?40x40"
-                    alt=""
-                  />
-                </div>
-                <p className="font-sans-600 text-lg">Sara F.</p>
-              </div>
-            </div>
-          </div> */}
+          
         </Slider>
       </div>
     </div>

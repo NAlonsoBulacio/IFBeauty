@@ -18,7 +18,7 @@ const LandingPage = () => {
   return (
     <div>
       <Header />
-      <div className="px-4 lg:px-10 xl:px-20 bg-slate-600 space-y-6 lg:space-y-20 py-4 lg:pb-12">
+      <div className="px-2 lg:px-10 xl:px-20 bg-slate-600 space-y-6 lg:space-y-20 py-4 lg:pb-12">
         <YoutubePlayer youtube_url="x4FsgRb7eEw" />
       </div>
       <div className="px-4 lg:px-10 xl:px-20 bg-white space-y-6 lg:space-y-20 py-4 overflow-hidden">

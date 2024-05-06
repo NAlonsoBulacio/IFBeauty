@@ -29,8 +29,8 @@ const ProductDetail = ({ homeVariant, handleVariantDetail }) => {
   const [objectVariant, setObjectVariant] = useState({
     id: 2,
     variant: "Double Pack",
-    price: 35,
-    compare_price: 60,
+    price: 60,
+    compare_price: 83,
     free_shipping: true,
     link: "https://ifbeauty.com.au/cart/43602984206511:1",
   });
@@ -38,16 +38,16 @@ const ProductDetail = ({ homeVariant, handleVariantDetail }) => {
     {
       id: 1,
       variant: "Single Pack",
-      price: 23,
-      compare_price: 40,
+      price: 35,
+      compare_price: 41.5,
       free_shipping: false,
       link: "https://ifbeauty.com.au/cart/43602984173743:1",
     },
     {
       id: 2,
       variant: "Double Pack",
-      price: 35,
-      compare_price: 60,
+      price: 60,
+      compare_price: 83,
       free_shipping: true,
       link: "https://ifbeauty.com.au/cart/43602984206511:1",
     },

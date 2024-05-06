@@ -23,9 +23,6 @@ const YoutubePlayer = ({ youtube_url }) => {
     setShowform(click);
   };
 
-  // const handleVideoStart = () => {
-  //   window.fbq("trackCustom", "VideoViewed");
-  // };
 
   const opts = {
     height: "360",
@@ -36,7 +33,7 @@ const YoutubePlayer = ({ youtube_url }) => {
   return (
     <div className="w-full flex flex-wrap justify-center px-0 lg:px-4 space-y-3">
       <div className="w-full">
-        <h1 className="text-3xl lg:text-5xl px-0 lg:mx-20 font-robotoCon-500 text-gray-300">See how more than 10,000 clients rejuvenated their skin by 10 to 15 years with our frmula and repairing sun damage.</h1>
+        <p className="font-light text-balance text-4xl lg:text-5xl px-0 lg:mx-20 font-podium text-gray-50 uppercase">We reveal 3 scientific studies of how to rejuvenate your skin and repair sun damage in 90 days.</p>
       </div>
       <div className="youtube-div relative">
         <YouTube
