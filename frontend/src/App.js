@@ -3,8 +3,8 @@ import { Route } from "react-router-dom";
 import LandingPage from "./pages/LandingPage/LandingPage";
 import Test from './pages/LandingPage/Test/Test';
 import LandingPageProduct from './pages/LandingPageProduct/LandingPageProducts';
-
-function App() {
+import { block } from 'million/react'
+const App = block(() => {
   return (
     <div className="App font-sans-200">
       <Route exact path="/" component={LandingPage} />
@@ -12,6 +12,6 @@ function App() {
       <Route exact path="/test" component={Test} />
     </div>
   );
-}
+})
 
 export default App;
