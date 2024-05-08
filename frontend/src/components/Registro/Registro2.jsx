@@ -22,6 +22,7 @@ const Registro2 =
       .catch((error) => {
         console.log(error);
       });
+      window.fbq("trackCustom", "FormSubmitted");
       actualizarEstado(true);
   }
   

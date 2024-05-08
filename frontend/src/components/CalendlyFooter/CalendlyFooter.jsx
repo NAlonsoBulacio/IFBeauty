@@ -75,6 +75,10 @@ const CalendlyFooter =
     );
     setObjectVariant(selectedVariant);
   };
+
+  const handleMetaEvent = () => {
+    window.fbq('track', 'AddToCart');
+  };
   return (
     <footer
       className={`fixed bottom-0 left-0 w-screen h-[90px]k h-auto bg-slate-200 flex flex-wrap justify-center border-t border-gray-400 items-center transition-all duration-300 rounded-t-2xl z-50 ${
@@ -126,7 +130,9 @@ const CalendlyFooter =
         </h1> */}
         <div>
           <a href={objectVariant.link}>
-            <button className="w-full rounded-md bg-[#1c4cfc] text-xl lg:text-2xl font-sans-500 text-gray-200 px-2 py-4">
+            <button 
+            onClick={handleMetaEvent}
+            className="w-full rounded-md bg-[#1c4cfc] text-xl lg:text-2xl font-sans-500 text-gray-200 px-2 py-4">
               {objectVariant ? ` 👉🏻 ADD TO BAG $${objectVariant.price}` : ""}
             </button>
           </a>

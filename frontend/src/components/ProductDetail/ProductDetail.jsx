@@ -102,6 +102,9 @@ const ProductDetail =
   const handleShowRegistro = () => {
     setShowRegistro(!showRegistro);
   };
+  const handleMetaEvent = () => {
+    window.fbq('track', 'AddToCart');
+  };
   return (
     <div className="bg-white flex flex-wrap lg:flex-nowrap">
       <div className="block lg:hidden pt-0 pb-8 lg:py-8 w-[100%]">
@@ -259,6 +262,7 @@ const ProductDetail =
 
           <a href={objectVariant.link}>
           <button
+          onClick={handleMetaEvent}
             id="add-to-bag-button"
             className="w-full rounded-md bg-[#1c4cfc] text-2xl font-sans-500 text-gray-200 px-2 py-4"
           >
