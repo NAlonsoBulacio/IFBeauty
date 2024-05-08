@@ -11,6 +11,7 @@ import Reviews from "../../components/Reviews/Reviews";
 import YoutubePlayer from "../../components/YoutubePlayer/YoutubePlayer";
 import QuestionsAnswersEnd from "../../components/QuestionsAnswersHome/QuestionsAnswersEnd";
 import { block } from 'million/react';
+
 const LandingPage = block(() => {
   const [homeVariant, setHomeVariant] = useState(2);
   const handleHomeVariant = (variant) => {

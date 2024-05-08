@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { IoIosArrowDown } from "react-icons/io";
-
-const CalendlyFooter = ({ handleVariantFooter, homeVariant }) => {
+import { block } from 'million/react';
+const CalendlyFooter = block(({ handleVariantFooter, homeVariant }) => {
   const [isVisible, setIsVisible] = useState(false);
   const [showOptions, setShowOptions] = useState(false);
   const [selectedVariant, setSelectedVariant] = useState(homeVariant);
@@ -132,6 +132,6 @@ const CalendlyFooter = ({ handleVariantFooter, homeVariant }) => {
       </div>
     </footer>
   );
-};
+});
 
 export default CalendlyFooter;

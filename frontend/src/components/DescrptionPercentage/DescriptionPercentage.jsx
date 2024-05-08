@@ -6,8 +6,8 @@ import SamplePrevArrow from "../../utils/SamplePrevArrow";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import VideoWithPreview from "./VideoPreview";
-
-const DescriptionPercentage = () => {
+import { block } from 'million/react';
+const DescriptionPercentage = block(() => {
   const settings = {
     infinite: true,
     speed: 500,
@@ -62,6 +62,6 @@ const DescriptionPercentage = () => {
       <VideoWithPreview />
     </div>
   );
-};
+});
 
 export default DescriptionPercentage;
