@@ -3,9 +3,9 @@ import shipping from "./images/shipping.png";
 import returning from "./images/return.png";
 import best_seller from "./images/best_seller.png";
 import au from "./images/australia.png";
-import product from "./images/product.png";
-import product2 from "./images/product2.png";
-import product3 from "./images/product3.png";
+import product from "./images/product.webp";
+import product2 from "./images/product2.webp";
+import product3 from "./images/product3.webp";
 
 import logo from "./images/logo.png";
 import life from "./images/life.png";
