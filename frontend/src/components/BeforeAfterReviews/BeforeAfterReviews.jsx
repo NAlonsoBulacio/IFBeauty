@@ -56,7 +56,7 @@ const BeforeAfterReviews = () => {
         </div>
         <div className="w-full">
           <h1 className="text-gray-700 font-sans-700 text-3xl lg:text-5xl">
-            What Babes Like You Are Saying
+            What Women Like You Are Saying
           </h1>
         </div>
         <div className="w-full">

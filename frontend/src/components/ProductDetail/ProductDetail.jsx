@@ -15,9 +15,11 @@ import {
   product3,
   au,
 } from "../../assets/index";
-import { block } from 'million/react';
+// import { block } from 'million/react';
 
-const ProductDetail = block(({ homeVariant, handleVariantDetail }) => {
+const ProductDetail = 
+// block(
+  ({ homeVariant, handleVariantDetail }) => {
   const [images, setImages] = useState({
     img1: product,
     img2: product2,
@@ -250,7 +252,7 @@ const ProductDetail = block(({ homeVariant, handleVariantDetail }) => {
         <div className="w-full ">
           <div className="flex space-x-2 justify-center items-center">
             <p className="font-sans-400 pb-2">
-              Shipping 2 to 5 days from Sydney, AU
+              Shipping 2 to 5 days from Melbourne, AU
             </p>
             <img src={au} alt="au" className="w-4 h-4" />
           </div>
@@ -307,6 +309,7 @@ const ProductDetail = block(({ homeVariant, handleVariantDetail }) => {
       )}
     </div>
   );
-});
+}
+// );
 
 export default ProductDetail;

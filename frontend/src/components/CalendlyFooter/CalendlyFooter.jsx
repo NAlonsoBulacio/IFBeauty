@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { IoIosArrowDown } from "react-icons/io";
-import { block } from 'million/react';
-const CalendlyFooter = block(({ handleVariantFooter, homeVariant }) => {
+// import { block } from 'million/react';
+const CalendlyFooter = 
+// block(
+  ({ handleVariantFooter, homeVariant }) => {
   const [isVisible, setIsVisible] = useState(false);
   const [showOptions, setShowOptions] = useState(false);
   const [selectedVariant, setSelectedVariant] = useState(homeVariant);
@@ -83,7 +85,7 @@ const CalendlyFooter = block(({ handleVariantFooter, homeVariant }) => {
         className="flex  justify-center items-center space-x-3 cursor-pointer h-10 rounded-t-2xl w-full px-8 bg-slate-300"
         onClick={() => setShowOptions(!showOptions)}
       >
-        <p>Ver opciones de compra</p>
+        <p>Show Options</p>
         <IoIosArrowDown
           className={` ${
             showOptions ? "rotate-180" : ""
@@ -132,6 +134,7 @@ const CalendlyFooter = block(({ handleVariantFooter, homeVariant }) => {
       </div>
     </footer>
   );
-});
+}
+// );
 
 export default CalendlyFooter;

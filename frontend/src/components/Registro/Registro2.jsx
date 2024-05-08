@@ -1,6 +1,8 @@
 // import "./styles.css";
-import { block } from 'million/react';
-const Registro2 = block(({handleShowRegistro, actualizarEstado}) => {
+// import { block } from 'million/react';
+const Registro2 = 
+// block(
+  ({handleShowRegistro, actualizarEstado}) => {
 
   function Submit(e) {
     const formEle = document.querySelector("form");
@@ -75,5 +77,6 @@ const Registro2 = block(({handleShowRegistro, actualizarEstado}) => {
       </div>
     </div>
   );
-})
+}
+// )
 export default Registro2;
