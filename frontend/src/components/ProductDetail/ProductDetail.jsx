@@ -5,7 +5,6 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import Registro2 from "../Registro/Registro2";
-
 import {
   calendar,
   shipping,
@@ -16,8 +15,9 @@ import {
   product3,
   au,
 } from "../../assets/index";
+import { block } from 'million/react';
 
-const ProductDetail = ({ homeVariant, handleVariantDetail }) => {
+const ProductDetail = block(({ homeVariant, handleVariantDetail }) => {
   const [images, setImages] = useState({
     img1: product,
     img2: product2,
@@ -307,6 +307,6 @@ const ProductDetail = ({ homeVariant, handleVariantDetail }) => {
       )}
     </div>
   );
-};
+});
 
 export default ProductDetail;

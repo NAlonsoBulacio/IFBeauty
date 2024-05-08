@@ -4,7 +4,9 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { logo_blanco } from "../../assets";
 import VideoPlayer from "./VideoPlayer";
-const VideoWithPreview = () => {
+import { block } from 'million/react';
+
+const VideoWithPreview = block(() => {
   const VideosUrl = [
     "https://res.cloudinary.com/doczyujqf/video/upload/v1714653349/IF%20Beauty/I_loveee_skin_care_skincare_nightskincare_vitaminc_retinol_niacinamide_moisturizer_fnvxby.mp4",
     "https://res.cloudinary.com/doczyujqf/video/upload/v1714653684/IF%20Beauty/iF.iPSO_FACTO_I_have_been_trialling_these_products_from_iPSO_FACTO_and_I_am_loving_them_especially_this_mist_Let_me_tell_you_about_them_and_the_best_bit_I_have_a_discount_code_for_you_4021548D_l51ncg.mp4",
@@ -119,6 +121,6 @@ const VideoWithPreview = () => {
       </Slider>
     </div>
   );
-};
+});
 
 export default VideoWithPreview;

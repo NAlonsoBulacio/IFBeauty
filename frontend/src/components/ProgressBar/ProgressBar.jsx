@@ -1,6 +1,7 @@
 import React from "react";
+import { block } from 'million/react';
 
-const StatementBar = ({ statement, percentage }) => {
+const StatementBar = block(({ statement, percentage }) => {
   return (
     <div className="p-2">
       <div className="flex items-start mb-2 space-x-1 text-left">
@@ -12,9 +13,9 @@ const StatementBar = ({ statement, percentage }) => {
       </div>
     </div>
   );
-};
+});
 
-const StatementList = () => {
+const StatementList = block(() => {
   return (
     <div className="bg-gray-100 rounded-xl p-4 border-[1.5px] border-gray-300">
       <StatementBar statement="Presents fewer wrinkles." percentage={80} />
@@ -22,6 +23,6 @@ const StatementList = () => {
       <StatementBar statement="Achieved a clinically proven increase in skin elasticity and firmness." percentage={90} />
     </div>
   );
-};
+});
 
 export default StatementList;
