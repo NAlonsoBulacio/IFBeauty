@@ -12,7 +12,7 @@ const QuestionsAnswersEnd = ({ landing }) => {
     {
       question: "Should I combine my Collagen Boost and Sun damage Repair with other IF Products?",
       answer:
-        "Yes, for the best results, you should combine your wrinkle cream with other IF products based on your routine.Pro tip: Collagen Boost and Sun damage Repair works best with and Chilled Eyes CBD Luxury Eye Cream",
+        "Yes, for the best results, you should combine your wrinkle cream with other IF products based on your routine.Pro tip: Collagen Boost and Sun damage Repair works best with Bright Eyes Peptide Complex Eye Gel",
       answer_id: "1",
     },
     {
@@ -27,7 +27,7 @@ const QuestionsAnswersEnd = ({ landing }) => {
       answer_id: "3",
     },
     {
-      question: "How long will Gle for Wrinkles last?",
+      question: "How long will Collagen Boost and Sun damage Repair last?",
       answer:
         "To ensure you have enough product for at least 30 days.",
       answer_id: "4",

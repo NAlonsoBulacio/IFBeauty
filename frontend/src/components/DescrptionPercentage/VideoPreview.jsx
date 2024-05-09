@@ -10,7 +10,8 @@ const VideoWithPreview =
 //  block(
   () => {
   const VideosUrl = [
-    "https://res.cloudinary.com/doczyujqf/video/upload/v1714653349/IF%20Beauty/I_loveee_skin_care_skincare_nightskincare_vitaminc_retinol_niacinamide_moisturizer_fnvxby.mp4",
+    "https://res.cloudinary.com/doczyujqf/video/upload/v1715292059/IF%20Beauty/IMG_6547_1_1_rcextc.mp4",
+    // "https://res.cloudinary.com/doczyujqf/video/upload/v1715291707/IF%20Beauty/IMG_6547_1_pjnhlf.mp4",
     "https://res.cloudinary.com/doczyujqf/video/upload/v1714653684/IF%20Beauty/iF.iPSO_FACTO_I_have_been_trialling_these_products_from_iPSO_FACTO_and_I_am_loving_them_especially_this_mist_Let_me_tell_you_about_them_and_the_best_bit_I_have_a_discount_code_for_you_4021548D_l51ncg.mp4",
      "https://res.cloudinary.com/doczyujqf/video/upload/v1714653801/IF%20Beauty/Using_our_IF_Beauty_-_clean_Australian_skincare_brand._Great_little_exfoliant_and_peel_to_use_in_your_weekly_skin_care_routine._More_videos_to_follow_the_scrub_and_removal_skin_skincareroutine_skinca._ssh6y6.mp4",
      "https://res.cloudinary.com/doczyujqf/video/upload/v1714653851/IF%20Beauty/HOLd_UP_I_found_prob_the_best_smelling_mask_EVER_and_i_am_just_saying_this_Blueberry_Oxygen_Mask_Cranberry_Glycolic_From_ifbeautyaus_15_off_using_my_CODE_store_wide_40215DI_have_NEVER_EVER_1_esdomv.mp4",

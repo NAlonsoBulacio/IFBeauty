@@ -57,7 +57,7 @@ const DescriptionPercentage =
           90 days results
         </h1>
         <p className="text-left w-auto lg:w-[90%]">
-        We have developed and patented the Unfailing Anti-aging Formula which has been scientifically proven with clinical studies conducted by dermatologists from Australia. These were the results:
+        We have developed the Proprietory formula that its ingredients have been scientifically tested with clinical studies conducted by dermatologists in Australia. These were the results:
         </p>
         <StatementList />
       </div> 

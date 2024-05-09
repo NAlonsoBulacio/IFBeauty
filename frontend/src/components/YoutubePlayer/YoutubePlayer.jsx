@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import YouTube from "react-youtube";
 import Registro2 from "../../components/Registro/Registro2";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -8,7 +7,7 @@ import "./YoutubePlayer.css";
 
 const YoutubePlayer = 
 // block(
-  ({ youtube_url }) => {
+  () => {
   const [showForm, setShowform] = useState(false);
   const [showVideo, setShowVideo] = useState(false);
 
@@ -27,17 +26,10 @@ const YoutubePlayer =
     setShowform(click);
   };
 
-
-  const opts = {
-    height: "360",
-    width: "100%",
-    playerVars: {},
-  };
-  const videoId = youtube_url;
   return (
     <div className="w-full flex flex-wrap justify-center px-0 lg:px-4 space-y-3">
       <div className="w-full">
-        <p className="font-light text-balance text-4xl lg:text-5xl px-0 lg:mx-20 font-podium text-gray-50 uppercase">We reveal 3 scientific studies of how to rejuvenate your skin and repair sun damage in 90 days.</p>
+        <p className="font-light text-balance text-4xl lg:text-5xl px-0 lg:mx-20 font-podium text-gray-50 uppercase">With more than 30 years as an anti-aging educator, I reveal the secrets of the most famous brands and the best products for your skin.</p>
       </div>
       <div className="youtube-div relative">
       <iframe width="100%" height="315" src="https://www.youtube.com/embed/x4FsgRb7eEw?si=IMMd6XCV0hm_HpDO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
