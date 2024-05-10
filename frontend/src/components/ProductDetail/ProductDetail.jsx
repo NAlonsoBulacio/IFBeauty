@@ -176,7 +176,7 @@ const ProductDetail =
         </div>
         <div className="w-full flex justify-start items-start py-4">
           <h1 className="text-gray-700 font-sans-500 text-left">
-            If you are tired of creams that you don't know what ingredients are
+            If you are tired of serums that you don't know what ingredients are
             in them and that don't give you the results you expect, our skin
             repair is for you!
           </h1>
