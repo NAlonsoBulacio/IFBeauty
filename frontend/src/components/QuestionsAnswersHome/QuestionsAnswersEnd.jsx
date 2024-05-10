@@ -12,7 +12,7 @@ const QuestionsAnswersEnd = ({ landing }) => {
     {
       question: "Should I combine my Collagen Boost and Sun damage Repair with other IF Products?",
       answer:
-        "Yes, for the best results, you should combine your wrinkle cream with other IF products based on your routine.Pro tip: Collagen Boost and Sun damage Repair works best with Bright Eyes Peptide Complex Eye Gel",
+        "Yes, for the best results, you should combine your wrinkle serum with other IF products based on your routine.Pro tip: Collagen Boost and Sun damage Repair works best with Bright Eyes Peptide Complex Eye Gel",
       answer_id: "1",
     },
     {
