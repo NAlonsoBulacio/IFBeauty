@@ -15,7 +15,7 @@ const ImageDescription = () => {
           </div>
           <div>
             <h1 className="text-md lg:text-xl font-sans-500 text-gray-400">
-              At If Beauty, our mission is to provide the best cream possible,
+              At If Beauty, our mission is to provide the best serum possible,
               with ingredients that have been proven to work over our 30 years
               of working with our patients. We have a 30-day return policy,
               which means you have 30 days after receiving your item to request
