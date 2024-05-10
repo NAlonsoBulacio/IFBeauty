@@ -56,8 +56,8 @@ const DescriptionPercentage =
         <h1 className="font-sans-400 text-3xl lg:text-5xl text-left">
           90 days results
         </h1>
-        <p className="text-left w-auto lg:w-[90%]">
-        We have developed the Proprietory formula that its ingredients have been scientifically tested with clinical studies conducted by dermatologists in Australia. These were the results:
+        <p className="text-left w-auto lg:w-[90%] font-sans-200" >
+        We have developed this Proprietory formula with ingredients that have been scientifically tested with clinical studies conducted by dermatologists. These were the results:
         </p>
         <StatementList />
       </div> 

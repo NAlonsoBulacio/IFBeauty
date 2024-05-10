@@ -61,7 +61,7 @@ const BeforeAfterReviews = () => {
         </div>
         <div className="w-full">
           <h1 className="font-sans-300 text-lg lg:text-xl">
-            Rated 4.8/5 by 175,000+ Happy Customers
+            Rated 4.8/5 by 1,000’s Happy Customers
           </h1>
         </div>
       </div>

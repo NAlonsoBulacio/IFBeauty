@@ -2,15 +2,15 @@ import React from "react";
 import { FaLeaf } from "react-icons/fa";
 const BenefitsandVideo = () => {
   return (
-    <div className="flex flex-wrap justify-center gap-4">
+    <div className="flex flex-wrap justify-center gap-4 font-sans-200">
       <div className="w-full">
         <h1 className="text-senter font-sans-700 text-3xl text-gray-700">
         Making your skin look younger and healthier is now much easier!
         </h1>
       </div>
       <div className="w-full ">
-        <p className="text-center font-sans-400 text-md text-gray-600 px-3">
-        Not all creams provide effective results, as some brands may offer products with ingredients or formulas that have been proven not to work, simply because they are cheaper. At If Beauty, our mission is to provide the best cream possible, with ingredients that have been proven to work over our 30 years of working with our patients.
+        <p className="text-center font-sans-400 text-md text-gray-600 px-3 lg:px-[140px]">
+        Not all serums provide effective results, as some brands may offer products with ingredients or formulas that have been proven not to work, simply because they are cheaper. At If Beauty, our mission is to provide the best serum possible, with ingredients that have been proven to work over our 30 years of working with our patients.
         </p>
       </div>
       <div className="w-full flex justify-center py-4">

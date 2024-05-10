@@ -297,7 +297,7 @@ const ProductDetail =
           <QuestionsAnswersHome />
         </div>
         <div className="w-full text-center text-lg font-sans-500 text-[#1c4cfc]">
-          + 1.000 happy clients
+          + 1.000’s happy clients
         </div>
       </div>
       {showRegistro ? (

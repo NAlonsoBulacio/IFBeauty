@@ -5,7 +5,7 @@ import Test from './pages/LandingPage/Test/Test';
 import LandingPageProduct from './pages/LandingPageProduct/LandingPageProducts';
 const App = () => {
   return (
-    <div className="App font-sans-200">
+    <div className="App ">
       <Route exact path="/" component={LandingPage} />
       <Route exact path="/collagen" component={LandingPageProduct} />
       <Route exact path="/test" component={Test} />
