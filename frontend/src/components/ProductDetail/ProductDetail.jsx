@@ -164,7 +164,7 @@ const ProductDetail =
           <img src={star} alt="star" />
           <img src={star} alt="star" />
           <img src={star} alt="star" />
-          <h1 className="text-gray-500 text-xl mx-2">(+1000 Reviews)</h1>
+          <h1 className="text-gray-500 text-xl mx-2">(+1000’s Reviews)</h1>
         </div>
         <div className="w-full flex justify-start items-start">
           <h1 className="text-4xl lg:text-5xl text-left text-gray-800 font-sans-700">
