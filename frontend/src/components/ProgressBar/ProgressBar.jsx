@@ -1,8 +1,8 @@
 import React from "react";
-// import { block } from 'million/react';
+ import { block } from 'million/react';
 
 const StatementBar = 
-// block(
+ block(
   ({ statement, percentage }) => {
   return (
     <div className="p-2">
@@ -16,10 +16,10 @@ const StatementBar =
     </div>
   );
 }
-// );
+ );
 
 const StatementList = 
-// block(
+block(
   () => {
   return (
     <div className="bg-gray-100 rounded-xl p-4 border-[1.5px] border-gray-300">
@@ -29,6 +29,6 @@ const StatementList =
     </div>
   );
 }
-// );
+ );
 
 export default StatementList;

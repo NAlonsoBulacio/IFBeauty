@@ -6,9 +6,9 @@ import SamplePrevArrow from "../../utils/SamplePrevArrow";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import VideoWithPreview from "./VideoPreview";
-// import { block } from 'million/react';
+import { block } from 'million/react';
 const DescriptionPercentage = 
-// block(
+ block(
   () => {
   const settings = {
     infinite: true,
@@ -65,6 +65,6 @@ const DescriptionPercentage =
     </div>
   );
 }
-// );
+ );
 
 export default DescriptionPercentage;

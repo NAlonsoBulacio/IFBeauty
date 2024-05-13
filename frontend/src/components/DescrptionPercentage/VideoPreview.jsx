@@ -4,10 +4,10 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { logo_blanco } from "../../assets";
 import VideoPlayer from "./VideoPlayer";
-// import { block } from 'million/react';
+ import { block } from 'million/react';
 
 const VideoWithPreview =
-//  block(
+block(
   () => {
   const VideosUrl = [
     "https://res.cloudinary.com/doczyujqf/video/upload/v1715292059/IF%20Beauty/IMG_6547_1_1_rcextc.mp4",
@@ -125,6 +125,6 @@ const VideoWithPreview =
     </div>
   );
 }
-// );
+ );
 
 export default VideoWithPreview;

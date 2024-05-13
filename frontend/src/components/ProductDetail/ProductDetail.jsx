@@ -15,10 +15,10 @@ import {
   product3,
   au,
 } from "../../assets/index";
-// import { block } from 'million/react';
+ import { block } from 'million/react';
 
 const ProductDetail = 
-// block(
+ block(
   ({ homeVariant, handleVariantDetail }) => {
   const [images, setImages] = useState({
     img1: product,
@@ -314,6 +314,6 @@ const ProductDetail =
     </div>
   );
 }
-// );
+ );
 
 export default ProductDetail;

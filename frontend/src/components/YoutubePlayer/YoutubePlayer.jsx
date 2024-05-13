@@ -3,10 +3,10 @@ import Registro2 from "../../components/Registro/Registro2";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import "./YoutubePlayer.css";
-// import { block } from 'million/react';
+import { block } from 'million/react';
 
 const YoutubePlayer = 
-// block(
+ block(
   () => {
   const [showForm, setShowform] = useState(false);
   const [showVideo, setShowVideo] = useState(false);
@@ -62,6 +62,6 @@ const YoutubePlayer =
     </div>
   );
 }
-// );
+);
 
 export default YoutubePlayer;

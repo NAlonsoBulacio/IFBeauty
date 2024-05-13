@@ -10,10 +10,10 @@ import ImageDescription from "../../components/ImageDescription/ImageDescription
 import Reviews from "../../components/Reviews/Reviews";
 import YoutubePlayer from "../../components/YoutubePlayer/YoutubePlayer";
 import QuestionsAnswersEnd from "../../components/QuestionsAnswersHome/QuestionsAnswersEnd";
-// import { block } from 'million/react';
+import { block } from 'million/react';
 
 const LandingPage = 
-// block(
+ block(
   () => {
   const [homeVariant, setHomeVariant] = useState(2);
   const handleHomeVariant = (variant) => {
@@ -45,6 +45,6 @@ const LandingPage =
     </div>
   );
 }
-// );
+ );
 
 export default LandingPage;
