@@ -32,7 +32,7 @@ const YoutubePlayer =
         <p className="font-light text-balance text-4xl lg:text-5xl px-0 lg:mx-20 font-podium text-gray-50 uppercase">With more than 30 years experience as an Anti Aging and Wellness Educator I reveal the Truth behind the most effective and famous skincare  brands and what is best for your Skin.</p>
       </div>
       <div className="youtube-div relative">
-      <iframe width="100%" height="315" src="https://www.youtube.com/embed/x4FsgRb7eEw?si=IMMd6XCV0hm_HpDO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <iframe width="100%" height="315" src="https://www.youtube-nocookie.com/embed/823CWbtbyVA?si=i9gXvbOD42-rn5I4&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       </div>
       {showForm && (
         <>
