@@ -53,7 +53,7 @@ const QuestionsAnswersEnd = ({ landing }) => {
       ) : (
         ""
       )}
-      <div className="w-full flex flex-wrap justify-start items-center space-y-2 max-w-[800px]">
+      <div className="w-full flex flex-wrap justify-start items-center space-y-2 max-w-[800px] pt-4">
         {QAs?.map((qa, index) => (
           <div key={index}>
             <div className="w-full">
