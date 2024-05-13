@@ -52,7 +52,7 @@ const YoutubePlayer =
       )}
       {showVideo === false ? (
         <div
-          className="absolute youtube-div z-30 bg-transparent cursor-pointer"
+          className="absolute w-full h-full z-30 bg-transparent cursor-pointer"
           onClick={() => setShowform(true)}
         ></div>
       ) : (
