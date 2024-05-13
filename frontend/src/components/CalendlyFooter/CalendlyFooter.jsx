@@ -13,7 +13,7 @@ const CalendlyFooter =
     price: 60,
     compare_price: 83,
     free_shipping: true,
-    save: "Save $13",
+    save: "Save $23",
     link: "https://ifbeauty.com.au/cart/43602984206511:1",
   });
 
@@ -24,7 +24,7 @@ const CalendlyFooter =
       price: 35,
       compare_price: 41.5,
       free_shipping: false,
-      save: "Full Price",
+      save: "Save $6,5",
       link: "https://ifbeauty.com.au/cart/43602984173743:1",
     },
     {
@@ -33,7 +33,7 @@ const CalendlyFooter =
       price: 60,
       compare_price: 83,
       free_shipping: false,
-      save: "Save $13",
+      save: "Save $23",
       link: "https://ifbeauty.com.au/cart/43602984206511:1",
     },
     // {
