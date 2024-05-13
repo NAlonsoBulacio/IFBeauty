@@ -22,7 +22,7 @@ const Reviews = () => {
   return (
     <div>
       <div>
-        <div className="w-full flex justify-center">
+        <div className="w-full flex justify-center py-4">
           <h1 className="text-gray-700 text-4xl mx-2">4.8</h1>
           <div className="flex h-8">
             <img src={star} alt="star" />

@@ -68,8 +68,7 @@ const Registro2 = ({ handleShowRegistro, actualizarEstado }) => {
         </div>
       </div>
       <h1 className="text-left">
-        Plus, stay up to date with special offers, giveaways, and the latest
-        news.
+      Subscribe to receive more educational content and skincare routines.
       </h1>
       <div>
         <form
