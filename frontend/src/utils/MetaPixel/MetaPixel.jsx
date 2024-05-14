@@ -13,7 +13,7 @@ t.src=v;s=b.getElementsByTagName(e)[0];
 s.parentNode.insertBefore(t,s)}(window, document,'script',
 'https://connect.facebook.net/en_US/fbevents.js');
 fbq('init', '3200268520232333');
-fbq('track', 'PageView');`}
+fbq('track', 'PageViewMasterclass');`}
 </script>
 <noscript key='image' id="facebook-pixel-image">
     {`<img height="1" width="1" style="display:none"
