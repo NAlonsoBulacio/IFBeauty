@@ -1,25 +1,33 @@
 import React, { useState } from "react";
 import Registro2 from "../../components/Registro/Registro2";
+import Registro3 from "../Registro/Registro3";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import "./YoutubePlayer.css";
-import { block } from 'million/react';
+import { useHistory } from "react-router-dom";
+import { block } from "million/react";
 
-const YoutubePlayer = 
- block(
-  () => {
+const YoutubePlayer = block(({ landingVideo }) => {
+  
+const history = useHistory();
   const [showForm, setShowform] = useState(false);
   const [showVideo, setShowVideo] = useState(false);
 
   const handleShowForm = () => {
     setShowform(!showForm);
-    setShowVideo(true);
+    if (!landingVideo) {
+      setShowVideo(true);
+    }
+
   };
   const actualizarEstadoPadre = (estado) => {
     if (estado === true) {
       setShowform(!showForm);
       setShowVideo(true);
       toast.success("Subscription submitted!");
+    }
+    if (landingVideo) {
+      history.push("/collagen");
     }
   };
   const handleClick = (click) => {
@@ -29,10 +37,23 @@ const YoutubePlayer =
   return (
     <div className="w-full flex flex-wrap justify-center px-0 lg:px-4 space-y-3">
       <div className="w-full">
-        <p className="font-light text-balance text-4xl lg:text-5xl px-0 lg:mx-20 font-podium text-gray-50 uppercase">With more than 30 years experience as an Anti Aging and Wellness Educator I reveal the Truth behind the most effective and famous skincare  brands and what is best for your Skin.</p>
+        <p className="font-light text-balance text-3xl lg:text-5xl px-0 mx-0 lg:mx-20 font-podium text-gray-50 uppercase">
+          With more than 30 years experience as an Anti Aging and Wellness
+          Educator I reveal the Truth behind the most effective and famous
+          skincare brands and what is best for your Skin.
+        </p>
       </div>
-      <div className="youtube-div relative">
-      <iframe width="100%" height="315" src="https://www.youtube-nocookie.com/embed/823CWbtbyVA?si=TcPcf4_xia6QdXlT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <div className={` ${landingVideo ? "h-[320px]" : "h-[360px]"} w-full lg:w-[640px] relative`}>
+        <iframe
+          width="100%"
+          height="315"
+          src="https://www.youtube-nocookie.com/embed/823CWbtbyVA?si=TcPcf4_xia6QdXlT"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
       </div>
       {showForm && (
         <>
@@ -42,10 +63,17 @@ const YoutubePlayer =
           ></div>
           <div className="fixed inset-0 flex items-center justify-center z-50">
             <div className="bg-white p-4 rounded-lg shadow-lg">
-              <Registro2
-                actualizarEstado={actualizarEstadoPadre}
-                handleShowRegistro={handleShowForm}
-              />
+              {landingVideo ? (
+                <Registro3
+                  actualizarEstado={actualizarEstadoPadre}
+                  handleShowRegistro={handleShowForm}
+                />
+              ) : (
+                <Registro2
+                  actualizarEstado={actualizarEstadoPadre}
+                  handleShowRegistro={handleShowForm}
+                />
+              )}
             </div>
           </div>
         </>
@@ -61,7 +89,6 @@ const YoutubePlayer =
       <ToastContainer />
     </div>
   );
-}
-);
+});
 
 export default YoutubePlayer;

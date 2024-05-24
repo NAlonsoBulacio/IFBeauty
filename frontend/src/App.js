@@ -1,14 +1,15 @@
 import './App.css';
 import { Route } from "react-router-dom";
 import LandingPage from "./pages/LandingPage/LandingPage";
-import Test from './pages/LandingPage/Test/Test';
 import LandingPageProduct from './pages/LandingPageProduct/LandingPageProducts';
+import LandingPageVideo from './pages/LandingPageVideo/LandingPageVideo';
 const App = () => {
   return (
     <div className="App ">
       <Route exact path="/" component={LandingPage} />
       <Route exact path="/collagen" component={LandingPageProduct} />
-      <Route exact path="/test" component={Test} />
+      <Route exact path="/video" component={LandingPageVideo} />
+    
     </div>
   );
 }
