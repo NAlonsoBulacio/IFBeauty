@@ -52,6 +52,14 @@ const history = useHistory();
           referrerpolicy="strict-origin-when-cross-origin"
           allowfullscreen
         ></iframe>
+        {showVideo === false ? (
+        <div
+          className="absolute w-full h-full z-30 bg-transparent cursor-pointer"
+          onClick={() => setShowform(true)}
+        ></div>
+      ) : (
+        ""
+      )}
       </div>
       {showForm && (
         <>
@@ -76,14 +84,7 @@ const history = useHistory();
           </div>
         </>
       )}
-      {showVideo === false ? (
-        <div
-          className="absolute w-full h-full z-30 bg-transparent cursor-pointer"
-          onClick={() => setShowform(true)}
-        ></div>
-      ) : (
-        ""
-      )}
+      
       <ToastContainer />
     </div>
   );

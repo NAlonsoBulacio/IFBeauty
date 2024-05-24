@@ -30,7 +30,7 @@ const LandingPageVideo = block(() => {
         <div style={{ display: "flex", justifyContent: "center" }}>
           <button
           onClick={handleClick}
-            className="flex justify-center items-center max-w-[700px] bg-gradient-to-r from-[#40b4e5] to-[#09a3e4] text-white text-xl lg:text-2xl py-4 px-6 rounded-xl mb-2 mx-4 my-0 md:my-2 uppercase"
+            className="z-50 flex justify-center items-center max-w-[700px] bg-gradient-to-r from-[#40b4e5] to-[#09a3e4] text-white text-xl lg:text-2xl py-4 px-6 rounded-xl mb-2 mx-4 my-0 md:my-2 uppercase"
             style={{
               marginBottom: "3rem",
         
