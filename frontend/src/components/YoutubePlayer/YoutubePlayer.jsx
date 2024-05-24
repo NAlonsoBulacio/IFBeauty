@@ -26,9 +26,7 @@ const history = useHistory();
       setShowVideo(true);
       toast.success("Subscription submitted!");
     }
-    if (landingVideo) {
-      history.push("/collagen");
-    }
+
   };
   const handleClick = (click) => {
     setShowform(click);
