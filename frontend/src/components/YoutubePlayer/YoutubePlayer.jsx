@@ -8,8 +8,7 @@ import { useHistory } from "react-router-dom";
 import { block } from "million/react";
 
 const YoutubePlayer = block(({ landingVideo }) => {
-  
-const history = useHistory();
+  const history = useHistory();
   const [showForm, setShowform] = useState(false);
   const [showVideo, setShowVideo] = useState(false);
 
@@ -18,7 +17,6 @@ const history = useHistory();
     if (!landingVideo) {
       setShowVideo(true);
     }
-
   };
   const actualizarEstadoPadre = (estado) => {
     if (estado === true) {
@@ -26,7 +24,6 @@ const history = useHistory();
       setShowVideo(true);
       toast.success("Subscription submitted!");
     }
-
   };
   const handleClick = (click) => {
     setShowform(click);
@@ -41,7 +38,11 @@ const history = useHistory();
           skincare brands and what is best for your Skin.
         </p>
       </div>
-      <div className={` ${landingVideo ? "h-[320px]" : "h-[360px]"} w-full lg:w-[640px] relative`}>
+      <div
+        className={` ${
+          landingVideo ? "h-[320px]" : "h-[360px]"
+        } w-full lg:w-[640px] relative`}
+      >
         <iframe
           width="100%"
           height="315"
@@ -52,14 +53,6 @@ const history = useHistory();
           referrerpolicy="strict-origin-when-cross-origin"
           allowfullscreen
         ></iframe>
-        {showVideo === false ? (
-        <div
-          className="absolute w-full h-full z-30 bg-transparent cursor-pointer"
-          onClick={() => setShowform(true)}
-        ></div>
-      ) : (
-        ""
-      )}
       </div>
       {showForm && (
         <>
@@ -84,7 +77,14 @@ const history = useHistory();
           </div>
         </>
       )}
-      
+      {showVideo === false ? (
+        <div
+          className="absolute w-full h-full z-30 bg-transparent cursor-pointer"
+          onClick={() => setShowform(true)}
+        ></div>
+      ) : (
+        ""
+      )}
       <ToastContainer />
     </div>
   );

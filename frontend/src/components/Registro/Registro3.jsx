@@ -68,7 +68,7 @@ const Registro3 = ({ handleShowRegistro, actualizarEstado }) => {
         </div>
       </div>
       <h1 className="text-left">
-      Subscribe to receive more educational content and skincare routines.
+      If you would like to receive a complete anti-aging skincare routine, we can send it to you via email.
       </h1>
       <div>
         <form
