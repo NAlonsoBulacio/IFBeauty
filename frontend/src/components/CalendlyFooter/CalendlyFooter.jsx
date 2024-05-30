@@ -77,7 +77,7 @@ block(
   };
 
   const handleMetaEvent = () => {
-    window.fbq('track', 'AddToCart');
+    // window.fbq('track', 'AddToCart');
   };
   return (
     <footer

@@ -48,7 +48,7 @@ const Registro3 = ({ handleShowRegistro, actualizarEstado }) => {
         console.log(error);
       });
     
-    window.fbq("trackCustom", "FormSubmitted");
+    // window.fbq("trackCustom", "FormSubmitted");
     actualizarEstado(true);
   };
 

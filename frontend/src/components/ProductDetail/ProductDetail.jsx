@@ -103,7 +103,7 @@ const ProductDetail =
     setShowRegistro(!showRegistro);
   };
   const handleMetaEvent = () => {
-    window.fbq('track', 'AddToCart');
+    // window.fbq('track', 'AddToCart');
   };
   return (
     <div className="bg-white flex flex-wrap lg:flex-nowrap">
