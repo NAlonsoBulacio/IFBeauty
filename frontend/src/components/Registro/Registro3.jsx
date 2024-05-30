@@ -93,7 +93,7 @@ const Registro3 = ({ handleShowRegistro, actualizarEstado }) => {
           />
           <input
             type="submit"
-            className="w-[20%] bg-gray-700 text-white p-2 cursor-pointer"
+            className="submit-btn w-[20%] bg-gray-700 text-white p-2 cursor-pointer"
             value="Submit"
           />
         </form>

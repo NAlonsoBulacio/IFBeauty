@@ -264,7 +264,7 @@ const ProductDetail =
           <button
           onClick={handleMetaEvent}
             id="add-to-bag-button"
-            className="w-full rounded-md bg-[#1c4cfc] text-2xl font-sans-500 text-gray-200 px-2 py-4"
+            className="add-to-cart-btn w-full rounded-md bg-[#1c4cfc] text-2xl font-sans-500 text-gray-200 px-2 py-4"
           >
             {objectVariant ? ` 👉🏻 ADD TO BAG $${objectVariant.price}` : ""}
           </button>
