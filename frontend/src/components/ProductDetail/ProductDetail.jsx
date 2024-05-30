@@ -260,11 +260,11 @@ const ProductDetail =
             <img src={au} alt="au" className="w-4 h-4" />
           </div>
 
-          <a href={objectVariant.link}>
+          <a href={objectVariant.link} className="add-to-cart-btn">
           <button
           onClick={handleMetaEvent}
             id="add-to-bag-button"
-            className="add-to-cart-btn w-full rounded-md bg-[#1c4cfc] text-2xl font-sans-500 text-gray-200 px-2 py-4"
+            className=" w-full rounded-md bg-[#1c4cfc] text-2xl font-sans-500 text-gray-200 px-2 py-4"
           >
             {objectVariant ? ` 👉🏻 ADD TO BAG $${objectVariant.price}` : ""}
           </button>
