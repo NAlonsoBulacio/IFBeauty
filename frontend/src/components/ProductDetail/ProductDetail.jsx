@@ -15,11 +15,9 @@ import {
   product3,
   au,
 } from "../../assets/index";
- import { block } from 'million/react';
+import { block } from "million/react";
 
-const ProductDetail = 
- block(
-  ({ homeVariant, handleVariantDetail }) => {
+const ProductDetail = block(({ homeVariant, handleVariantDetail }) => {
   const [images, setImages] = useState({
     img1: product,
     img2: product2,
@@ -31,8 +29,8 @@ const ProductDetail =
   const [objectVariant, setObjectVariant] = useState({
     id: 2,
     variant: "Double Pack",
-    price:60, 
-    compare_price:  83,
+    price: 60,
+    compare_price: 83,
     link: "https://ifbeauty.com.au/cart/43602984206511:1",
   });
   const variants = [
@@ -47,7 +45,7 @@ const ProductDetail =
     {
       id: 2,
       variant: "Double Pack",
-      price: 60, 
+      price: 60,
       compare_price: 83,
       free_shipping: false,
       link: "https://ifbeauty.com.au/cart/43602984206511:1",
@@ -260,14 +258,17 @@ const ProductDetail =
             <img src={au} alt="au" className="w-4 h-4" />
           </div>
 
-          <a href={objectVariant.link} className="add-to-cart-btn">
-          <button
-          onClick={handleMetaEvent}
+          <a
+            href={objectVariant.link}
+            className="add-to-cart-btn"
             id="add-to-bag-button"
-            className=" w-full rounded-md bg-[#1c4cfc] text-2xl font-sans-500 text-gray-200 px-2 py-4"
           >
-            {objectVariant ? ` 👉🏻 ADD TO BAG $${objectVariant.price}` : ""}
-          </button>
+            <button
+              onClick={handleMetaEvent}
+              className=" w-full rounded-md bg-[#1c4cfc] text-2xl font-sans-500 text-gray-200 px-2 py-4"
+            >
+              {objectVariant ? ` 👉🏻 ADD TO BAG $${objectVariant.price}` : ""}
+            </button>
           </a>
         </div>
         <div className="w-full flex justify-center items-center py-6  gap-2">
@@ -293,7 +294,6 @@ const ProductDetail =
           </div>
         </div>
         <div className="w-full">
-         
           <QuestionsAnswersHome />
         </div>
         <div className="w-full text-center text-lg font-sans-500 text-[#1c4cfc]">
@@ -303,9 +303,7 @@ const ProductDetail =
       {showRegistro ? (
         <div className="fixed inset-0 flex items-center justify-center z-50">
           <div className="bg-white p-4 rounded-lg shadow-lg">
-            <Registro2
-              handleShowRegistro={handleShowRegistro}
-            />
+            <Registro2 handleShowRegistro={handleShowRegistro} />
           </div>
         </div>
       ) : (
@@ -313,7 +311,6 @@ const ProductDetail =
       )}
     </div>
   );
-}
- );
+});
 
 export default ProductDetail;

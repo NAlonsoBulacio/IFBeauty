@@ -1,9 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { IoIosArrowDown } from "react-icons/io";
-import { block } from 'million/react';
-const CalendlyFooter = 
-block(
-  ({ handleVariantFooter, homeVariant }) => {
+import { block } from "million/react";
+const CalendlyFooter = block(({ handleVariantFooter, homeVariant }) => {
   const [isVisible, setIsVisible] = useState(false);
   const [showOptions, setShowOptions] = useState(false);
   const [selectedVariant, setSelectedVariant] = useState(homeVariant);
@@ -103,11 +101,13 @@ block(
       >
         {variants?.map((variant, index) => (
           <div
-          key={index}
+            key={index}
             className={`${
               variant.id === selectedVariant ? "bg-slate-400" : ""
             } ${
-              showOptions ? "block opacity-100 transition-opacity duration-400" : "hidden opacity-0"
+              showOptions
+                ? "block opacity-100 transition-opacity duration-400"
+                : "hidden opacity-0"
             } relative w-24 h-20 border-slate-500 border-2 rounded-xl my-4 overflow-hidden flex  cursor-pointer transition-opacity duration-400`}
             onClick={() => handleSelectedVariant(variant.id, variant.price)}
           >
@@ -129,10 +129,15 @@ block(
           Tratamiento Anti-Aging Infalible
         </h1> */}
         <div>
-          <a href={objectVariant.link} className="add-to-cart-btn">
-            <button 
-            onClick={handleMetaEvent}
-            className="add-to-cart-btn w-full rounded-md bg-[#1c4cfc] text-xl lg:text-2xl font-sans-500 text-gray-200 px-2 py-4">
+          <a
+            href={objectVariant.link}
+            className="add-to-cart-btn"
+            id="add-to-bag-button"
+          >
+            <button
+              onClick={handleMetaEvent}
+              className="add-to-cart-btn w-full rounded-md bg-[#1c4cfc] text-xl lg:text-2xl font-sans-500 text-gray-200 px-2 py-4"
+            >
               {objectVariant ? ` 👉🏻 ADD TO BAG $${objectVariant.price}` : ""}
             </button>
           </a>
@@ -140,7 +145,6 @@ block(
       </div>
     </footer>
   );
-}
- );
+});
 
 export default CalendlyFooter;
