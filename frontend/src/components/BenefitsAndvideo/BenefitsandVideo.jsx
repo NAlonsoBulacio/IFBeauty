@@ -27,7 +27,7 @@ const BenefitsandVideo = () => {
         <div className="w-1/2 flex flex-wrap justify-center px-2 lg:px-8">
           <div className="w-auto flex justify-center">
             <img
-              src="https://res.cloudinary.com/doczyujqf/image/upload/v1713798991/Doctor%20Sales/IF/notesting_ssbvod.png"
+              src="https://res.cloudinary.com/dtf3dfpnw/image/upload/v1717594763/animal_test_lhqvh4.png"
               alt=""
               className="w-[50%]"
             />
@@ -46,7 +46,7 @@ const BenefitsandVideo = () => {
         <div className="w-1/2 flex flex-wrap justify-center px-2 lg:px-8">
           <div className="w-auto flex justify-center">
             <img
-              src="https://res.cloudinary.com/doczyujqf/image/upload/v1713799015/Doctor%20Sales/IF/skincare-svgrepo-com_vptcqd.svg"
+              src="https://res.cloudinary.com/dtf3dfpnw/image/upload/v1717594762/Dise%C3%B1o_sin_t%C3%ADtulo_40_qe9zg2.png"
               alt=""
               className="w-[50%]"
             />
@@ -65,7 +65,7 @@ const BenefitsandVideo = () => {
         <div className="w-1/2 flex flex-wrap justify-center px-2 lg:px-8">
           <div className="w-auto flex justify-center">
             <img
-              src="https://res.cloudinary.com/doczyujqf/image/upload/v1713798990/Doctor%20Sales/IF/smells_sjdhca.png"
+              src="https://res.cloudinary.com/dtf3dfpnw/image/upload/v1717594763/fresh_ggojtq.png"
               alt=""
               className="w-[50%]"
             />
@@ -85,7 +85,7 @@ Revitalize your skin with the invigorating pink grapefruit aroma, leaving you re
         <div className="w-1/2 flex flex-wrap justify-center px-2 lg:px-8">
           <div className="w-auto flex justify-center">
             <img
-              src="https://res.cloudinary.com/doczyujqf/image/upload/v1713799139/Doctor%20Sales/IF/sun_i0zfqp.png"
+              src="https://res.cloudinary.com/dtf3dfpnw/image/upload/v1717594740/sun_ixmt0p.png"
               alt=""
               className="w-[50%]"
             />
