@@ -1,6 +1,6 @@
 import React from "react";
 import { FaLeaf } from "react-icons/fa";
-const BenefitsandVideo = () => {
+const BenefitsandVideo = ({acne}) => {
   return (
     <div className="flex flex-wrap justify-center gap-4 font-sans-200">
       <div className="w-full">
@@ -53,7 +53,7 @@ const BenefitsandVideo = () => {
           </div>
           <div className="w-[100%]">
             <h1 className="text-center text-lg font-sans-700 text-gray-700">
-              Anti Aging
+             {acne ? "Higher self-esteem Smooth" : "Anti Aging"}
             </h1>
           </div>
           <div>
@@ -92,12 +92,12 @@ Revitalize your skin with the invigorating pink grapefruit aroma, leaving you re
           </div>
           <div className="w-[100%]">
             <h1 className="text-center text-lg font-sans-700 text-gray-700">
-            Sun Damage Repair
+            {acne ? "Acne-Free " : "Sun Damage Repair"}
             </h1>
           </div>
           <div>
             <h1>
-            Restore your skin's natural radiance with our sun damage repair solution.
+            Restore your skin's natural radiance with our acne damage repair solution.
             </h1>
           </div>
         </div>

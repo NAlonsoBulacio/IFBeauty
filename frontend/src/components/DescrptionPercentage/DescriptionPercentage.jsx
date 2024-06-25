@@ -49,7 +49,7 @@ const DescriptionPercentage =
 
   return (
     <div className="flex flex-wrap justify-center items-start h-auto lg:h-[550px] xl:space-x-0">
-      <div className="w-full lg:w-[60%] flex flex-wrap justify-start items-start space-y-4 ">
+      <div className="w-full lg:w-[60%] flex flex-wrap justify-start items-start space-y-2 lg:space-y-4 ">
         <h2 className="w-full font-sans-400 text-xl text-left text-teal-700">
           IF Beauty
         </h2>

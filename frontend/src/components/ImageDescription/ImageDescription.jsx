@@ -7,7 +7,7 @@ const ImageDescription = () => {
         <div className="h-1/2 lg:h-full w-full lg:w-1/2 overflow-hidden">
           <img src={life} alt="" className="w-full object-cover" />
         </div>
-        <div className="h-1/2 lg:h-full w-full lg:w-1/2 bg-slate-800 p-8 text-left space-y-3">
+        <div className="h-1/2 lg:h-full w-full lg:w-1/2 bg-slate-800 p-4 lg:p-8 text-left space-y-3">
           <div>
             <h1 className="text-3xl lg:text-4xl font-sans-600 text-gray-300">
               IF Beauty Guarantee

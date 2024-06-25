@@ -5,8 +5,8 @@ import SamplePrevArrow from "../../utils/SamplePrevArrow";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import star from "../../assets/star.svg";
-import {before_after} from "./index";
-const BeforeAfterReviews = () => {
+import {before_after, before_after_acne} from "./index";
+const BeforeAfterReviews = ({acne}) => {
   const settings = {
     infinite: true,
     speed: 500,
@@ -65,7 +65,32 @@ const BeforeAfterReviews = () => {
           </h1>
         </div>
       </div>
-      <div className="py-12">
+     {acne ? <div className="py-12">
+        <Slider {...settings} className="">
+          { before_after_acne?.map((rev, index) => (<div key={index} className="px-2">
+            <div
+            
+            className="w-auto flex flex-wrap justify-center items-start gap-4 overflow-hidden">
+              <img
+                src={rev.img}
+                alt="img_before"
+                className="rounded-3xl"
+              />
+              <div className="w-full">
+                <p>
+                  {rev.description}
+                </p>
+              </div>
+              <div className="w-full flex justify-center items-center gap-2">
+              
+                <p className="font-sans-600 text-lg">{rev.name}</p>
+              </div>
+            </div>
+          </div>))}
+          
+        </Slider>
+     </div>
+     : <div className="py-12">
         <Slider {...settings} className="">
           { before_after?.map((rev, index) => (<div key={index} className="px-2">
             <div
@@ -89,7 +114,7 @@ const BeforeAfterReviews = () => {
           </div>))}
           
         </Slider>
-      </div>
+      </div>}
     </div>
   );
 };

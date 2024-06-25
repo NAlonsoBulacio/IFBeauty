@@ -14,6 +14,15 @@ import paymeth from "./images/paymethods.png";
 import person from "./images/person.svg";
 import email from "./images/email.svg";
 import phone from "./images/phone.svg";
+
+import a1 from "./images/befandaf acne/a.jpeg";
+import a2 from "./images/befandaf acne/s.jpeg";
+import a3 from "./images/befandaf acne/d.jpeg";
+import a4 from "./images/befandaf acne/f.jpeg";
+import a5 from "./images/befandaf acne/g.jpeg";
+import a6 from "./images/befandaf acne/h.jpeg";
+
+
 export {
     calendar,
     shipping,
@@ -30,6 +39,12 @@ export {
     person, 
     phone, 
     email,
+    a1,
+    a2,
+    a3,
+    a4,
+    a5,
+    a6,
 }
 
 

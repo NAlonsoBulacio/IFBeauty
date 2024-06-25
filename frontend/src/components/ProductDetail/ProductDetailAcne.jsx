@@ -267,7 +267,7 @@ const ProductDetailAcne = block(({ homeVariant, handleVariantDetail }) => {
           </div>
         </div>
         <div className="w-full">
-          <QuestionsAnswersHome />
+          <QuestionsAnswersHome acne={"Acne"} />
         </div>
         <div className="w-full text-center text-lg font-sans-500 text-[#1c4cfc]">
           + 1.000’s happy clients

@@ -45,9 +45,9 @@ const acne = {
           homeVariant={homeVariant}
           handleVariantDetail={handleHomeVariant}
         />
-        <BenefitsandVideo />
+        <BenefitsandVideo acne={"Acne"} />
         <DescriptionPercentage />
-        <BeforeAfterReviews />
+        <BeforeAfterReviews acne={"acne"} />
         <ImageDescription />
         <Reviews />
         <QuestionsAnswersEnd />

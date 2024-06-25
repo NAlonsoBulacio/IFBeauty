@@ -1,14 +1,9 @@
 import b3 from "../../assets/images/befandaf/b3.jpeg";
-import b4 from "../../assets/images/befandaf/b4.jpeg";
 import b5 from "../../assets/images/befandaf/b5.jpeg";
-import b2 from "../../assets/images/befandaf/b2.jpeg";
-import b1 from "../../assets/images/befandaf/b1.jpeg";
-import b6 from "../../assets/images/befandaf/b6.jpeg";
-import b7 from "../../assets/images/befandaf/b7.jpeg";
-import b8 from "../../assets/images/befandaf/b8.jpeg";
 import b9 from "../../assets/images/befandaf/b9.jpeg";
-import b10 from "../../assets/images/befandaf/b10.jpeg";
 import b11 from "../../assets/images/befandaf/b11.jpeg";
+
+import { a1, a2, a3, a4, a5, a6 } from "../../assets";
 
 const before_after = [
     // {
@@ -74,3 +69,51 @@ const before_after = [
 ];
 
 export { before_after };
+
+const before_after_acne = [
+      {
+        name: "Laura B.",
+        description:
+          "After trying many serums, I finally found one that works wonders for my skin. This serum has improved my skin texture and reduced the appearance of wrinkles. I'm thrilled with the results!",
+        img: a1,
+      },
+      {
+        name: "Sophia M.",
+        description:
+          "I've noticed a significant improvement in my skin's texture since using this serum. It feels smoother and looks more even-toned. Definitely worth the investment!",
+        img: a2,
+      },
+      
+      {
+        name: "Emily R.",
+        description:
+          "This serum has exceeded my expectations. My skin looks brighter, smoother, and more youthful. I've received so many compliments on my complexion since I started using it. Absolutely love it!",
+        img: a3,
+      },
+      {
+        name: "Sophie H.",
+        description:
+          "I've been using this serum for a few months now, and I'm blown away by the results. My skin feels firmer and more hydrated, and my fine lines have noticeably diminished. I can't recommend it enough!",
+        img: a3,
+      },
+      {
+        name: "Ava W.",
+        description:
+          "As a skincare enthusiast, I'm always on the lookout for products that deliver results. This serum has quickly become one of my favorites. It's lightweight, absorbs quickly, and leaves my skin feeling smooth and refreshed. 10/10 would recommend!",
+        img: a4,
+      },
+      {
+        name: "Olivia P.",
+        description:
+          "I've struggled with dry skin for years, but this serum has completely transformed my complexion. My skin feels hydrated and plump, and I've even noticed a reduction in redness. Couldn't be happier!",
+        img: a5,
+      },
+      {
+        name: "Isabella T.",
+        description:
+          "I'm always hesitant to try new skincare products, but I'm so glad I gave this serum a chance. It's gentle yet effective, and my skin has never looked better. I'll definitely be repurchasing!",
+        img: a6,
+      },
+];
+
+export { before_after_acne };
