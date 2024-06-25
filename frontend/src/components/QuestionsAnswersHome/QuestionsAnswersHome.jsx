@@ -5,7 +5,7 @@ import QuestionSvg from "../../utils/QuestionSvg";
 import StarSvg from "../../utils/StarSvg";
 import ShippingSvg from "../../utils/ShippingSvg";
 import ReturnSvg from "../../utils/ReturnSvg";
-const QuestionsAnswersHome = ({ landing }) => {
+const QuestionsAnswersHome = ({ landing, acne }) => {
   const [answer, setAnswer] = useState("");
 
   const handleAnswer = (answerId) => {
@@ -15,14 +15,15 @@ const QuestionsAnswersHome = ({ landing }) => {
   const QAs = [
     {
       question: "How does it work?",
-      answer:
-        "This light-as-a-feather formula contains Vitamin C, peptides and plant stem cells to stimulate collagen production and repair.Why boost collagen? Collagen is the most common and abundant protein in the body. In our skin, it is responsible for helping skin cells renew and repair themselves and keeps our skin smooth and healthy. As we mature, collagen is naturally depleted. Vitamin C and specific peptides help stimulate collagen production. Sodium PCA, amino acids and plant-derived hyaluronic acid promote skin hydration. A botanical repair serum for every day. A good starting point if you want to begin using specific serums.",
+      answer: acne
+        ? "This serum combines powerful ingredients like niacinamide, vitamin C, retinol, and salicylic acid to transform your skin. It not only visibly reduces breakouts and redness but also protects and nourishes, leaving you with a more even and healthy complexion. It's the perfect solution for those looking to regain confidence in their skin, eliminating daily acne worries."
+        : "This light-as-a-feather formula contains Vitamin C, peptides and plant stem cells to stimulate collagen production and repair.Why boost collagen? Collagen is the most common and abundant protein in the body. In our skin, it is responsible for helping skin cells renew and repair themselves and keeps our skin smooth and healthy. As we mature, collagen is naturally depleted. Vitamin C and specific peptides help stimulate collagen production. Sodium PCA, amino acids and plant-derived hyaluronic acid promote skin hydration. A botanical repair serum for every day. A good starting point if you want to begin using specific serums.",
       answer_id: "1",
     },
     {
       question: "How to use?",
       answer:
-        "Apply 2-3 pumps to face and neck after cleansing and before your chosen moisturiser. May be used am or pm in conjunction with other serums if required.",
+       acne ? " Apply 1-4 drops onto clean skin. Can be used as a spot treatment. A great option for teenage breakouts. Finish with your chosen moisturizer.  Achieving acne-free and healthy skin is much easier than you think with our serum! We know that not all serums are effective. Many brands use low-quality ingredients that don't deliver on their promises. Our serum is carefully formulated with clinically proven ingredients like niacinamide, vitamin C, retinol, and salicylic acid. These ingredients not only help reduce breakouts but also calm redness and improve skin uniformity. With years of experience in skincare, we offer you a reliable solution to feel more confident and radiant every day. Your skin deserves the best, and we're here to help you achieve it." : "Apply 2-3 pumps to face and neck after cleansing and before your chosen moisturiser. May be used am or pm in conjunction with other serums if required.",
       answer_id: "2",
     },
     {
