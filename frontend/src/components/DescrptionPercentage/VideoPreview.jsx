@@ -12,7 +12,6 @@ block(
   const VideosUrl = [
     "https://res.cloudinary.com/dtf3dfpnw/video/upload/v1717595018/if_ugc_3_1_jlfyns.mp4",
     "https://res.cloudinary.com/dtf3dfpnw/video/upload/v1717594882/if_1_1_1_zcctt0.mp4",
-     "https://res.cloudinary.com/dtf3dfpnw/video/upload/v1717595018/if_ugc_3_1_jlfyns.mp4",
      "https://res.cloudinary.com/dtf3dfpnw/video/upload/v1717595065/if_ugc_4_1_r2zh3h.mov",
   ];
   const settings = {
