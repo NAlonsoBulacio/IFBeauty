@@ -44,7 +44,7 @@ const BeforeAfterReviews = ({acne}) => {
 
   return (
     <div className="gap-y-8">
-      <div className="w-full flex flex-wrap justify-center items-center gap-2">
+      <div className="w-full flex flex-wrap justify-center items-center gap-2 my-6">
         <div className="w-full flex justify-center">
           <div className="w-full flex h-6 justify-center">
             <img src={star} alt="star" />

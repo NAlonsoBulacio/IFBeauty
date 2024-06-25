@@ -2,7 +2,7 @@ import React from "react";
 import { FaLeaf } from "react-icons/fa";
 const BenefitsandVideo = ({acne}) => {
   return (
-    <div className="flex flex-wrap justify-center gap-4 font-sans-200">
+    <div className="flex flex-wrap justify-center gap-4 font-sans-200 my-6">
       <div className="w-full">
         <h1 className="text-senter font-sans-700 text-3xl text-gray-700">
         Making your skin look younger and healthier is now much easier!
