@@ -10,9 +10,9 @@ const VideoWithPreview =
 block(
   () => {
   const VideosUrl = [
-    "https://res.cloudinary.com/dtf3dfpnw/video/upload/v1717595018/if_ugc_3_1_jlfyns.mp4",
-    "https://res.cloudinary.com/dtf3dfpnw/video/upload/v1717594882/if_1_1_1_zcctt0.mp4",
-     "https://res.cloudinary.com/dtf3dfpnw/video/upload/v1717595065/if_ugc_4_1_r2zh3h.mov",
+    "https://cdn.shopify.com/videos/c/o/v/ae932ff15e9940eeb835c49ead54d964.mp4",
+    "https://cdn.shopify.com/videos/c/o/v/eb3ef6a3f9884d86abed87b6fc5a9a26.mp4",
+     "https://cdn.shopify.com/videos/c/o/v/29b36cb0bda14abc8641aa5469b973b5.mov",
   ];
   const settings = {
     dots: true,
