@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import ProductDetail from "../../components/ProductDetail/ProductDetail";
+import ProductDetail from "../../components/ProductDetail/ProductDetailBundle";
 import HeaderProduct from "../../components/Header/HeaderProduct";
 import Footer from "../../components/Footer/Footer";
 import BeforeAfterReviews from "../../components/BeforeAfterReviews/BeforeAfterReviews";
