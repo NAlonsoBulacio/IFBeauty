@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
 import ProductDetailAcne from "../../components/ProductDetail/ProductDetailAcne";
 import BeforeAfterReviews from "../../components/BeforeAfterReviews/BeforeAfterReviews";
@@ -8,7 +7,7 @@ import BenefitsandVideo from "../../components/BenefitsAndvideo/BenefitsandVideo
 import CalendlyFooter from "../../components/CalendlyFooter/CalendlyFooter";
 import ImageDescription from "../../components/ImageDescription/ImageDescription";
 import Reviews from "../../components/Reviews/Reviews";
-import YoutubePlayer from "../../components/YoutubePlayer/YoutubePlayer";
+import HeaderProduct from "../../components/Header/HeaderProduct";
 import QuestionsAnswersEnd from "../../components/QuestionsAnswersHome/QuestionsAnswersEnd";
 import { block } from 'million/react';
 
@@ -36,7 +35,7 @@ const acne = {
 
   return (
     <div>
-      <Header />
+      <HeaderProduct />
       <div className="px-4 lg:px-10 xl:px-20 bg-white space-y-6 lg:space-y-20 py-4 overflow-hidden">
         <ProductDetailAcne
           homeVariant={homeVariant}
