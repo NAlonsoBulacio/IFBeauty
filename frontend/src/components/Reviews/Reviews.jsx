@@ -3,19 +3,18 @@ import Stars from "./Stars";
 import star from "../../assets/star.svg";
 import { reviews, acne_reviews } from "./AllReviews";
 
-const Reviews = ({acne}) => {
+const Reviews = ({ acne }) => {
   const [visibleReviews, setVisibleReviews] = useState(3);
   const maxVisibleReviews = 3; // Máximo número de reviews visibles
-const [fullReviews, setFullReviews] = useState("");
+  const [fullReviews, setFullReviews] = useState("");
 
-useEffect(() => {
-  if (acne) {
-   setFullReviews(acne_reviews)
-  } else {
-    setFullReviews(reviews)
-  }
-}, [acne_reviews, reviews]);
-
+  useEffect(() => {
+    if (acne) {
+      setFullReviews(acne_reviews);
+    } else {
+      setFullReviews(reviews);
+    }
+  }, [acne_reviews, reviews]);
 
   const handleShowMore = () => {
     if (visibleReviews + 3 <= fullReviews.length) {
@@ -43,31 +42,35 @@ useEffect(() => {
           </div>
         </div>
         <div className="space-y-10">
-          {fullReviews.slice(0, visibleReviews).map((review, index) => (
-            <div
-              key={index}
-              className="space-y-2 border-b-[1px] border-gray-400 py-2"
-            >
-              <div className="flex gap-x-2">
-                <h1 className="font-sans-600">{review.name}</h1>
-                <h1 className="text-green-600 font-sans-500">Verified Buyer</h1>
-              </div>
-              <div> 
-                <Stars starsRate={review.starRate === "4" ? true : false}/>
-              </div>
-              <div>
-                <h1 className="text-left text-lg font-sans-600">
-                  {review.title}
-                </h1>
-              </div>
-              <div>
-                <h1 className="font-sans-400 text-gray-600 text-left">
-                  {review.review}
-                </h1>
-              </div>
-            </div>
-          ))}
-          {fullReviews.length > maxVisibleReviews && (
+          {fullReviews.length !== 0
+            ? fullReviews.slice(0, visibleReviews).map((review, index) => (
+                <div
+                  key={index}
+                  className="space-y-2 border-b-[1px] border-gray-400 py-2"
+                >
+                  <div className="flex gap-x-2">
+                    <h1 className="font-sans-600">{review.name}</h1>
+                    <h1 className="text-green-600 font-sans-500">
+                      Verified Buyer
+                    </h1>
+                  </div>
+                  <div>
+                    <Stars starsRate={review.starRate === "4" ? true : false} />
+                  </div>
+                  <div>
+                    <h1 className="text-left text-lg font-sans-600">
+                      {review.title}
+                    </h1>
+                  </div>
+                  <div>
+                    <h1 className="font-sans-400 text-gray-600 text-left">
+                      {review.review}
+                    </h1>
+                  </div>
+                </div>
+              ))
+            : ""}
+          {fullReviews.length !== 0 ? fullReviews.length > maxVisibleReviews && (
             <div className="text-center">
               <button
                 onClick={handleShowLess}
@@ -83,7 +86,7 @@ useEffect(() => {
                 Show More
               </button>
             </div>
-          )}
+          ) : ""}
         </div>
       </div>
     </div>
