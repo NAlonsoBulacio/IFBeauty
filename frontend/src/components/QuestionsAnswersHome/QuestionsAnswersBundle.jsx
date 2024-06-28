@@ -17,48 +17,39 @@ const QuestionsAnswersBundle = ({ landing }) => {
     {
       question: "What’s Included in the Bundle:",
       answer: `
-        **Active Enzyme Cleanser - Fermented Pomegranate**
-        **Price:** $34.95 AUD
-
-        A 2-in-1 foaming cleanser with fermented pomegranate enzymes that gently exfoliates your skin and prepares it for optimal absorption of the Collagen Boost and Repair Serum.
-
-        **Collagen Boost and Repair - Vitamin C, Peptides, Stem Cells**
-        **Price:** $41.50 AUD
-
-        This featherlight formula is powered by Vitamin C, peptides, and plant stem cells to boost collagen production and repair. It helps the skin cells to renew and repair themselves, keeping your skin plump and healthy. Sodium PCA, amino acids, and botanical hyaluronic acid support skin hydration.
-
-        **Biomimetic Daily Moisturiser - CoQ10 + Resveratrol**
-        **Price:** $57.95 AUD
-
-        The perfect follow-up to the Collagen Boost and Repair Serum, this daily moisturizer locks in hydration, reduces fine lines and wrinkles, brightens your complexion, and combats skin inflammation.
-
-        **Bundle Offer:**
-        **Total Retail Price:** $134.40 AUD
-        **Opening Offer:** $100.80 AUD (25% Discount)
+        <strong>Active Enzyme Cleanser - Fermented Pomegranate</strong><br>
+        <strong>Price:</strong> $34.95 AUD<br><br>
+        A 2-in-1 foaming cleanser with fermented pomegranate enzymes that gently exfoliates your skin and prepares it for optimal absorption of the Collagen Boost and Repair Serum.<br><br>
+        <strong>Collagen Boost and Repair - Vitamin C, Peptides, Stem Cells</strong><br>
+        <strong>Price:</strong> $41.50 AUD<br><br>
+        This featherlight formula is powered by Vitamin C, peptides, and plant stem cells to boost collagen production and repair. It helps the skin cells to renew and repair themselves, keeping your skin plump and healthy. Sodium PCA, amino acids, and botanical hyaluronic acid support skin hydration.<br><br>
+        <strong>Biomimetic Daily Moisturiser - CoQ10 + Resveratrol</strong><br>
+        <strong>Price:</strong> $57.95 AUD<br><br>
+        The perfect follow-up to the Collagen Boost and Repair Serum, this daily moisturizer locks in hydration, reduces fine lines and wrinkles, brightens your complexion, and combats skin inflammation.<br><br>
+        <strong>Bundle Offer:</strong><br>
+        <strong>Total Retail Price:</strong> $134.40 AUD<br>
+        <strong>Opening Offer:</strong> $100.80 AUD (25% Discount)
       `,
       answer_id: "1",
     },
     {
       question: "How Does It Work?",
       answer: `
-        Our bundle combines three powerful products designed to work together to enhance your skin's health and appearance:
-
-        1. **Cleanse:** Start with the Active Enzyme Cleanser to remove impurities and prepare your skin for maximum serum absorption.
-        2. **Repair:** Follow with the Collagen Boost and Repair Serum to stimulate collagen production and repair your skin.
-        3. **Moisturize:** Finish with the Biomimetic Daily Moisturiser to lock in moisture and provide added protection and hydration.
+        Our bundle combines three powerful products designed to work together to enhance your skin's health and appearance:<br><br>
+        1. <strong>Cleanse:</strong> Start with the Active Enzyme Cleanser to remove impurities and prepare your skin for maximum serum absorption.<br>
+        2. <strong>Repair:</strong> Follow with the Collagen Boost and Repair Serum to stimulate collagen production and repair your skin.<br>
+        3. <strong>Moisturize:</strong> Finish with the Biomimetic Daily Moisturiser to lock in moisture and provide added protection and hydration.
       `,
       answer_id: "2",
     },
     {
       question: "How to Use the Bundle:",
       answer: `
-        1. **Step 1: Cleanse**
-           - Apply the Active Enzyme Cleanser to damp skin, massage gently, and rinse thoroughly.
-
-        2. **Step 2: Boost and Repair**
-           - Apply 2-3 pumps of the Collagen Boost and Repair Serum to your face and neck after cleansing, before moisturizing. Use in the morning and evening for best results.
-
-        3. **Step 3: Moisturize**
+        1. <strong>Step 1: Cleanse</strong><br>
+           - Apply the Active Enzyme Cleanser to damp skin, massage gently, and rinse thoroughly.<br><br>
+        2. <strong>Step 2: Boost and Repair</strong><br>
+           - Apply 2-3 pumps of the Collagen Boost and Repair Serum to your face and neck after cleansing, before moisturizing. Use in the morning and evening for best results.<br><br>
+        3. <strong>Step 3: Moisturize</strong><br>
            - Follow with the Biomimetic Daily Moisturiser to lock in the serum and provide added hydration and protection.
       `,
       answer_id: "3",
@@ -80,19 +71,15 @@ const QuestionsAnswersBundle = ({ landing }) => {
     {
       question: "Our Facts",
       answer: `
-        **Should I combine my Collagen Boost and Repair Bundle with other IF Products?**
-        Yes, for the best results, you should combine your skincare routine with other IF products based on your routine.
-
-        **How long will it take to see results?**
-        While you will notice softer, smoother, and instantly hydrated skin, it's important to know that changing your skincare routine will take a few weeks to show more permanent results.
-
-        **Can I use the products at night?**
-        Yes, the products can be used both day and night. For optimal results, combine them with our Golden Glycolic 10% Glycolic Night Serum.
-
-        **How long will the products last?**
-        Each product in the bundle is designed to last for at least 30 days with regular use.
-
-        ## Unlock the full potential of your skin with our Professional Skincare Bundle. Order now and experience the transformation!
+        <strong>Should I combine my Collagen Boost and Repair Bundle with other IF Products?</strong><br>
+        Yes, for the best results, you should combine your skincare routine with other IF products based on your routine.<br><br>
+        <strong>How long will it take to see results?</strong><br>
+        While you will notice softer, smoother, and instantly hydrated skin, it's important to know that changing your skincare routine will take a few weeks to show more permanent results.<br><br>
+        <strong>Can I use the products at night?</strong><br>
+        Yes, the products can be used both day and night. For optimal results, combine them with our Golden Glycolic 10% Glycolic Night Serum.<br><br>
+        <strong>How long will the products last?</strong><br>
+        Each product in the bundle is designed to last for at least 30 days with regular use.<br><br>
+        <strong>Unlock the full potential of your skin with our Professional Skincare Bundle. Order now and experience the transformation!</strong>
       `,
       answer_id: "6",
     },
