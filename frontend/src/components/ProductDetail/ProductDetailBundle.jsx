@@ -198,7 +198,7 @@ const ProductDetail = block(({ homeVariant, handleVariantDetail }) => {
                         ""
                       )}
                     </div>
-                    <p className="text-left">You Save ${savings}</p>
+                    <p className="text-left">You Save $34</p>
                   </div>
                   <div>
                     <p className="text-2xl font-sans-500 text-gray-700">
