@@ -18,7 +18,7 @@ useEffect(() => {
 
 
   const handleShowMore = () => {
-    if (visibleReviews + 3 <= reviews.length) {
+    if (visibleReviews + 3 <= fullReviews.length) {
       setVisibleReviews(visibleReviews + 3);
     }
   };
@@ -43,7 +43,7 @@ useEffect(() => {
           </div>
         </div>
         <div className="space-y-10">
-          {reviews.slice(0, visibleReviews).map((review, index) => (
+          {fullReviews.slice(0, visibleReviews).map((review, index) => (
             <div
               key={index}
               className="space-y-2 border-b-[1px] border-gray-400 py-2"
@@ -67,7 +67,7 @@ useEffect(() => {
               </div>
             </div>
           ))}
-          {reviews.length > maxVisibleReviews && (
+          {fullReviews.length > maxVisibleReviews && (
             <div className="text-center">
               <button
                 onClick={handleShowLess}
