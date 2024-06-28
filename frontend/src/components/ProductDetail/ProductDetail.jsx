@@ -170,7 +170,7 @@ const ProductDetail = block(({ homeVariant, handleVariantDetail }) => {
           </h1>
         </div>
         <div className="w-full flex justify-start items-start text-[12px]">
-          New 🏆 Innovation in skin health 2024
+          New 🏆 Innovation in Skin Health 2024
         </div>
         <div className="w-full flex justify-start items-start py-4">
           <h1 className="text-gray-700 font-sans-500 text-left">
@@ -181,10 +181,10 @@ const ProductDetail = block(({ homeVariant, handleVariantDetail }) => {
         </div>
         <div className="w-full flex justify-start items-start">
           <ul className="text-left text-md lg:text-xl">
-            <li>💜 Guarantees healthy and youthful skin.</li>
-            <li>🍑 Collagen repair Vit C, Peptides, Stem cells.</li>
-            <li>✨ Refreshing citrus scent of pink grapefruit.</li>
-            <li>🌱Not tested on animals and organic.</li>
+            <li>💜 Guarantees Healthy and Youthful Skin.</li>
+            <li>🍑 Collagen Repair with Vitamin C, Peptides, and Stem Cells</li>
+            <li>✨ Refreshing Citrus Scent of Pink Grapefruit.</li>
+            <li>🌱 Not Tested on Animals and Organic.</li>
           </ul>
         </div>
         <div className="w-full flex flex-wrap gap-3 py-4">

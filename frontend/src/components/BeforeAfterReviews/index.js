@@ -71,43 +71,43 @@ const before_after = [
 export { before_after };
 
 const before_after_acne = [
-      {
-        name: "Laura B.",
-        description:
-          "After trying many serums, I finally found one that works wonders for my skin. This serum has improved my skin texture and reduced the appearance of wrinkles. I'm thrilled with the results!",
-        img: a1,
-      },
-      {
-        name: "Sophia M.",
-        description:
-          "I've noticed a significant improvement in my skin's texture since using this serum. It feels smoother and looks more even-toned. Definitely worth the investment!",
-        img: a2,
-      },
-      
-      {
-        name: "Emily R.",
-        description:
-          "This serum has exceeded my expectations. My skin looks brighter, smoother, and more youthful. I've received so many compliments on my complexion since I started using it. Absolutely love it!",
-        img: a3,
-      },
-      {
-        name: "Ava W.",
-        description:
-          "As a skincare enthusiast, I'm always on the lookout for products that deliver results. This serum has quickly become one of my favorites. It's lightweight, absorbs quickly, and leaves my skin feeling smooth and refreshed. 10/10 would recommend!",
-        img: a4,
-      },
-      {
-        name: "Olivia P.",
-        description:
-          "I've struggled with dry skin for years, but this serum has completely transformed my complexion. My skin feels hydrated and plump, and I've even noticed a reduction in redness. Couldn't be happier!",
-        img: a5,
-      },
-      {
-        name: "Isabella T.",
-        description:
-          "I'm always hesitant to try new skincare products, but I'm so glad I gave this serum a chance. It's gentle yet effective, and my skin has never looked better. I'll definitely be repurchasing!",
-        img: a6,
-      },
+  {
+    name: "Carla G.",
+    description:
+      "Since I started using Acne Detox Liquid, my breakouts have significantly decreased. My skin looks clearer and healthier. I'm thrilled with the results!",
+    img: a1,
+  },
+  {
+    name: "Marta L.",
+    description:
+      "This serum has transformed my skin. Redness has diminished and my skin is more balanced. Definitely worth every penny!",
+    img: a2,
+  },
+  
+  {
+    name: "Elena S.",
+    description:
+      "Acne Detox Liquid has exceeded my expectations. My skin is smoother, clearer, and breakout-free. I've received many compliments since I started using it. Absolutely love it!",
+    img: a3,
+  },
+  {
+    name: "Ana K.",
+    description:
+      "As a skincare enthusiast, I'm always looking for effective products. This serum has quickly become one of my favorites. It's lightweight, absorbs quickly, and leaves my skin feeling smooth and refreshed. 10/10 would recommend!",
+    img: a4,
+  },
+  {
+    name: "Paula R.",
+    description:
+      "I've dealt with oily skin for years, but this serum has transformed my complexion. My skin feels balanced and I've noticed a reduction in pore appearance. Couldn't be happier!",
+    img: a5,
+  },
+  {
+    name: "Lucía D.",
+    description:
+      "I'm always cautious with new skincare products, but I'm so glad I tried Acne Detox Liquid. It's gentle yet effective, and my skin has never looked better. I'll definitely be repurchasing!",
+    img: a6,
+  },
 ];
 
 export { before_after_acne };

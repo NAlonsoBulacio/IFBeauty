@@ -1,11 +1,21 @@
 import React, { useState } from "react";
 import Stars from "./Stars";
 import star from "../../assets/star.svg";
-import { reviews } from "./AllReviews";
+import { reviews, acne_reviews } from "./AllReviews";
 
-const Reviews = () => {
+const Reviews = ({acne}) => {
   const [visibleReviews, setVisibleReviews] = useState(3);
   const maxVisibleReviews = 3; // Máximo número de reviews visibles
+const [fullReviews, setFullReviews] = useState("");
+
+useEffect(() => {
+  if (acne) {
+   setFullReviews(acne_reviews)
+  } else {
+    setFullReviews(reviews)
+  }
+}, [acne_reviews, reviews]);
+
 
   const handleShowMore = () => {
     if (visibleReviews + 3 <= reviews.length) {
@@ -42,7 +52,7 @@ const Reviews = () => {
                 <h1 className="font-sans-600">{review.name}</h1>
                 <h1 className="text-green-600 font-sans-500">Verified Buyer</h1>
               </div>
-              <div>
+              <div> 
                 <Stars starsRate={review.starRate === "4" ? true : false}/>
               </div>
               <div>

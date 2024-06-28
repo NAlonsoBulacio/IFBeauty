@@ -22,6 +22,10 @@ import a4 from "./images/befandaf acne/f.jpeg";
 import a5 from "./images/befandaf acne/g.jpeg";
 import a6 from "./images/befandaf acne/h.jpeg";
 
+import item_sun from "./images/item_sun.png";
+import item_age from "./images/item_age.png";
+import item_animal from "./images/item_animal.png";
+import item_fresh from "./images/item_fresh.png";
 
 export {
     calendar,
@@ -45,6 +49,10 @@ export {
     a4,
     a5,
     a6,
+    item_age,
+    item_animal,
+    item_fresh,
+    item_sun
 }
 
 

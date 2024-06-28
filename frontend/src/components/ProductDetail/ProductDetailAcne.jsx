@@ -146,7 +146,7 @@ const ProductDetailAcne = block(({ homeVariant, handleVariantDetail }) => {
           </h1>
         </div>
         <div className="w-full flex justify-start items-start text-[12px]">
-          New 🏆 Innovation in skin health 2024
+          New 🏆 Innovation in Skin Health 2024
         </div>
         <div className="w-full flex justify-start items-start py-4">
           <h1 className="text-gray-700 font-sans-500 text-left">
@@ -158,7 +158,7 @@ const ProductDetailAcne = block(({ homeVariant, handleVariantDetail }) => {
             <li>💜 Eliminates breakouts and improves appearance, boosting your confidence.</li>
             <li>🍑 Calms redness, so you can socialize without worrying about your skin.</li>
             <li>✨ Achieve smooth and clear skin.</li>
-            <li>🌱Clinically proven ingredients that enhance your skin.</li>
+            <li>🌱 Clinically proven ingredients that enhance your skin.</li>
           </ul>
         </div>
         <div className="w-full flex flex-wrap gap-3 py-4">
