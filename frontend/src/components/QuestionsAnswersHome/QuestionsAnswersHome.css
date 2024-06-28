@@ -9,13 +9,13 @@
   
   .answer.show {
     opacity: 1;
-    max-height: 480px; 
+    max-height: 780px; 
     padding-top: 4px;
     padding-bottom: 10px;
   }
 
   @media screen and (max-width: 600px) {
     .answer.show {
-      max-height: 400px; 
+      max-height: 800px; 
     }
   }

@@ -44,12 +44,6 @@ const ProductDetail = block(({ homeVariant, handleVariantDetail }) => {
     },
   ];
 
-  const contains = [
-    `Active Enzyme Cleanser - Fermented Pomegranate <span style="font-weight: normal;"> Price:$34.95 AUD</span>`,
-    `X2 Serum for Dark Circles<span style="font-weight: normal;"> 0.5fl oz 15ml </span>`,
-    `Gift VIP Rejuvenation Advisor (Direct Access)`,
-  ];
-
   useEffect(() => {
     if (homeVariant !== null) {
       handleSelectVariant(homeVariant);
@@ -250,17 +244,6 @@ const ProductDetail = block(({ homeVariant, handleVariantDetail }) => {
               {objectVariant ? ` 👉🏻 ADD TO BAG $${objectVariant.price}` : ""}
             </button>
           </a>
-        </div>
-
-        <div className="w-full flex justify-start items-start">
-          <ul className="text-left text-md lg:text-xl list-disc pl-4 lg:pl-6">
-            {contains?.map((phrase) => (
-              <li
-                className="font-bold"
-                dangerouslySetInnerHTML={{ __html: phrase }}
-              ></li>
-            ))}
-          </ul>
         </div>
 
         <div className="w-full flex justify-center items-center py-6  gap-2">

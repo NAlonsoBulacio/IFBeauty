@@ -5,6 +5,8 @@ import QuestionSvg from "../../utils/QuestionSvg";
 import StarSvg from "../../utils/StarSvg";
 import ShippingSvg from "../../utils/ShippingSvg";
 import ReturnSvg from "../../utils/ReturnSvg";
+import SkinSvg from "../../utils/SkinSvg";
+import CheckSvg from "../../utils/CheckSvg";
 
 const QuestionsAnswersBundle = ({ landing }) => {
   const [answer, setAnswer] = useState("");
@@ -117,9 +119,11 @@ const QuestionsAnswersBundle = ({ landing }) => {
                 }}
               >
                 {index === 0 && <QuestionSvg />}
-                {index === 1 && <StarSvg />}
-                {index === 2 && <ShippingSvg />}
-                {index === 3 && <ReturnSvg />}
+                {index === 1 && <SkinSvg />}
+                {index === 2 && <StarSvg />}
+                {index === 3 && <ShippingSvg />}
+                {index === 4 && <ReturnSvg />}
+                {index === 5 && <CheckSvg />}
 
                 <span className="w-3/4 flex-grow text-left font-sans-600 text-gray-800 text-md lg:text-lg">
                   {qa.question}
