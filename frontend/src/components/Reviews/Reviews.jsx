@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Stars from "./Stars";
 import star from "../../assets/star.svg";
 import { reviews, acne_reviews } from "./AllReviews";
