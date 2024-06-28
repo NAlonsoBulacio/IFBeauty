@@ -1,5 +1,5 @@
 import React from "react";
-import skinsvg from "../assets/skin.svg";
+import skinsvg from "../assets/images/skin.svg";
 function SkinSvg() {
   return (
     <div>
