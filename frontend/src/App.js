@@ -4,7 +4,7 @@ import LandingPage from "./pages/LandingPage/LandingPage";
 import LandingPageProduct from './pages/LandingPageProduct/LandingPageProducts';
 import LandingPageVideo from './pages/LandingPageVideo/LandingPageVideo';
 import LandingPageAcne from './pages/LandingPageAcne/LandingPageAcne';
-import LandingPageBundle from './pages/LandingPageProduct/LandingPageProducts';
+import LandingPageBundle from './pages/LandingPageBundle/LandingPageBundle';
 const App = () => {
   return (
     <div className="App ">
