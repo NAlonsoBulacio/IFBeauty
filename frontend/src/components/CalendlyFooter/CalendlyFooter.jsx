@@ -34,15 +34,15 @@ const CalendlyFooter = block(({ handleVariantFooter, homeVariant }) => {
       save: "Save $23",
       link: "https://ifbeauty.com.au/cart/43602984206511:1",
     },
-    // {
-    //   id: 3,
-    //   variant: "3-Pack",
-    //   price: 43,
-    //   compare_price: 70,
-    //   free_shipping: true,
-    //   save: "Save $12",
-    //   link: "https://ifbeauty.com.au/cart/43602984239279:1",
-    // },
+    {
+      id: 3,
+      variant: "Bundle",
+      price: 100.8,
+      compare_price: 134.4,
+      free_shipping: true,
+      save: "Save $34",
+      link: "https://ifbeauty.com.au/cart/44088617959599:1",
+    },
   ];
 
   useEffect(() => {

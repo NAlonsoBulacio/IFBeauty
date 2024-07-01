@@ -36,7 +36,7 @@ const ProductDetail = block(({ homeVariant, handleVariantDetail }) => {
   const variants = [
     {
       id: 2,
-      variant: "Double Pack",
+      variant: "Bundle",
       price: 100.80,
       compare_price: 134.40,
       free_shipping: true,
