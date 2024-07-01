@@ -168,7 +168,8 @@ const ProductDetail = block(({ homeVariant, handleVariantDetail }) => {
             <div className="flex-grow h-[2px] bg-[#1c4cfc]"></div>
           </div>
           {variants?.map((variant, index) => {
-            const savings = variant.compare_price - variant.price;
+       const savings = Math.ceil(variant.compare_price - variant.price);
+
             return (
               <div
                 key={index}
