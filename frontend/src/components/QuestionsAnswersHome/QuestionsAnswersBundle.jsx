@@ -70,21 +70,21 @@ const QuestionsAnswersBundle = ({ landing }) => {
       `,
       answer_id: "5",
     },
-    {
-      question: "Our Facts",
-      answer: `
-        <strong>Should I combine my Collagen Boost and Repair Bundle with other IF Products?</strong><br>
-        Yes, for the best results, you should combine your skincare routine with other IF products based on your routine.<br><br>
-        <strong>How long will it take to see results?</strong><br>
-        While you will notice softer, smoother, and instantly hydrated skin, it's important to know that changing your skincare routine will take a few weeks to show more permanent results.<br><br>
-        <strong>Can I use the products at night?</strong><br>
-        Yes, the products can be used both day and night. For optimal results, combine them with our Golden Glycolic 10% Glycolic Night Serum.<br><br>
-        <strong>How long will the products last?</strong><br>
-        Each product in the bundle is designed to last for at least 30 days with regular use.<br><br>
-        <strong>Unlock the full potential of your skin with our Professional Skincare Bundle. Order now and experience the transformation!</strong>
-      `,
-      answer_id: "6",
-    },
+    // {
+    //   question: "Our Facts",
+    //   answer: `
+    //     <strong>Should I combine my Collagen Boost and Repair Bundle with other IF Products?</strong><br>
+    //     Yes, for the best results, you should combine your skincare routine with other IF products based on your routine.<br><br>
+    //     <strong>How long will it take to see results?</strong><br>
+    //     While you will notice softer, smoother, and instantly hydrated skin, it's important to know that changing your skincare routine will take a few weeks to show more permanent results.<br><br>
+    //     <strong>Can I use the products at night?</strong><br>
+    //     Yes, the products can be used both day and night. For optimal results, combine them with our Golden Glycolic 10% Glycolic Night Serum.<br><br>
+    //     <strong>How long will the products last?</strong><br>
+    //     Each product in the bundle is designed to last for at least 30 days with regular use.<br><br>
+    //     <strong>Unlock the full potential of your skin with our Professional Skincare Bundle. Order now and experience the transformation!</strong>
+    //   `,
+    //   answer_id: "6",
+    // },
   ];
 
   return (
