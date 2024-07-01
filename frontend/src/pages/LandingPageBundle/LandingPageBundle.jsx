@@ -27,7 +27,7 @@ const LandingPageBundle = () => {
         <BeforeAfterReviews />
         <ImageDescription />
         <Reviews />
-        <QuestionsAnswersEnd />
+        <QuestionsAnswersEnd bundle={"bundle"} />
       </div>
       <CalendlyFooterBundle
         handleVariantFooter={handleHomeVariant}

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { IoIosArrowDown } from "react-icons/io";
 import "./QuestionsAnswersHome.css";
 
-const QuestionsAnswersEnd = ({ landing, acne }) => {
+const QuestionsAnswersEnd = ({ landing, acne, bundle }) => {
   const [answer, setAnswer] = useState("");
 
   const handleAnswer = (answerId) => {
@@ -13,7 +13,7 @@ const QuestionsAnswersEnd = ({ landing, acne }) => {
     {
       question: "Should I combine my Collagen Boost and Sun damage Repair with other IF Products?",
       answer:
-        "Yes, for the best results, you should combine your wrinkle serum with other IF products based on your routine.Pro tip: Collagen Boost and Sun damage Repair works best with Bright Eyes Peptide Complex Eye Gel",
+        "Yes, for the best results, you should combine your wrinkle serum with other IF products based on your routine. Pro tip: Collagen Boost and Sun damage Repair works best with Bright Eyes Peptide Complex Eye Gel",
       answer_id: "1",
     },
     {
@@ -63,9 +63,34 @@ const QuestionsAnswersEnd = ({ landing, acne }) => {
     },
   ];
 
-  // Elegir preguntas basadas en la presencia de la prop 'acne'
-  const QAs = acne ? QAsAcne : QAsDefault;
-
+  const QAsBundle = [
+    {
+      question: "Should I combine my Collagen Boost and Repair Bundle with other IF Products?",
+      answer:
+        "Yes, for the best results, you should combine your skincare routine with other IF products based on your routine.",
+      answer_id: "1",
+    },
+    {
+      question: "How long will it take to see results?",
+      answer:
+        "While you will notice softer, smoother, and instantly hydrated skin, it's important to know that changing your skincare routine will take a few weeks to show more permanent results.",
+      answer_id: "2",
+    },
+    {
+      question: "Can I use the products at night?",
+      answer:
+        "Yes, the products can be used both day and night. For optimal results, combine them with our Golden Glycolic 10% Glycolic Night Serum.",
+      answer_id: "3",
+    },
+    {
+      question: "How long will the products last?",
+      answer:
+        "Each product in the bundle is designed to last for at least 30 days with regular use.",
+      answer_id: "4",
+    },
+  ];
+  
+  const QAs = bundle ? QAsBundle : (acne ? QAsAcne : QAsDefault);
   return (
     <div
       id="q&a"
