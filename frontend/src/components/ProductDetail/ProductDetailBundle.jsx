@@ -28,10 +28,10 @@ const ProductDetail = block(({ homeVariant, handleVariantDetail }) => {
   const [selectedVariant, setSelectedVariant] = useState(homeVariant);
   const [objectVariant, setObjectVariant] = useState({
     id: 2,
-    variant: "Double Pack",
+    variant: "Bundle",
     price: 100.80,
     compare_price: 134.40,
-    link: "https://ifbeauty.com.au/cart/43602984206511:1",
+    link: "https://ifbeauty.com.au/cart/44076074303663:1",
   });
   const variants = [
     {
@@ -40,7 +40,7 @@ const ProductDetail = block(({ homeVariant, handleVariantDetail }) => {
       price: 100.80,
       compare_price: 134.40,
       free_shipping: true,
-      link: "https://ifbeauty.com.au/cart/43602984206511:1",
+      link: "https://ifbeauty.com.au/cart/44076074303663:1",
     },
   ];
 

@@ -46,7 +46,7 @@ const acne = {
         <BeforeAfterReviews acne={"acne"} />
         <ImageDescription />
         <Reviews acne={"acne"}  />
-        <QuestionsAnswersEnd />
+        <QuestionsAnswersEnd acne={"acne"} />
       </div>
       <CalendlyFooter
         handleVariantFooter={handleHomeVariant}

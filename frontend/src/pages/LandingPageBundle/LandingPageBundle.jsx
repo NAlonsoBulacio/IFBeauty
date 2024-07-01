@@ -5,7 +5,7 @@ import Footer from "../../components/Footer/Footer";
 import BeforeAfterReviews from "../../components/BeforeAfterReviews/BeforeAfterReviews";
 import DescriptionPercentage from "../../components/DescrptionPercentage/DescriptionPercentage";
 import BenefitsandVideo from "../../components/BenefitsAndvideo/BenefitsandVideo";
-import CalendlyFooter from "../../components/CalendlyFooter/CalendlyFooter";
+import CalendlyFooterBundle from "../../components/CalendlyFooter/CalendlyFooterBundle";
 import ImageDescription from "../../components/ImageDescription/ImageDescription";
 import Reviews from "../../components/Reviews/Reviews";
 import QuestionsAnswersEnd from "../../components/QuestionsAnswersHome/QuestionsAnswersEnd";
@@ -29,7 +29,7 @@ const LandingPageBundle = () => {
         <Reviews />
         <QuestionsAnswersEnd />
       </div>
-      <CalendlyFooter
+      <CalendlyFooterBundle
         handleVariantFooter={handleHomeVariant}
         homeVariant={homeVariant}
       />
