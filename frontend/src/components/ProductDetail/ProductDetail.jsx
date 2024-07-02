@@ -22,6 +22,7 @@ const ProductDetail = block(({ homeVariant, handleVariantDetail }) => {
     img1: product,
     img2: product2,
     img3: product3,
+    img4: "https://cdn.shopify.com/s/files/1/0593/0945/7583/files/IMG_0497_fff18038-d4b1-4844-b079-bf9c2a720ef0.jpg?v=1719930931"
   });
   const [showRegistro, setShowRegistro] = useState(false);
   const [activeImg, setActiveImage] = useState(images.img1);
@@ -69,7 +70,9 @@ const ProductDetail = block(({ homeVariant, handleVariantDetail }) => {
 
   useEffect(() => {
     if (selectedVariant === 3) {
-      setActiveImage(images.img3)
+      setActiveImage(images.img4)
+    } else {
+      setActiveImage(images.img1)
     }
   }, [selectedVariant]);
 
@@ -104,23 +107,11 @@ const ProductDetail = block(({ homeVariant, handleVariantDetail }) => {
     <div className="bg-white flex flex-wrap lg:flex-nowrap">
       <div className="block lg:hidden pt-0 pb-8 lg:py-8 w-[100%]">
         {selectedVariant === 3 ? (
-          <Slider {...settings} className="">
             <div className="px-2">
               <div className="w-auto flex flex-wrap justify-center items-start gap-4 rounded-xl overflow-hidden">
-                <img src={product3} alt="img_before" />
+                <img src="https://cdn.shopify.com/s/files/1/0593/0945/7583/files/IMG_0497_fff18038-d4b1-4844-b079-bf9c2a720ef0.jpg?v=1719930931" alt="img_before" />
               </div>
-            </div>
-            <div className="px-2">
-              <div className="w-auto flex flex-wrap justify-center items-start gap-4 rounded-xl overflow-hidden">
-                <img src={product3} alt="img_before" />
-              </div>
-            </div>
-            <div className="px-2">
-              <div className="w-auto flex flex-wrap justify-center items-start gap-4 rounded-xl overflow-hidden">
-                <img src={product3} alt="img_before" />
-              </div>
-            </div>
-          </Slider>
+            </div>      
         ) : (
           <Slider {...settings} className="">
             <div className="px-2">
@@ -149,28 +140,6 @@ const ProductDetail = block(({ homeVariant, handleVariantDetail }) => {
               alt=""
               className="w-full h-auto aspect-square object-cover rounded-xl"
             />
-            <div className="h-24 flex justify-between">
-              <div className="flex flex-row justify-center space-x-6 h-24 overflow-hidden">
-                <img
-                  src={images.img3}
-                  alt=""
-                  className="w-24 h-24 rounded-md cursor-pointer"
-                  onClick={() => setActiveImage(images.img1)}
-                />
-                <img
-                  src={images.img3}
-                  alt=""
-                  className="w-24 h-24 rounded-md cursor-pointer"
-                  onClick={() => setActiveImage(images.img2)}
-                />
-                <img
-                  src={images.img3}
-                  alt=""
-                  className="w-24 h-24 rounded-md cursor-pointer"
-                  onClick={() => setActiveImage(images.img3)}
-                />
-              </div>
-            </div>
           </div>
         </div>
       ) : (
