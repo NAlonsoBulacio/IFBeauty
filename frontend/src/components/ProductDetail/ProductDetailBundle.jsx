@@ -17,7 +17,6 @@ import { block } from "million/react";
 const ProductDetail = block(({ homeVariant, handleVariantDetail }) => {
  
   const [showRegistro, setShowRegistro] = useState(false);
-  const [activeImg, setActiveImage] = useState(images.img1);
   const [selectedVariant, setSelectedVariant] = useState(homeVariant);
   const [objectVariant, setObjectVariant] = useState({
     id: 2,
