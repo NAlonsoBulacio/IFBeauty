@@ -10,19 +10,12 @@ import {
   shipping,
   returning,
   best_seller,
-  product,
-  product2,
-  product3,
   au,
 } from "../../assets/index";
 import { block } from "million/react";
 
 const ProductDetail = block(({ homeVariant, handleVariantDetail }) => {
-  const [images, setImages] = useState({
-    img1: product,
-    img2: product2,
-    img3: product3,
-  });
+ 
   const [showRegistro, setShowRegistro] = useState(false);
   const [activeImg, setActiveImage] = useState(images.img1);
   const [selectedVariant, setSelectedVariant] = useState(homeVariant);
@@ -81,53 +74,19 @@ const ProductDetail = block(({ homeVariant, handleVariantDetail }) => {
   return (
     <div className="bg-white flex flex-wrap lg:flex-nowrap">
       <div className="block lg:hidden pt-0 pb-8 lg:py-8 w-[100%]">
-        <Slider {...settings} className="">
           <div className="px-2">
             <div className="w-auto flex flex-wrap justify-center items-start gap-4 rounded-xl overflow-hidden">
-              <img src={product} alt="img_before" />
+              <img src="https://cdn.shopify.com/s/files/1/0593/0945/7583/files/IMG_0497_fff18038-d4b1-4844-b079-bf9c2a720ef0.jpg?v=1719930931" alt="img_before" />
             </div>
           </div>
-          <div className="px-2">
-            <div className="w-auto flex flex-wrap justify-center items-start gap-4 rounded-xl overflow-hidden">
-              <img src={product2} alt="img_before" />
-            </div>
-          </div>
-          <div className="px-2">
-            <div className="w-auto flex flex-wrap justify-center items-start gap-4 rounded-xl overflow-hidden">
-              <img src={product3} alt="img_before" />
-            </div>
-          </div>
-        </Slider>
       </div>
       <div className="hidden lg:flex flex-col gap-6 lg:w-2/4">
         <div className="hidden lg:block sticky top-0">
           <img
-            src={activeImg}
+            src="https://cdn.shopify.com/s/files/1/0593/0945/7583/files/IMG_0497_fff18038-d4b1-4844-b079-bf9c2a720ef0.jpg?v=1719930931"
             alt=""
             className="w-full h-auto aspect-square object-cover rounded-xl"
           />
-          <div className="h-24 flex justify-between">
-            <div className="flex flex-row justify-center space-x-6 h-24 overflow-hidden">
-              <img
-                src={images.img1}
-                alt=""
-                className="w-24 h-24 rounded-md cursor-pointer"
-                onClick={() => setActiveImage(images.img1)}
-              />
-              <img
-                src={images.img2}
-                alt=""
-                className="w-24 h-24 rounded-md cursor-pointer"
-                onClick={() => setActiveImage(images.img2)}
-              />
-              <img
-                src={images.img3}
-                alt=""
-                className="w-24 h-24 rounded-md cursor-pointer"
-                onClick={() => setActiveImage(images.img3)}
-              />
-            </div>
-          </div>
         </div>
       </div>
       <div className="flex flex-wrap h-full justify-start items-start w-full lg:w-1/2 px-0 lg:px-10 space-y-2">
