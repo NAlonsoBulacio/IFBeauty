@@ -19,10 +19,10 @@ const CalendlyFooter = block(({ handleVariantFooter, homeVariant }) => {
     {
       id: 1,
       variant: "Single",
-      price: 35,
-      compare_price: 41.5,
+      price: 41.5,
+      // compare_price: 41.5,
       free_shipping: false,
-      save: "Save $6,5",
+      // save: "Save $6,5",
       link: "https://ifbeauty.com.au/cart/43602984173743:1",
     },
     {
@@ -113,7 +113,7 @@ const CalendlyFooter = block(({ handleVariantFooter, homeVariant }) => {
           >
             <div className="w-full flex flex-col justify-start items-center">
               <div className="bg-slate-500 w-full h-8 text-gray-200 flex justify-center items-center">
-                {variant.save}
+                {variant.save ? variant.save : ""}
               </div>
               <div className="flex gap-2">
                 <p className="font-sans-600 text-gray-600 text-lg">

@@ -38,8 +38,8 @@ const ProductDetail = block(({ homeVariant, handleVariantDetail }) => {
     {
       id: 1,
       variant: "Single Pack",
-      price: 35,
-      compare_price: 41.5,
+      price:  41.5,
+      // compare_price: 41.5,
       free_shipping: false,
       link: "https://ifbeauty.com.au/cart/43602984173743:1",
     },
@@ -214,7 +214,11 @@ const ProductDetail = block(({ homeVariant, handleVariantDetail }) => {
             <div className="flex-grow h-[2px] bg-[#1c4cfc]"></div>
           </div>
           {variants?.map((variant, index) => {
-           const savings = Math.ceil(variant.compare_price - variant.price);
+          let savings = "";
+
+          if (variant.compare_price) {
+            savings = Math.ceil(variant.compare_price - variant.price);
+          }
 
             return (
               <div
@@ -245,14 +249,14 @@ const ProductDetail = block(({ homeVariant, handleVariantDetail }) => {
                         ""
                       )}
                     </div>
-                    <p className="text-left">You Save ${savings}</p>
+                    <p className="text-left">You Save ${variant.compare_price ? savings : ""}</p>
                   </div>
                   <div>
                     <p className="text-2xl font-sans-500 text-gray-700">
                       ${variant.price}
                     </p>
                     <p className="font-sans-400 text-gray-600 line-through">
-                      ${variant.compare_price}
+                      ${variant.compare_price ? variant.compare_price : ""}
                     </p>
                   </div>
                 </div>
