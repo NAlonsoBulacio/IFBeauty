@@ -44,8 +44,8 @@ const VideoPlayer = block(({ landingVideo }) => {
         } w-full lg:w-[640px] relative`}
       >
         <video
-          width="100%"
-          height="315"
+          width="auto"
+          height="100%"
           controls
           src="https://cdn.shopify.com/videos/c/o/v/f706a4ee74e94756b2ffa21601f2dc66.mp4"
           title="Video player"
