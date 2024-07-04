@@ -53,7 +53,7 @@ const ProductDetail = block(({ homeVariant, handleVariantDetail }) => {
     },
     {
       id: 3,
-      variant: "Bundle",
+      variant: "Professional Skincare Bundle for Home Use",
       price: 100.8,
       compare_price: 134.4,
       free_shipping: true,
@@ -249,15 +249,15 @@ const ProductDetail = block(({ homeVariant, handleVariantDetail }) => {
                         ""
                       )}
                     </div>
-                    <p className="text-left">You Save ${variant.compare_price ? savings : ""}</p>
+                 {  variant.compare_price ? <p className="text-left">You Save ${variant.compare_price ? savings : ""}</p> : ""}
                   </div>
                   <div>
                     <p className="text-2xl font-sans-500 text-gray-700">
                       ${variant.price}
                     </p>
-                    <p className="font-sans-400 text-gray-600 line-through">
+                   {variant.compare_price ? <p className="font-sans-400 text-gray-600 line-through">
                       ${variant.compare_price ? variant.compare_price : ""}
-                    </p>
+                    </p> : ""}
                   </div>
                 </div>
                 {variant.id === 2 ? (
