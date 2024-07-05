@@ -22,7 +22,7 @@ const ProductDetail = block(({ homeVariant, handleVariantDetail }) => {
     img1: product,
     img2: product2,
     img3: product3,
-    img4: "https://cdn.shopify.com/s/files/1/0593/0945/7583/files/IMG_0497_fff18038-d4b1-4844-b079-bf9c2a720ef0.jpg?v=1719930931"
+    img4: "https://cdn.shopify.com/s/files/1/0593/0945/7583/files/IMG_0497_fff18038-d4b1-4844-b079-bf9c2a720ef0.jpg?v=1719930931",
   });
   const [showRegistro, setShowRegistro] = useState(false);
   const [activeImg, setActiveImage] = useState(images.img1);
@@ -38,7 +38,7 @@ const ProductDetail = block(({ homeVariant, handleVariantDetail }) => {
     {
       id: 1,
       variant: "Single Pack",
-      price:  41.5,
+      price: 41.5,
       // compare_price: 41.5,
       free_shipping: false,
       link: "https://ifbeauty.com.au/cart/43602984173743:1",
@@ -70,17 +70,15 @@ const ProductDetail = block(({ homeVariant, handleVariantDetail }) => {
 
   useEffect(() => {
     if (selectedVariant === 3) {
-      setActiveImage(images.img4)
+      setActiveImage(images.img4);
     } else {
-      setActiveImage(images.img1)
+      setActiveImage(images.img1);
     }
   }, [selectedVariant]);
-
 
   const handleSelectVariant = (variant) => {
     setSelectedVariant(variant);
   };
-
 
   const settings = {
     dots: true,
@@ -107,11 +105,14 @@ const ProductDetail = block(({ homeVariant, handleVariantDetail }) => {
     <div className="bg-white flex flex-wrap lg:flex-nowrap">
       <div className="block lg:hidden pt-0 pb-8 lg:py-8 w-[100%]">
         {selectedVariant === 3 ? (
-            <div className="px-2">
-              <div className="w-auto flex flex-wrap justify-center items-start gap-4 rounded-xl overflow-hidden">
-                <img src="https://cdn.shopify.com/s/files/1/0593/0945/7583/files/IMG_0497_fff18038-d4b1-4844-b079-bf9c2a720ef0.jpg?v=1719930931" alt="img_before" />
-              </div>
-            </div>      
+          <div className="px-2">
+            <div className="w-auto flex flex-wrap justify-center items-start gap-4 rounded-xl overflow-hidden">
+              <img
+                src="https://cdn.shopify.com/s/files/1/0593/0945/7583/files/IMG_0497_fff18038-d4b1-4844-b079-bf9c2a720ef0.jpg?v=1719930931"
+                alt="img_before"
+              />
+            </div>
+          </div>
         ) : (
           <Slider {...settings} className="">
             <div className="px-2">
@@ -214,11 +215,11 @@ const ProductDetail = block(({ homeVariant, handleVariantDetail }) => {
             <div className="flex-grow h-[2px] bg-[#1c4cfc]"></div>
           </div>
           {variants?.map((variant, index) => {
-          let savings = "";
+            let savings = "";
 
-          if (variant.compare_price) {
-            savings = Math.ceil(variant.compare_price - variant.price);
-          }
+            if (variant.compare_price) {
+              savings = Math.ceil(variant.compare_price - variant.price);
+            }
 
             return (
               <div
@@ -238,20 +239,33 @@ const ProductDetail = block(({ homeVariant, handleVariantDetail }) => {
                 <div className="w-full flex justify-between">
                   <div className="flex flex-col justify-start">
                     <div className="flex gap-2">
-                      <p className={` ${variant.id === 3 ? "text-md font-bold" : "text-xl"} "font-sans-500 text-gray-600 "`}>
+                      <p
+                        className={` ${
+                          variant.id === 3 ? "text-md font-bold" : "text-xl"
+                        } "font-sans-500 text-gray-600 "`}
+                      >
                         {variant.variant}
                       </p>
-                     
                     </div>
-                 {  variant.compare_price ? <p className="text-left">You Save ${variant.compare_price ? savings : ""}</p> : ""}
+                    {variant.compare_price ? (
+                      <p className="text-left">
+                        You Save ${variant.compare_price ? savings : ""}
+                      </p>
+                    ) : (
+                      ""
+                    )}
                   </div>
                   <div>
                     <p className="text-2xl font-sans-500 text-gray-700">
                       ${variant.price}
                     </p>
-                   {variant.compare_price ? <p className="font-sans-400 text-gray-600 line-through">
-                      ${variant.compare_price ? variant.compare_price : ""}
-                    </p> : ""}
+                    {variant.compare_price ? (
+                      <p className="font-sans-400 text-gray-600 line-through">
+                        ${variant.compare_price ? variant.compare_price : ""}
+                      </p>
+                    ) : (
+                      ""
+                    )}
                   </div>
                 </div>
                 {variant.id === 2 ? (

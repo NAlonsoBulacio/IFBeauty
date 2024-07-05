@@ -34,10 +34,9 @@ const ProductDetailAcne = block(({ homeVariant, handleVariantDetail }) => {
     {
       id: 1,
       variant: "Single Pack",
-      price: 35,
-      compare_price: 41.5,
+      price: 42,
       free_shipping: false,
-      link: "https://ifbeauty.com.au/cart/43602984173743:1",
+      link: "https://ifbeauty.com.au/cart/44128794411183:1",
     },
     {
       id: 2,
@@ -45,7 +44,7 @@ const ProductDetailAcne = block(({ homeVariant, handleVariantDetail }) => {
       price: 60,
       compare_price: 83,
       free_shipping: false,
-      link: "https://ifbeauty.com.au/cart/43602984206511:1",
+      link: "https://ifbeauty.com.au/cart/44128794443951:1",
     },
   ];
 
@@ -168,7 +167,11 @@ const ProductDetailAcne = block(({ homeVariant, handleVariantDetail }) => {
             <div className="flex-grow h-[2px] bg-[#1c4cfc]"></div>
           </div>
           {variants?.map((variant, index) => {
-            const savings = variant.compare_price - variant.price;
+           let savings = "";
+
+           if (variant.compare_price) {
+             savings = Math.ceil(variant.compare_price - variant.price);
+           }
             return (
               <div
                 key={index}
@@ -198,15 +201,25 @@ const ProductDetailAcne = block(({ homeVariant, handleVariantDetail }) => {
                         ""
                       )}
                     </div>
-                    <p className="text-left">You Save ${savings}</p>
+                    {variant.compare_price ? (
+                      <p className="text-left">
+                        You Save ${variant.compare_price ? savings : ""}
+                      </p>
+                    ) : (
+                      ""
+                    )}
                   </div>
                   <div>
                     <p className="text-2xl font-sans-500 text-gray-700">
                       ${variant.price}
                     </p>
-                    <p className="font-sans-400 text-gray-600 line-through">
-                      ${variant.compare_price}
-                    </p>
+                    {variant.compare_price ? (
+                      <p className="font-sans-400 text-gray-600 line-through">
+                        ${variant.compare_price ? variant.compare_price : ""}
+                      </p>
+                    ) : (
+                      ""
+                    )}
                   </div>
                 </div>
                 {variant.id === 2 ? (
