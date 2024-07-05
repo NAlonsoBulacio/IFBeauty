@@ -25,6 +25,15 @@ const CalendlyFooterBundle = block(({ handleVariantFooter, homeVariant }) => {
       save: "Save $34",
       link: "https://ifbeauty.com.au/cart/44076074303663:1",
     },
+    {
+      id: 3,
+      variant: "Detox Bundle",
+      price: 91.35,
+      compare_price: 130.5,
+      free_shipping: true,
+      save: "Save $39",
+      link: "https://ifbeauty.com.au/cart/44128567460015:1",
+    },
   ];
 
   useEffect(() => {

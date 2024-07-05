@@ -15,24 +15,31 @@ import {
 import { block } from "million/react";
 
 const ProductDetail = block(({ homeVariant, handleVariantDetail }) => {
- 
   const [showRegistro, setShowRegistro] = useState(false);
   const [selectedVariant, setSelectedVariant] = useState(homeVariant);
   const [objectVariant, setObjectVariant] = useState({
     id: 2,
     variant: "Bundle",
-    price: 100.80,
-    compare_price: 134.40,
+    price: 100.8,
+    compare_price: 134.4,
     link: "https://ifbeauty.com.au/cart/44076074303663:1",
   });
   const variants = [
     {
       id: 2,
-      variant: "Bundle",
-      price: 100.80,
-      compare_price: 134.40,
+      variant: "Professional Skincare Bundle",
+      price: 100.8,
+      compare_price: 134.4,
       free_shipping: true,
       link: "https://ifbeauty.com.au/cart/44076074303663:1",
+    },
+    {
+      id: 3,
+      variant: "The Skin Detox Bundle",
+      price: 91.35,
+      compare_price: 130.5,
+      free_shipping: true,
+      link: "https://ifbeauty.com.au/cart/44128567460015:1",
     },
   ];
 
@@ -43,11 +50,9 @@ const ProductDetail = block(({ homeVariant, handleVariantDetail }) => {
     }
   }, [homeVariant]);
 
-
   const handleSelectVariant = (variant) => {
     setSelectedVariant(variant);
   };
-
 
   const settings = {
     dots: true,
@@ -73,19 +78,39 @@ const ProductDetail = block(({ homeVariant, handleVariantDetail }) => {
   return (
     <div className="bg-white flex flex-wrap lg:flex-nowrap">
       <div className="block lg:hidden pt-0 pb-8 lg:py-8 w-[100%]">
-          <div className="px-2">
+        <div className="px-2">
+          {selectedVariant === 2 ? (
             <div className="w-auto flex flex-wrap justify-center items-start gap-4 rounded-xl overflow-hidden">
-              <img src="https://cdn.shopify.com/s/files/1/0593/0945/7583/files/IMG_0497_fff18038-d4b1-4844-b079-bf9c2a720ef0.jpg?v=1719930931" alt="img_before" />
+              <img
+                src="https://cdn.shopify.com/s/files/1/0593/0945/7583/files/IMG_0497_fff18038-d4b1-4844-b079-bf9c2a720ef0.jpg?v=1719930931"
+                alt="img_before"
+              />
             </div>
-          </div>
+          ) : (
+            <div className="w-auto flex flex-wrap justify-center items-start gap-4 rounded-xl overflow-hidden">
+              <img
+                src="https://cdn.shopify.com/s/files/1/0593/0945/7583/products/Artboard1copy_5.png?v=1666329695"
+                alt="img_before"
+              />
+            </div>
+          )}
+        </div>
       </div>
       <div className="hidden lg:flex flex-col gap-6 lg:w-2/4">
         <div className="hidden lg:block sticky top-0">
-          <img
-            src="https://cdn.shopify.com/s/files/1/0593/0945/7583/files/IMG_0497_fff18038-d4b1-4844-b079-bf9c2a720ef0.jpg?v=1719930931"
-            alt=""
-            className="w-full h-auto aspect-square object-cover rounded-xl"
-          />
+          {selectedVariant === 2 ? (
+            <img
+              src="https://cdn.shopify.com/s/files/1/0593/0945/7583/files/IMG_0497_fff18038-d4b1-4844-b079-bf9c2a720ef0.jpg?v=1719930931"
+              alt=""
+              className="w-full h-auto aspect-square object-cover rounded-xl"
+            />
+          ) : (
+            <img
+              src="https://cdn.shopify.com/s/files/1/0593/0945/7583/products/Artboard1copy_5.png?v=1666329695"
+              alt=""
+              className="w-full h-auto aspect-square object-cover rounded-xl"
+            />
+          )}
         </div>
       </div>
       <div className="flex flex-wrap h-full justify-start items-start w-full lg:w-1/2 px-0 lg:px-10 space-y-2">
@@ -99,8 +124,7 @@ const ProductDetail = block(({ homeVariant, handleVariantDetail }) => {
         </div>
         <div className="w-full flex justify-start items-start">
           <h1 className="text-4xl lg:text-5xl text-left text-gray-800 font-sans-700">
-          Professional Skincare Bundle for Home Use
-
+            Professional Skincare Bundle for Home Use
           </h1>
         </div>
         <div className="w-full flex justify-start items-start text-[12px]">
@@ -108,7 +132,9 @@ const ProductDetail = block(({ homeVariant, handleVariantDetail }) => {
         </div>
         <div className="w-full flex justify-start items-start py-4">
           <h1 className="text-gray-700 font-sans-500 text-left">
-          If you are tired of creams that you don't know what ingredients are in them and that don't give you the results you expect, our Professional Skincare Bundle is for you!
+            If you are tired of creams that you don't know what ingredients are
+            in them and that don't give you the results you expect, our
+            Professional Skincare Bundle is for you!
           </h1>
         </div>
         <div className="w-full flex justify-start items-start">
@@ -126,7 +152,7 @@ const ProductDetail = block(({ homeVariant, handleVariantDetail }) => {
             <div className="flex-grow h-[2px] bg-[#1c4cfc]"></div>
           </div>
           {variants?.map((variant, index) => {
-       const savings = Math.ceil(variant.compare_price - variant.price);
+            const savings = Math.ceil(variant.compare_price - variant.price);
 
             return (
               <div
