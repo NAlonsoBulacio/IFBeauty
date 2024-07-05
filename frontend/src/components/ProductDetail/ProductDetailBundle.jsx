@@ -124,7 +124,7 @@ const ProductDetail = block(({ homeVariant, handleVariantDetail }) => {
         </div>
         <div className="w-full flex justify-start items-start">
           <h1 className="text-4xl lg:text-5xl text-left text-gray-800 font-sans-700">
-            Professional Skincare Bundle for Home Use
+           {selectedVariant === 3 ? "The Ultimate Skin Detox Bundle" : "Professional Skincare Bundle for Home Use"}
           </h1>
         </div>
         <div className="w-full flex justify-start items-start text-[12px]">
